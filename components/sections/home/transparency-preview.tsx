@@ -28,11 +28,13 @@ export function HomeTransparencyPreview() {
         right={
           <StaggerChildren className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {[
-              { label: "PAN", value: trustInfo.pan },
+              { label: "Established", value: String(trustInfo.established) },
+              { label: "Registration", value: trustInfo.registration },
               { label: "12A", value: trustInfo.twelveA },
               { label: "80G", value: trustInfo.eightyG },
-              { label: "FCRA", value: trustInfo.fcra },
-            ].map((item) => (
+            ]
+              .filter((item) => item.value)
+              .map((item) => (
               <StaggerItem key={item.label}>
                 <TrustBadge label={item.label} description={item.value} />
               </StaggerItem>

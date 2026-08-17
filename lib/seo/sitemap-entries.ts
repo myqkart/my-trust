@@ -21,7 +21,6 @@ export const sitemapEntries: SitemapEntry[] = [
   { path: ROUTES.home, changeFrequency: "weekly", priority: 1 },
   { path: ROUTES.about, changeFrequency: "monthly", priority: 0.9 },
   { path: ROUTES.programs, changeFrequency: "weekly", priority: 0.9 },
-  { path: ROUTES.oldAgeHome, changeFrequency: "weekly", priority: 0.95 },
   { path: ROUTES.donate, changeFrequency: "weekly", priority: 0.95 },
   { path: ROUTES.volunteer, changeFrequency: "weekly", priority: 0.9 },
   { path: ROUTES.impact, changeFrequency: "monthly", priority: 0.85 },
@@ -36,9 +35,7 @@ export const sitemapEntries: SitemapEntry[] = [
   { path: ROUTES.refund, changeFrequency: "yearly", priority: 0.2 },
   { path: ROUTES.cookies, changeFrequency: "yearly", priority: 0.2 },
   { path: ROUTES.accessibility, changeFrequency: "yearly", priority: 0.2 },
-  ...programsInfo
-    .filter((program) => program.slug !== "old-age-home")
-    .map((program) => ({
+  ...programsInfo.map((program) => ({
       path: `/programs/${program.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.75,

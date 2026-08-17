@@ -27,34 +27,34 @@ export const reportDocuments = [
 
 export const blogPosts = [
   {
-    slug: "education-and-hostel-support",
-    title: "A Hostel, a School, a Chance",
-    excerpt: "How safe accommodation helps needy children continue their education.",
-    category: "Education Programs",
+    slug: "tree-plantation-seva",
+    title: "Planting Trees, Growing Hope",
+    excerpt: "How neighbourhood plantation drives keep Ahmedabad greener.",
+    category: "Environment",
     publishedAt: "2026-06-12",
     readingTime: "5 min",
   },
   {
-    slug: "bhandara-and-clothing-seva",
-    title: "Meals and Clothes Shared with Dignity",
-    excerpt: "Bhandara events and clothing support for families in need.",
+    slug: "food-distribution-seva",
+    title: "A Meal Shared with Dignity",
+    excerpt: "Food distribution for people who need a plate of food today.",
     category: "Community Impact",
     publishedAt: "2026-05-28",
     readingTime: "4 min",
   },
   {
-    slug: "tree-plantation-and-gau-seva",
-    title: "Green Earth, Gentle Care",
-    excerpt: "Tree plantation and cow welfare as part of serving all life.",
-    category: "Environmental Initiatives",
+    slug: "gau-seva-and-helping-the-poor",
+    title: "Gau Seva and Help for Families",
+    excerpt: "Care for cows, and support for families who have little.",
+    category: "Seva",
     publishedAt: "2026-05-10",
     readingTime: "6 min",
   },
   {
-    slug: "upcoming-old-age-home",
-    title: "A Home for Every Elder",
-    excerpt: "Why Navchetna is working towards an Old Age Home in Ahmedabad.",
-    category: "Elder Care",
+    slug: "education-support-for-children",
+    title: "A Chance to Keep Studying",
+    excerpt: "Education support for needy children in Ahmedabad.",
+    category: "Education",
     publishedAt: "2026-04-22",
     readingTime: "5 min",
   },
@@ -108,7 +108,7 @@ export const legalPages = {
     sections: [
       {
         heading: "Donation intent",
-        body: "Donations are voluntary contributions supporting education, food and clothing, cow welfare, plantation, and the upcoming old age home.",
+        body: "Donations are voluntary contributions supporting tree plantation, food distribution, gau seva, help for the poor, and education.",
       },
       {
         heading: "Refund requests",
@@ -151,54 +151,54 @@ export const legalPages = {
 } as const;
 
 export const aboutFutureGoals = [
-  "Establish an Old Age Home where elders live with dignity, care, and companionship",
-  "Deepen hostel and education support for more needy children",
-  "Continue Bhandara, food, and clothing seva for families in need",
-  "Grow cow welfare and tree plantation with the community",
+  "Plant more trees with neighbourhoods across Ahmedabad",
+  "Reach more hungry families through food distribution",
+  "Grow gau seva for cows that need care",
+  "Stand with more poor families through clothes, essentials, and education support",
 ] as const;
 
 export const eventsList = [
-  {
-    title: "Community Bhandara",
-    dateLabel: "Upcoming",
-    startDate: "2026-08-15",
-    location: "Ahmedabad",
-    summary: "A large Bhandara sharing meals with poor and needy people.",
-  },
   {
     title: "Tree Plantation Drive",
     dateLabel: "Upcoming",
     startDate: "2026-08-20",
     location: "Ahmedabad neighbourhoods",
-    summary: "Planting trees with volunteers, families, and well-wishers.",
+    summary: "Plant trees with volunteers, families, and well-wishers.",
   },
   {
-    title: "Clothing Distribution",
+    title: "Food Distribution",
+    dateLabel: "Upcoming",
+    startDate: "2026-08-15",
+    location: "Ahmedabad",
+    summary: "Share meals with people who need food today.",
+  },
+  {
+    title: "Gau Seva",
+    dateLabel: "Upcoming",
+    startDate: "2026-10-02",
+    location: "Ahmedabad",
+    summary: "Feed and care for cows that are needy or helpless.",
+  },
+  {
+    title: "Help for Families",
     dateLabel: "Upcoming",
     startDate: "2026-09-05",
     location: "Ashram Road, Ahmedabad",
-    summary: "Clothes and essentials for families who need them.",
+    summary: "Clothes, essentials, and support for poor families.",
   },
   {
     title: "Education Support Meet",
     dateLabel: "Upcoming",
     startDate: "2026-09-20",
     location: "Navchetna office, Ahmedabad",
-    summary: "Connecting well-wishers with hostel and education support.",
+    summary: "Connecting well-wishers with education support for children.",
   },
   {
-    title: "Cow Welfare Seva",
-    dateLabel: "Upcoming",
-    startDate: "2026-10-02",
-    location: "Ahmedabad",
-    summary: "Care and support for needy and helpless cattle.",
-  },
-  {
-    title: "Diwali Celebration",
+    title: "Community Gathering",
     dateLabel: "Upcoming",
     startDate: "2026-11-08",
     location: "Ahmedabad",
-    summary: "Lights, sweets, and festival joy shared with the community.",
+    summary: "A day of seva, togetherness, and gratitude.",
   },
 ] as const;
 
@@ -206,44 +206,52 @@ export const impactHighlights = [
   { label: "Years of service", value: "17+" },
   { label: "Established", value: "2009" },
   { label: "Focus areas", value: "5" },
-  { label: "Education", value: "Hostel" },
-  { label: "Food & clothing", value: "Bhandara" },
-  { label: "Cow welfare", value: "Gau Seva" },
-  { label: "Environment", value: "Plantation" },
-  { label: "Old Age Home", value: "Planned" },
+  { label: "Plants", value: "Trees" },
+  { label: "Food", value: "Meals" },
+  { label: "Gau seva", value: "Cows" },
+  { label: "Helping the poor", value: "Families" },
+  { label: "Education", value: "Children" },
 ] as const;
 
 export const storyProfiles = [
   {
-    name: "Children we shelter",
+    name: "Trees we plant",
     quote:
-      "A safe hostel and a chance to study gave our children hope when we had nowhere else to turn.",
+      "The plantation drive brought the neighbourhood together—and the trees are still growing with us.",
     summary:
-      "Needy children without proper education and accommodation receive hostel facilities so they can continue school in a supportive environment.",
+      "Navchetna organises tree plantation so Ahmedabad stays greener and healthier for the next generation.",
+    role: "Tree Plantation",
+  },
+  {
+    name: "Meals we share",
+    quote:
+      "When food reached our family, it was given with respect. That kindness stays with us.",
+    summary:
+      "Food distribution reaches people who are hungry—quietly, regularly, and with dignity.",
+    role: "Food Distribution",
+  },
+  {
+    name: "Gau seva",
+    quote:
+      "Gau seva at Navchetna is quiet, steady care for animals that have nowhere else to go.",
+    summary:
+      "We feed, shelter, and protect cows that are needy or helpless.",
+    role: "Gau Seva",
+  },
+  {
+    name: "Families we stand with",
+    quote:
+      "When we had nothing left to give our children, Navchetna stood with us—clothes, food, and a little hope.",
+    summary:
+      "Clothes, essentials, and a helping hand for underprivileged families when life is hardest.",
+    role: "Helping the Poor",
+  },
+  {
+    name: "Children we support",
+    quote:
+      "A safe place to stay and a chance to study changed what our children could hope for.",
+    summary:
+      "Education support and hostel care help needy children continue school.",
     role: "Education",
-  },
-  {
-    name: "Families at our Bhandara",
-    quote:
-      "The Bhandara and clothing support reached families in our neighbourhood with dignity and care.",
-    summary:
-      "Food distribution, large Bhandara events, and clothes help poor and needy people meet everyday needs.",
-    role: "Food & Clothing",
-  },
-  {
-    name: "Gau seva well-wishers",
-    quote:
-      "Navchetna’s gau seva and plantation work show that service includes animals and the environment too.",
-    summary:
-      "Cow welfare and tree plantation invite the community to care for cattle and a greener Ahmedabad.",
-    role: "Environment & gau seva",
-  },
-  {
-    name: "Our elder-care promise",
-    quote:
-      "Respect, Care and Support for Every Elder — This is Our Commitment.",
-    summary:
-      "We are working towards an Old Age Home so senior citizens can live with safety, companionship, and dignity.",
-    role: "Upcoming Old Age Home",
   },
 ] as const;

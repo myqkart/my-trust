@@ -13,7 +13,7 @@ import { faqInfo, programsInfo } from "@/data/demo";
 import { media } from "@/data/media";
 
 const programsDescription =
-  "Explore Navchetna Charitable Trust programs—education and hostel care, food and clothing, cow welfare, tree plantation, and an upcoming old age home.";
+  "Explore Navchetna Charitable Trust programs—tree plantation, food distribution, gau seva, helping the poor, and education support.";
 
 export const metadata = createPageMetadata({
   title: "Programs",
@@ -37,7 +37,7 @@ export default function ProgramsPage() {
         breadcrumbs={[{ label: "Programs" }]}
         eyebrow="Our Work"
         title="Programs that serve with humanity"
-        description="Education, food and clothing, cow welfare, tree plantation—and a respectful home for elders we are working to establish."
+        description="Tree plantation, food distribution, gau seva, helping the poor, and education support."
         primaryCta={{ label: "Donate Now", href: ROUTES.donate }}
         secondaryCta={{ label: "Volunteer", href: ROUTES.volunteer }}
       />
@@ -47,7 +47,7 @@ export default function ProgramsPage() {
           align="center"
           eyebrow="Impact Areas"
           title="Five ways we serve"
-          description="Choose a program to see how your support becomes hostel care, meals, gau seva, greener streets, and elder dignity."
+          description="Choose a program to see how your support becomes trees, meals, gau seva, help for families, and education."
         />
         <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {programsInfo.map((program) => (

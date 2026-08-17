@@ -16,81 +16,81 @@ export const homeTimeline = [
       "Navchetna Charitable Trust is established in Ahmedabad by Shri Rupesh Bhai Modi to serve people in need.",
   },
   {
-    year: "Education",
-    title: "Hostel for children",
+    year: "Seva",
+    title: "Food, gau seva & helping the poor",
     description:
-      "Needy children without proper education and accommodation receive hostel facilities to continue their studies.",
+      "Food distribution, cow care, and support for underprivileged families become a steady part of our work.",
   },
   {
-    year: "Seva",
-    title: "Food, clothes & gau seva",
+    year: "Learn",
+    title: "Education support",
     description:
-      "Bhandara events, food and clothing support, and cow welfare grow as more people join the work.",
+      "Needy children receive education support and hostel facilities so they can continue their studies.",
   },
   {
     year: "Today",
-    title: "Plantation & elder home",
-    description: `Tree plantation continues, and we are working towards an Old Age Home—${statisticsInfo.yearsOfService} years of service in Ahmedabad.`,
+    title: "Planting for tomorrow",
+    description: `Tree plantation continues across Ahmedabad—${statisticsInfo.yearsOfService} years of service, support, and humanity.`,
   },
 ] as const;
 
 export const featuredResidentStory = {
-  name: "Children we shelter",
-  quote: testimonialsInfo[0].quote,
+  name: "Children we support",
+  quote: testimonialsInfo.find((item) => item.role === "Education")?.quote ?? "",
   summary:
-    "The Trust has supported needy children who did not have proper facilities for education and accommodation—giving them a hostel so they can study in safety.",
+    "The Trust supports needy children with education and a safe place to stay—so learning is not lost when a family has little.",
   journey:
-    "For families with nowhere to turn, a secure place to stay and continue school is the first step toward a better life. That is the heart of Navchetna’s education support.",
+    "For children without proper facilities, a chance to study is the first step toward a better life. That is the heart of Navchetna’s education support.",
   href: ROUTES.stories,
   cta: "Read Our Stories",
 } as const;
 
 export const galleryPreviewItems = [
-  { title: "Education and hostel care", category: "Education" },
-  { title: "Bhandara and shared meals", category: "Meals" },
-  { title: "Clothes for families in need", category: "Volunteers" },
-  { title: "Tree plantation drives", category: "Environment" },
-  { title: "Community celebrations", category: "Festivals" },
-  { title: "Volunteers in action", category: "Daily Life" },
+  { title: "Trees we plant together", category: "Environment" },
+  { title: "Food shared with dignity", category: "Meals" },
+  { title: "Gau seva", category: "Daily Life" },
+  { title: "Help for families in need", category: "Volunteers" },
+  { title: "Education support", category: "Education" },
+  { title: "Community gatherings", category: "Festivals" },
 ] as const;
 
 export const upcomingEvents = [
   {
     title: eventsInfo[0],
     dateLabel: "Upcoming",
-    location: "Ahmedabad",
-    summary: "A large Bhandara sharing meals with poor and needy people.",
+    location: "Ahmedabad neighbourhoods",
+    summary: "Plant trees with volunteers, families, and well-wishers.",
     href: ROUTES.events,
   },
   {
     title: eventsInfo[1],
     dateLabel: "Upcoming",
-    location: "Ahmedabad neighbourhoods",
-    summary: "Planting trees with volunteers, families, and well-wishers.",
+    location: "Ahmedabad",
+    summary: "Distribute food to people who need a meal today.",
     href: ROUTES.events,
   },
   {
     title: eventsInfo[2],
     dateLabel: "Upcoming",
-    location: "Ashram Road, Ahmedabad",
-    summary: "Clothes and essentials for families who need them.",
+    location: "Ahmedabad",
+    summary: "Care, feed, and protect cows that need our help.",
     href: ROUTES.events,
   },
 ] as const;
 
 export const impactUtilization = [
-  { label: "Education & Hostel", percent: 30 },
-  { label: "Food, Bhandara & Clothing", percent: 28 },
-  { label: "Cow Welfare", percent: 16 },
-  { label: "Tree Plantation", percent: 14 },
-  { label: "Upcoming Old Age Home", percent: 12 },
+  { label: "Tree Plantation", percent: 22 },
+  { label: "Food Distribution", percent: 24 },
+  { label: "Gau Seva", percent: 18 },
+  { label: "Helping the Poor", percent: 20 },
+  { label: "Education Support", percent: 16 },
 ] as const;
 
 export const homeNewsletter = {
   eyebrow: "Stay Close",
   title: "Stories of hope, delivered gently",
   description:
-    "Join our community for updates on seva, events, and meaningful ways to help—never spam, only purpose.",
+    "Join us for updates on plantation, food seva, gau seva, education, and ways to help—never spam, only purpose.",
 } as const;
 
 export const homeAbout = {
@@ -102,5 +102,5 @@ export const homeAbout = {
 export const homeTransparency = {
   eyebrow: "Transparency",
   title: "Open books. Clear impact.",
-  description: `${trustInfo.name} has served Ahmedabad since ${trustInfo.established}. Reach us anytime for how your support is used.`,
+  description: `${trustInfo.name} has served Ahmedabad since ${trustInfo.established}. Reach us anytime to know how your support is used.`,
 } as const;

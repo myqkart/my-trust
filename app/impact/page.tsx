@@ -2,7 +2,6 @@ import Link from "next/link";
 import { PageHero } from "@/components/hero/page-hero";
 import { DonateCTA } from "@/components/cta/section-cta";
 import { StatisticCard, TrustBadge } from "@/components/cards";
-import { PartnerLogos } from "@/components/common/partner-logos";
 import { PageJsonLd } from "@/components/seo/page-json-ld";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/typography";
@@ -10,17 +9,17 @@ import { Button } from "@/components/ui/button";
 import { StaggerChildren, StaggerItem } from "@/components/animations";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { ROUTES } from "@/constants/routes";
-import { partnersInfo, trustBadgesInfo } from "@/data/demo";
+import { trustBadgesInfo } from "@/data/demo";
 import { impactHighlights } from "@/data/pages";
 
 const impactDescription =
-  "See how Navchetna Charitable Trust serves Ahmedabad—education, food and clothing, cow welfare, tree plantation, and an upcoming old age home.";
+  "See how Navchetna Charitable Trust serves Ahmedabad—tree plantation, food distribution, gau seva, helping the poor, and education support.";
 
 export const metadata = createPageMetadata({
   title: "Impact",
   description: impactDescription,
   path: ROUTES.impact,
-  keywords: ["NGO impact Gujarat", "CSR NGO Gujarat"],
+  keywords: ["NGO impact Gujarat", "Charitable Trust Ahmedabad"],
 });
 
 export default function ImpactPage() {
@@ -36,7 +35,7 @@ export default function ImpactPage() {
         breadcrumbs={[{ label: "Impact" }]}
         eyebrow="Transparency"
         title="Impact you can feel"
-        description="Years of seva, five focus areas, and a promise to elders still taking shape."
+        description="Seventeen years of seva across five focus areas: plants, food, gau seva, helping the poor, and education."
         primaryCta={{ label: "Download Reports", href: ROUTES.reports }}
         secondaryCta={{ label: "Donate", href: ROUTES.donate }}
       />
@@ -74,17 +73,6 @@ export default function ImpactPage() {
           <Button asChild variant="secondary">
             <Link href={ROUTES.reports}>View Documents</Link>
           </Button>
-        </div>
-      </Section>
-
-      <Section background="white">
-        <SectionHeading
-          align="center"
-          eyebrow="Partners"
-          title="Organizations walking with us"
-        />
-        <div className="mt-10">
-          <PartnerLogos partners={partnersInfo.map((name) => ({ name }))} />
         </div>
       </Section>
 

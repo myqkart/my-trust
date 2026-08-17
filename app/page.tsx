@@ -52,14 +52,6 @@ const HomeUpcomingEvents = dynamic(
   { loading: () => <SectionSkeleton /> },
 );
 
-const HomePartners = dynamic(
-  () =>
-    import("@/components/sections/home/partners").then(
-      (mod) => mod.HomePartners,
-    ),
-  { loading: () => <SectionSkeleton rows={1} /> },
-);
-
 const HomeTransparencyPreview = dynamic(
   () =>
     import("@/components/sections/home/transparency-preview").then(
@@ -149,7 +141,6 @@ export default function HomePage() {
       <HomeGalleryPreview />
       <HomeTestimonials />
       <HomeUpcomingEvents />
-      <HomePartners />
       <HomeTransparencyPreview />
       <DonateCTA />
       <HomeNewsletter />

@@ -18,7 +18,7 @@ export const metadata = createPageMetadata({
 });
 
 const popularLinks = [
-  { label: "Old Age Home", href: ROUTES.oldAgeHome },
+  { label: "Tree Plantation", href: "/programs/environment" },
   { label: "Donate", href: ROUTES.donate },
   { label: "Volunteer", href: ROUTES.volunteer },
   { label: "Programs", href: ROUTES.programs },

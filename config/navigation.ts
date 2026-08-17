@@ -13,7 +13,7 @@ export interface NavItem {
   children?: NavChild[];
 }
 
-const programChildren: NavChild[] = programsInfo.slice(0, 4).map((program) => ({
+const programChildren: NavChild[] = programsInfo.map((program) => ({
   label: program.title,
   href: program.href,
   description: program.summary,
@@ -56,7 +56,6 @@ export const footerNavigation = {
   explore: [
     { label: "About", href: ROUTES.about },
     { label: "Programs", href: ROUTES.programs },
-    { label: "Old Age Home", href: ROUTES.oldAgeHome },
     { label: "Impact", href: ROUTES.impact },
     { label: "Stories", href: ROUTES.stories },
   ],

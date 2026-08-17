@@ -17,7 +17,7 @@ export function HomeStatisticsDashboard() {
           align="center"
           eyebrow="Dashboard"
           title="Where support becomes care"
-          description="A clear view of how contributions become education, meals, gau seva, and a future home for elders."
+          description="A clear view of how contributions become trees, meals, gau seva, help for families, and education."
         />
       </SlideUp>
 
@@ -67,21 +67,21 @@ export function HomeStatisticsDashboard() {
             <StatisticCard
               value={STATISTICS.programs}
               label="Focus Areas"
-              description="Education, food, gau seva, plantation, and elder care."
+              description="Plants, food, gau seva, helping the poor, and education."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.food}
-              label="Food & Clothing"
-              description="Bhandara events and essentials for families in need."
+              label="Food Distribution"
+              description="Meals for people who need them today."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.oldAgeHome}
-              label="Old Age Home"
-              description="A commitment taking shape for every elder."
+              value={STATISTICS.helpingPoor}
+              label="Helping the Poor"
+              description="Clothes, essentials, and a helping hand."
             />
           </StaggerItem>
         </StaggerChildren>

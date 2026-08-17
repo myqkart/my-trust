@@ -11,7 +11,7 @@ import { galleryCategories } from "@/data/pages";
 import { media, type GalleryCategory } from "@/data/media";
 
 const galleryDescription =
-  "Browse moments from education, bhandara, plantation, volunteering, and community seva at Navchetna Charitable Trust.";
+  "Browse moments from plantation, food seva, gau seva, education, and community work at Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Gallery",

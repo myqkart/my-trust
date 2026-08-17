@@ -11,7 +11,7 @@ describe("contactSchema", () => {
       email: "priya@example.com",
       phone: "9876543210",
       subject: "Visit enquiry",
-      message: "I would like to visit the old age home this weekend.",
+      message: "I would like to visit the Trust office this weekend.",
     });
     expect(result.success).toBe(true);
   });
@@ -31,7 +31,7 @@ describe("donationSchema", () => {
   it("accepts a valid donation payload", () => {
     const result = donationSchema.safeParse({
       amount: 1100,
-      category: "sponsor-medicine",
+      category: "sponsor-meal",
       recurring: false,
       name: "Rohan Shah",
       email: "rohan@example.com",

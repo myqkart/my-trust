@@ -14,13 +14,13 @@ import { faqInfo } from "@/data/demo";
 import { reportDocuments } from "@/data/pages";
 
 const reportsDescription =
-  "Documents and updates from Navchetna Charitable Trust—reach us for reports and partnership materials.";
+  "Documents and updates from Navchetna Charitable Trust—reach us for reports and giving details.";
 
 export const metadata = createPageMetadata({
   title: "Reports & Documents",
   description: reportsDescription,
   path: ROUTES.reports,
-  keywords: ["NGO annual report", "80G certificate", "CSR NGO Gujarat"],
+  keywords: ["NGO annual report", "Charitable Trust Ahmedabad"],
 });
 
 export default function ReportsPage() {
@@ -39,7 +39,7 @@ export default function ReportsPage() {
         eyebrow="Transparency"
         title="Reports & compliance documents"
         description="Open books build trust. Explore our reports and registrations."
-        primaryCta={{ label: "Partner With Us", href: ROUTES.contact }}
+        primaryCta={{ label: "Contact Us", href: ROUTES.contact }}
         secondaryCta={{ label: "Donate", href: ROUTES.donate }}
       />
 
@@ -47,7 +47,7 @@ export default function ReportsPage() {
         <SectionHeading
           align="center"
           eyebrow="Library"
-          title="Documents for donors & partners"
+          title="Documents for donors & well-wishers"
           description="Ask us for verified documents. Links below connect you to giving, volunteering, and our office."
         />
         <StaggerChildren className="mt-12 grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -15,9 +15,7 @@ import { programsInfo } from "@/data/demo";
 type Params = { slug: string };
 
 export function generateStaticParams() {
-  return programsInfo
-    .filter((program) => program.slug !== "old-age-home")
-    .map((program) => ({ slug: program.slug }));
+  return programsInfo.map((program) => ({ slug: program.slug }));
 }
 
 export async function generateMetadata({
@@ -80,13 +78,12 @@ export default async function ProgramDetailPage({
         <div className="mx-auto max-w-3xl space-y-8">
           <SectionHeading
             title={`How ${program.title.toLowerCase()} changes lives`}
-            description="Your partnership helps us deliver care with dignity, accountability, and local presence across Ahmedabad."
+            description="Your support helps us serve with dignity, care, and a local presence across Ahmedabad."
           />
           <Card variant="soft" className="space-y-4">
             <p className="text-muted">
-              {program.summary} We coordinate with volunteers, medical partners,
-              and community leaders so every rupee and every hour of service
-              reaches people who need it most.
+              {program.summary} We work with volunteers and community well-wishers
+              so every rupee and every hour of service reaches people who need it most.
             </p>
             <p className="text-muted">
               Want to visit, sponsor, or volunteer for this program? Reach out

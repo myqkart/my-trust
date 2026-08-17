@@ -11,13 +11,13 @@ import { ROUTES } from "@/constants/routes";
 import { eventsList } from "@/data/pages";
 
 const eventsDescription =
-  "Join upcoming Navchetna Charitable Trust events—bhandara, plantation drives, clothing distribution, and community gatherings.";
+  "Join upcoming Navchetna Charitable Trust events—plantation drives, food distribution, gau seva, and community gatherings.";
 
 export const metadata = createPageMetadata({
   title: "Events",
   description: eventsDescription,
   path: ROUTES.events,
-  keywords: ["NGO events Ahmedabad", "Bhandara Ahmedabad", "Tree plantation"],
+  keywords: ["NGO events Ahmedabad", "Tree plantation Ahmedabad", "Food distribution"],
 });
 
 export default function EventsPage() {
@@ -43,7 +43,7 @@ export default function EventsPage() {
         breadcrumbs={[{ label: "Events" }]}
         eyebrow="Gatherings"
         title="Come together for care and celebration"
-        description="From wellness camps to festival joy—every event strengthens community bonds."
+        description="Plantation drives, food distribution, gau seva, and community gatherings—every event is a chance to serve."
         primaryCta={{ label: "Volunteer at an Event", href: ROUTES.volunteer }}
         secondaryCta={{ label: "Contact Us", href: ROUTES.contact }}
       />

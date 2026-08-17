@@ -15,7 +15,6 @@ describe("routes & sitemap integrity", () => {
     const sitemapPaths = new Set(sitemapEntries.map((entry) => entry.path));
     expect(sitemapPaths.has(ROUTES.home)).toBe(true);
     expect(sitemapPaths.has(ROUTES.donate)).toBe(true);
-    expect(sitemapPaths.has(ROUTES.oldAgeHome)).toBe(true);
     expect(sitemapPaths.has(ROUTES.contact)).toBe(true);
     expect(sitemapPaths.has(ROUTES.privacy)).toBe(true);
   });
@@ -23,7 +22,6 @@ describe("routes & sitemap integrity", () => {
   it("includes program and blog detail paths", () => {
     const sitemapPaths = new Set(sitemapEntries.map((entry) => entry.path));
     for (const program of programsInfo) {
-      if (program.slug === "old-age-home") continue;
       expect(sitemapPaths.has(`/programs/${program.slug}`)).toBe(true);
     }
     for (const post of blogPosts) {
@@ -41,9 +39,9 @@ describe("createPageMetadata", () => {
   it("sets canonical, open graph, and twitter fields", () => {
     const metadata = createPageMetadata({
       title: "Donate",
-      description: "Support elder care with transparent donations.",
+      description: "Support tree plantation, food, gau seva, and education.",
       path: ROUTES.donate,
-      keywords: ["Donation for Elderly"],
+      keywords: ["Charitable Trust donation"],
     });
 
     expect(metadata.alternates?.canonical).toBe(ROUTES.donate);

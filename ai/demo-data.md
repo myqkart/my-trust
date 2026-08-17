@@ -26,11 +26,11 @@ Respect, Care and Support for Every Elder — This is Our Commitment.
 
 Mission
 
-To serve society through education, compassion, support, and humanity, while helping needy people and contributing to the betterment of the community.
+To serve society through tree plantation, food distribution, gau seva, help for the poor, and education support.
 
 Vision
 
-To build a society where underprivileged families, children, cattle, and elders receive dignity, care, and a chance at a better life.
+To build a kinder Ahmedabad where trees grow, no one goes hungry, cows are cared for, poor families are supported, and children can keep studying.
 
 Core Values
 
@@ -130,41 +130,41 @@ Do not invent resident counts, meal totals, or medical camp numbers.
 
 # Programs
 
-Education Support
-
-Hostel facilities for needy children who did not have proper education and accommodation, so they can continue their studies in a safe and supportive environment.
-
-Food & Clothing
-
-Food distribution programs and large Bhandara events for poor and needy people. Clothes and other necessary support for families in need.
-
-Cow Welfare
-
-Care and well-being of needy and helpless cattle through cow welfare and gau seva.
-
 Tree Plantation
 
-Tree plantation programs that encourage people to contribute towards a greener and healthier environment.
+We plant trees and invite people to join plantation drives—so Ahmedabad grows greener, cooler, and healthier for the next generation.
 
-Upcoming Old Age Home
+Food Distribution
 
-Working towards establishing an Old Age Home so elderly people who need care, companionship, and support can live in a safe, respectful, and caring environment.
+We distribute food to people who are hungry—through community meals and regular food seva for poor and needy families.
+
+Gau Seva
+
+We care for cows that are needy or helpless—feeding, sheltering, and protecting them with respect.
+
+Helping the Poor
+
+We stand with underprivileged families—offering clothes, essentials, and a helping hand when life is hardest.
+
+Education Support
+
+We support needy children with education and hostel facilities so they can study in a safe, supportive environment.
+
+The Trust does not currently list corporate partners or CSR programmes.
 
 ---
 
 # Donation Plans
 
-Support a Bhandara — ₹501
+Plant Trees — ₹501
 
-Clothes & Essentials — ₹1,100
+Distribute Food — ₹1,100
 
-Education & Hostel — ₹2,500
+Gau Seva — ₹2,500
 
-Cow Welfare — ₹5,100
+Help the Poor — ₹5,100
 
-Tree Plantation — ₹11,000
-
-Old Age Home Fund — ₹21,000
+Education Support — ₹11,000
 
 General Donation — Any Amount
 
@@ -186,11 +186,11 @@ Yes. You are welcome at our office on Ashram Road. Please call +91 97125 17115 t
 
 How can I volunteer?
 
-Fill out the volunteer form or contact us.
+Fill out the volunteer form or contact us. We welcome help with plantation, food distribution, gau seva, helping families in need, and education support.
 
-Do you have an old age home?
+How can we help poor families?
 
-We are working towards establishing one. Your support helps this commitment take shape.
+You can donate, volunteer, or give in-kind support such as food, clothes, and essentials.
 
 Do you accept in-kind donations?
 
@@ -212,17 +212,15 @@ Secondary Keywords
 
 NGO in Gujarat
 
-Education hostel NGO
+Education support Ahmedabad
 
 Food distribution Ahmedabad
 
-Bhandara Ahmedabad
+Helping the poor Ahmedabad
 
-Cow welfare Gujarat
+Gau seva Gujarat
 
 Tree plantation NGO
-
-Old Age Home Ahmedabad
 
 ---
 

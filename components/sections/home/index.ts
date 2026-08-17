@@ -8,6 +8,5 @@ export { HomeStatisticsDashboard } from "./statistics-dashboard";
 export { HomeGalleryPreview } from "./gallery-preview";
 export { HomeTestimonials } from "./testimonials";
 export { HomeUpcomingEvents } from "./upcoming-events";
-export { HomePartners } from "./partners";
 export { HomeTransparencyPreview } from "./transparency-preview";
 export { HomeNewsletter } from "./newsletter";

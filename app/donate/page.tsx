@@ -12,7 +12,7 @@ import { ROUTES } from "@/constants/routes";
 import { donationPlans, faqInfo, trustBadgesInfo } from "@/data/demo";
 
 const donateDescription =
-  "Support Navchetna Charitable Trust with donations for education, food and clothing, cow welfare, plantation, and the upcoming old age home.";
+  "Support Navchetna Charitable Trust with donations for tree plantation, food distribution, gau seva, helping the poor, and education.";
 
 export const metadata = createPageMetadata({
   title: "Donate",
@@ -36,7 +36,7 @@ export default function DonatePage() {
         breadcrumbs={[{ label: "Donate" }]}
         eyebrow="Give With Confidence"
         title="Your kindness becomes daily care"
-        description="Support a Bhandara, education and hostel care, cow welfare, plantation—or the old age home we are building."
+        description="Plant trees, share meals, care for cows, help families in need, or support a child's education."
       />
 
       <Section background="white">

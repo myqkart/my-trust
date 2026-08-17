@@ -17,7 +17,7 @@ import { aboutFutureGoals } from "@/data/pages";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const aboutDescription =
-  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Bhai Modi to serve people in need through education, food, cow welfare, plantation, and an upcoming old age home.";
+  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Bhai Modi to serve people in need through plantation, food distribution, gau seva, helping the poor, and education.";
 
 export const metadata = createPageMetadata({
   title: "About",
@@ -40,7 +40,7 @@ export default function AboutPage() {
         breadcrumbs={[{ label: "About" }]}
         eyebrow="About Us"
         title="Our journey of service and humanity"
-        description="From a vision in 2009 to ongoing seva for children, families, cattle, and the environment—and a home for elders still to come."
+        description="From a vision in 2009 to ongoing seva—planting trees, sharing food, gau seva, helping the poor, and supporting children's education."
         primaryCta={{ label: "Support Our Mission", href: ROUTES.donate }}
         secondaryCta={{ label: "Meet Our Team", href: "#team" }}
       />
@@ -172,7 +172,7 @@ export default function AboutPage() {
         </ul>
         <div className="mt-10 text-center">
           <Button asChild>
-            <Link href={ROUTES.contact}>Partner With Us</Link>
+            <Link href={ROUTES.contact}>Talk to Us</Link>
           </Button>
         </div>
       </Section>

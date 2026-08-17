@@ -52,7 +52,7 @@ export default function OldAgeHomePage() {
         primaryCta={{ label: "Support This Vision", href: ROUTES.donate }}
         secondaryCta={{ label: "Talk to Us", href: ROUTES.contact }}
         stats={[
-          { label: "Status", value: statisticsInfo.oldAgeHome },
+          { label: "Status", value: "Planned" },
           { label: "Serving since", value: statisticsInfo.established },
           { label: "Years of seva", value: statisticsInfo.yearsOfService },
         ]}

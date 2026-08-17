@@ -75,6 +75,7 @@ async function main() {
     "/programs/education",
     "/programs/cow-welfare",
     "/programs/environment",
+    "/programs/helping-poor",
   ]);
 
   const hrefPattern = /href=["'`](\/[^"'`?#]*)/g;

@@ -34,7 +34,7 @@ export default function ContactPage() {
         breadcrumbs={[{ label: "Contact" }]}
         eyebrow="Get in Touch"
         title="We’d love to hear from you"
-        description="Questions about visits, sponsorship, volunteering, or partnerships—reach out anytime."
+        description="Questions about visits, volunteering, or how to help—reach out anytime."
       />
 
       <Section background="white">

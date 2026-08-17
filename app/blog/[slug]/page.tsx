@@ -79,8 +79,8 @@ export default async function BlogPostPage({
           <p>{post.excerpt}</p>
           <p>
             At Navchetna Charitable Trust, we share practical insights drawn from
-            education support, food and clothing seva, cow welfare, plantation,
-            and our commitment to elders in Ahmedabad. This article expands on {post.category.toLowerCase()} with
+            education support, food distribution, gau seva, helping the poor,
+            and tree plantation in Ahmedabad. This article expands on {post.category.toLowerCase()} with
             guidance rooted in service and humanity.
           </p>
           <p>

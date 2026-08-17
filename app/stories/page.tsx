@@ -17,7 +17,7 @@ export const metadata = createPageMetadata({
   title: "Success Stories",
   description: storiesDescription,
   path: ROUTES.stories,
-  keywords: ["Volunteer Stories", "Senior Citizen Care"],
+  keywords: ["Volunteer Stories", "Charitable Trust Ahmedabad"],
 });
 
 export default function StoriesPage() {

@@ -27,17 +27,17 @@ export const imageBlurDataUrl =
 
 export const media = {
   about: {
-    elderCare: unsplashSrc("1576765608535-5f04d1e3f289", { w: 900, h: 1125 }),
-    companionship: unsplashSrc("1581579438747-1dc8d17bbce4", { w: 900, h: 1125 }),
+    plantation: unsplashSrc("1542601906990-b4d3fb778b09", { w: 900, h: 1125 }),
+    meals: unsplashSrc("1488521787991-ed7bbaae773c", { w: 900, h: 1125 }),
   },
   featuredStory: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 1250 }),
   oldAgeHome: unsplashSrc("1516734212186-a967f81ad0d7", { w: 1200, h: 900 }),
   programs: {
-    "old-age-home": unsplashSrc("1576765608535-5f04d1e3f289", { w: 1000, h: 750 }),
-    "food-distribution": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 750 }),
-    education: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 750 }),
-    "cow-welfare": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 750 }),
     environment: unsplashSrc("1542601906990-b4d3fb778b09", { w: 1000, h: 750 }),
+    "food-distribution": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 750 }),
+    "cow-welfare": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 750 }),
+    "helping-poor": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 750 }),
+    education: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 750 }),
   },
   gallery: {
     "Daily Life": unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
@@ -49,41 +49,42 @@ export const media = {
   },
   galleryPreview: [
     {
-      title: "Education and hostel care",
-      category: "Education",
-      src: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
-    },
-    {
-      title: "Bhandara and shared meals",
-      category: "Meals",
-      src: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
-    },
-    {
-      title: "Clothes for families in need",
-      category: "Volunteers",
-      src: unsplashSrc("1489980557514-251d61e3eeb6", { w: 800, h: 1000 }),
-    },
-    {
-      title: "Tree plantation drives",
+      title: "Trees we plant together",
       category: "Environment",
       src: unsplashSrc("1542601906990-b4d3fb778b09", { w: 800, h: 1000 }),
     },
     {
-      title: "Community celebrations",
+      title: "Food shared with dignity",
+      category: "Meals",
+      src: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
+    },
+    {
+      title: "Gau seva",
+      category: "Daily Life",
+      src: unsplashSrc("1546445317-29f4545e9d53", { w: 800, h: 1000 }),
+    },
+    {
+      title: "Help for families in need",
+      category: "Volunteers",
+      src: unsplashSrc("1489980557514-251d61e3eeb6", { w: 800, h: 1000 }),
+    },
+    {
+      title: "Education support",
+      category: "Education",
+      src: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
+    },
+    {
+      title: "Community gatherings",
       category: "Festivals",
       src: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
     },
-    {
-      title: "Volunteers in action",
-      category: "Daily Life",
-      src: unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
-    },
   ],
   stories: {
-    "Children we shelter": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
-    "Families at our Bhandara": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
-    "Gau seva well-wishers": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
-    "Our elder-care promise": unsplashSrc("1576765608535-5f04d1e3f289", { w: 1000, h: 625 }),
+    "Trees we plant": unsplashSrc("1542601906990-b4d3fb778b09", { w: 1000, h: 625 }),
+    "Meals we share": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
+    "Gau seva": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
+    "Families we stand with": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 625 }),
+    "Children we support": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
   },
   team: [
     unsplashSrc("1507003211169-0a1dd7228f2d", { w: 240, h: 240 }),
@@ -95,19 +96,19 @@ export const media = {
     unsplashSrc("1523240795612-9a054b0db644", { w: 240, h: 240 }),
   ],
   blog: {
-    "education-and-hostel-support": unsplashSrc("1503676260728-1c00da094a0b", {
+    "tree-plantation-seva": unsplashSrc("1542601906990-b4d3fb778b09", {
       w: 1200,
       h: 750,
     }),
-    "bhandara-and-clothing-seva": unsplashSrc("1488521787991-ed7bbaae773c", {
+    "food-distribution-seva": unsplashSrc("1488521787991-ed7bbaae773c", {
       w: 1200,
       h: 750,
     }),
-    "tree-plantation-and-gau-seva": unsplashSrc("1542601906990-b4d3fb778b09", {
+    "gau-seva-and-helping-the-poor": unsplashSrc("1546445317-29f4545e9d53", {
       w: 1200,
       h: 750,
     }),
-    "upcoming-old-age-home": unsplashSrc("1576765608535-5f04d1e3f289", {
+    "education-support-for-children": unsplashSrc("1503676260728-1c00da094a0b", {
       w: 1200,
       h: 750,
     }),

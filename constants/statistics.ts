@@ -11,6 +11,6 @@ export const STATISTICS = {
   food: statisticsInfo.food,
   cowWelfare: statisticsInfo.cowWelfare,
   trees: statisticsInfo.trees,
-  oldAgeHome: statisticsInfo.oldAgeHome,
+  helpingPoor: statisticsInfo.helpingPoor,
   city: statisticsInfo.city,
 } as const;

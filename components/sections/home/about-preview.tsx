@@ -37,8 +37,8 @@ export function HomeAboutPreview() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-image)] bg-soft/40">
                     <OptimizedImage
-                      src={media.about.elderCare}
-                      alt="Caregiver supporting an elderly resident with compassion"
+                      src={media.about.plantation}
+                      alt="Tree plantation with the community in Ahmedabad"
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 45vw, 22vw"
@@ -46,8 +46,8 @@ export function HomeAboutPreview() {
                   </div>
                   <div className="relative mt-8 aspect-[4/5] overflow-hidden rounded-[var(--radius-image)] bg-soft/40">
                     <OptimizedImage
-                      src={media.about.companionship}
-                      alt="Elderly hands held in companionship and care"
+                      src={media.about.meals}
+                      alt="Food shared with people in need"
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 45vw, 22vw"

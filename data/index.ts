@@ -8,7 +8,6 @@ export {
   donationPlans,
   testimonialsInfo,
   eventsInfo,
-  partnersInfo,
   teamInfo,
   faqInfo,
   trustBadgesInfo,

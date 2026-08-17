@@ -10,9 +10,9 @@ export const trustInfo = {
   elderCommitment:
     "Respect, Care and Support for Every Elder — This is Our Commitment.",
   mission:
-    "To serve society through education, compassion, support, and humanity—helping needy people and contributing to the betterment of the community.",
+    "To serve society through tree plantation, food distribution, gau seva, help for the poor, and education support.",
   vision:
-    "To build a society where underprivileged families, children, cattle, and elders receive dignity, care, and a chance at a better life.",
+    "To build a kinder Ahmedabad where trees grow, no one goes hungry, cows are cared for, poor families are supported, and children can keep studying.",
   values: [
     "Service",
     "Compassion",
@@ -27,7 +27,6 @@ export const trustInfo = {
   twelveA: "Please contact us for details",
   eightyG: "Please contact us for details",
   fcra: "",
-  csrEligible: true,
   website: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;
 
@@ -72,155 +71,147 @@ export const statisticsInfo = {
   yearsOfService: "17+",
   established: "2009",
   programs: "5",
-  education: "Hostel",
-  food: "Bhandara",
+  education: "Education",
+  food: "Meals",
   cowWelfare: "Gau Seva",
-  trees: "Plantation",
-  oldAgeHome: "Planned",
+  trees: "Plants",
+  helpingPoor: "Seva",
   city: "Ahmedabad",
 } as const;
 
 export const programsInfo = [
   {
-    id: "education",
-    slug: "education",
-    title: "Education Support",
+    id: "environment",
+    slug: "environment",
+    title: "Tree Plantation",
     summary:
-      "Hostel facilities for needy children who did not have proper education and accommodation, so they can continue studies in a safe, supportive environment.",
-    href: "/programs/education",
-    impact: "Learning & shelter",
+      "We plant trees and invite people to join plantation drives—so Ahmedabad grows greener, cooler, and healthier for the next generation.",
+    href: "/programs/environment",
+    impact: "Plants",
   },
   {
     id: "food-distribution",
     slug: "food-distribution",
-    title: "Food & Clothing",
+    title: "Food Distribution",
     summary:
-      "Food distribution programs and large Bhandara events for poor and needy people, along with clothes and other essential support for families.",
+      "We distribute food to people who are hungry—through community meals and regular food seva for poor and needy families.",
     href: "/programs/food-distribution",
     impact: "Nourishment",
   },
   {
     id: "cow-welfare",
     slug: "cow-welfare",
-    title: "Cow Welfare",
+    title: "Gau Seva",
     summary:
-      "Care and well-being of needy and helpless cattle through cow welfare and gau seva.",
+      "We care for cows that are needy or helpless—feeding, sheltering, and protecting them with respect.",
     href: "/programs/cow-welfare",
     impact: "Gau seva",
   },
   {
-    id: "environment",
-    slug: "environment",
-    title: "Tree Plantation",
+    id: "helping-poor",
+    slug: "helping-poor",
+    title: "Helping the Poor",
     summary:
-      "Tree plantation programs that invite people to contribute towards a greener, healthier environment.",
-    href: "/programs/environment",
-    impact: "Environment",
+      "We stand with underprivileged families—offering clothes, essentials, and a helping hand when life is hardest.",
+    href: "/programs/helping-poor",
+    impact: "Support",
   },
   {
-    id: "old-age-home",
-    slug: "old-age-home",
-    title: "Upcoming Old Age Home",
+    id: "education",
+    slug: "education",
+    title: "Education Support",
     summary:
-      "A planned home where elderly people who need care, companionship, and support can live with dignity in a safe, respectful environment.",
-    href: "/old-age-home",
-    impact: "Coming soon",
+      "We support needy children with education and hostel facilities so they can study in a safe, supportive environment.",
+    href: "/programs/education",
+    impact: "Learning",
   },
 ] as const;
 
 export const donationPlans = [
   {
-    id: "sponsor-meal",
-    label: "Support a Bhandara",
+    id: "sponsor-plantation",
+    label: "Plant Trees",
     amount: 501,
     amountLabel: "₹501",
-    impact: "Meals shared with people in need",
+    impact: "Help us plant and care for trees",
   },
   {
-    id: "sponsor-clothing",
-    label: "Clothes & Essentials",
+    id: "sponsor-meal",
+    label: "Distribute Food",
     amount: 1100,
     amountLabel: "₹1,100",
-    impact: "Clothing and necessary support for families",
-  },
-  {
-    id: "sponsor-education",
-    label: "Education & Hostel",
-    amount: 2500,
-    amountLabel: "₹2,500",
-    impact: "Help a child stay and study with dignity",
+    impact: "Meals for people who need them today",
   },
   {
     id: "sponsor-gau-seva",
-    label: "Cow Welfare",
+    label: "Gau Seva",
+    amount: 2500,
+    amountLabel: "₹2,500",
+    impact: "Feed and care for needy cows",
+  },
+  {
+    id: "sponsor-poor",
+    label: "Help the Poor",
     amount: 5100,
     amountLabel: "₹5,100",
-    impact: "Care for needy and helpless cattle",
+    impact: "Clothes, essentials, and support for families",
   },
   {
-    id: "sponsor-plantation",
-    label: "Tree Plantation",
+    id: "sponsor-education",
+    label: "Education Support",
     amount: 11000,
     amountLabel: "₹11,000",
-    impact: "Greener neighbourhoods through plantation drives",
-  },
-  {
-    id: "sponsor-elder-home",
-    label: "Old Age Home Fund",
-    amount: 21000,
-    amountLabel: "₹21,000",
-    impact: "Help us build a respectful home for elders",
+    impact: "Help a child continue school with dignity",
   },
   {
     id: "general",
     label: "General Donation",
     amount: null,
     amountLabel: "Any Amount",
-    impact: "Flexible support wherever the need is greatest",
+    impact: "Support whichever seva is needed most",
   },
 ] as const;
 
 export const testimonialsInfo = [
   {
     quote:
-      "A safe hostel and a chance to study gave our children hope when we had nowhere else to turn.",
+      "The plantation drive brought the neighbourhood together—and the trees are still growing with us.",
+    name: "A volunteer",
+    role: "Tree Plantation",
+  },
+  {
+    quote:
+      "When food reached our family, it was given with respect. That kindness stays with us.",
+    name: "A neighbour we support",
+    role: "Food Distribution",
+  },
+  {
+    quote:
+      "Gau seva at Navchetna is quiet, steady care for animals that have nowhere else to go.",
+    name: "A well-wisher",
+    role: "Gau Seva",
+  },
+  {
+    quote:
+      "When we had nothing left to give our children, Navchetna stood with us—clothes, food, and a little hope.",
+    name: "A family we support",
+    role: "Helping the Poor",
+  },
+  {
+    quote:
+      "A safe place to stay and a chance to study changed what our children could hope for.",
     name: "A parent we support",
     role: "Education",
-  },
-  {
-    quote:
-      "The Bhandara and clothing support reached families in our neighbourhood with dignity and care.",
-    name: "Community volunteer",
-    role: "Food & Clothing",
-  },
-  {
-    quote:
-      "Navchetna’s gau seva and plantation work show that service includes animals and the environment too.",
-    name: "Local supporter",
-    role: "Donor",
-  },
-  {
-    quote:
-      "The Trust’s commitment to an old age home gives elders a future of respect, care, and companionship.",
-    name: "Well-wisher",
-    role: "Elder care",
   },
 ] as const;
 
 export const eventsInfo = [
-  "Community Bhandara",
   "Tree Plantation Drive",
-  "Clothing Distribution",
+  "Food Distribution",
+  "Gau Seva",
+  "Support for Families",
   "Education Support Meet",
-  "Cow Welfare Seva",
-  "Diwali Celebration",
-] as const;
-
-export const partnersInfo = [
-  "Community Volunteers",
-  "Local Donors",
-  "Ahmedabad Neighbourhoods",
-  "Education Well-wishers",
+  "Community Gathering",
 ] as const;
 
 export const teamInfo = [
@@ -265,12 +256,12 @@ export const faqInfo = [
   {
     question: "How can I volunteer?",
     answer:
-      "Fill out the volunteer form or contact us. We welcome help with education, food distribution, plantation, cow welfare, and upcoming elder-care work.",
+      "Fill out the volunteer form or contact us. We welcome help with plantation, food distribution, gau seva, helping families in need, and education support.",
   },
   {
-    question: "Do you have an old age home?",
+    question: "How can we help poor families?",
     answer:
-      "We are working towards establishing an Old Age Home so elders can live with dignity, care, and companionship. Your support helps this commitment take shape.",
+      "You can donate, volunteer, or give in-kind support such as food, clothes, and essentials. Call +91 97125 17115 or email us.",
   },
   {
     question: "Do you accept in-kind donations?",
@@ -295,11 +286,11 @@ export const trustBadgesInfo = [
   },
   {
     label: "Our Work",
-    description: "Education, food, gau seva & environment",
+    description: "Plants, food, gau seva, helping the poor & education",
   },
   {
-    label: "Looking Ahead",
-    description: "Old Age Home for elders",
+    label: "Serving since",
+    description: "2009 in Ahmedabad",
   },
 ] as const;
 
@@ -309,8 +300,7 @@ export const seoKeywords = [
   "NGO in Gujarat",
   "Education hostel NGO",
   "Food distribution Ahmedabad",
-  "Bhandara Ahmedabad",
-  "Cow welfare Gujarat",
+  "Helping the poor Ahmedabad",
+  "Gau seva Gujarat",
   "Tree plantation NGO",
-  "Old Age Home Ahmedabad",
 ] as const;
