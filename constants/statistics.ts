@@ -1,18 +1,16 @@
 import { statisticsInfo } from "@/data/demo";
 
 /**
- * Impact statistics from ai/demo-data.md.
+ * Impact statistics shown across the site.
  */
 export const STATISTICS = {
-  residents: statisticsInfo.residents,
-  meals: statisticsInfo.meals,
-  medicalCamps: statisticsInfo.medicalCamps,
-  volunteers: statisticsInfo.volunteers,
-  projects: statisticsInfo.csrPartners,
   yearsOfService: statisticsInfo.yearsOfService,
+  established: statisticsInfo.established,
+  programs: statisticsInfo.programs,
+  education: statisticsInfo.education,
+  food: statisticsInfo.food,
+  cowWelfare: statisticsInfo.cowWelfare,
   trees: statisticsInfo.trees,
-  familiesSupported: statisticsInfo.familiesSupported,
-  childrenEducated: statisticsInfo.childrenEducated,
-  annualBeneficiaries: statisticsInfo.annualBeneficiaries,
-  donations: statisticsInfo.annualBeneficiaries,
+  oldAgeHome: statisticsInfo.oldAgeHome,
+  city: statisticsInfo.city,
 } as const;

@@ -7,100 +7,100 @@ import {
   trustInfo,
 } from "@/data/demo";
 
-/** Homepage-specific structured content from demo-data.md. */
+/** Homepage-specific structured content. */
 export const homeTimeline = [
   {
-    year: "2012",
-    title: "Foundation begins",
+    year: "2009",
+    title: "Trust begins",
     description:
-      "Anandam Seva Foundation is established in Ahmedabad with a vision of dignity for every elder.",
+      "Navchetna Charitable Trust is established in Ahmedabad by Shri Rupesh Bhai Modi to serve people in need.",
   },
   {
-    year: "2016",
-    title: "Home expands",
+    year: "Education",
+    title: "Hostel for children",
     description:
-      "Residential care grows as more seniors find companionship, healthcare, and belonging.",
+      "Needy children without proper education and accommodation receive hostel facilities to continue their studies.",
   },
   {
-    year: "2020",
-    title: "Community outreach",
+    year: "Seva",
+    title: "Food, clothes & gau seva",
     description:
-      "Medical camps and food distribution scale across neighborhoods in need.",
+      "Bhandara events, food and clothing support, and cow welfare grow as more people join the work.",
   },
   {
-    year: "2025",
-    title: "Continued impact",
-    description: `${statisticsInfo.residents} residents supported and ${statisticsInfo.volunteers} volunteers walking with us.`,
+    year: "Today",
+    title: "Plantation & elder home",
+    description: `Tree plantation continues, and we are working towards an Old Age Home—${statisticsInfo.yearsOfService} years of service in Ahmedabad.`,
   },
 ] as const;
 
 export const featuredResidentStory = {
-  name: "Sushila Ben",
+  name: "Children we shelter",
   quote: testimonialsInfo[0].quote,
   summary:
-    "Sushila Ben arrived seeking safety and companionship. Today she shares morning yoga, evening prayers, and a family that listens.",
+    "The Trust has supported needy children who did not have proper facilities for education and accommodation—giving them a hostel so they can study in safety.",
   journey:
-    "Before joining Anandam Seva, loneliness weighed heavily on her days. Through steady care, shared meals, and gentle routines, she rediscovered joy and belonging.",
+    "For families with nowhere to turn, a secure place to stay and continue school is the first step toward a better life. That is the heart of Navchetna’s education support.",
   href: ROUTES.stories,
-  cta: "Meet Our Residents",
+  cta: "Read Our Stories",
 } as const;
 
 export const galleryPreviewItems = [
-  { title: "Morning yoga with residents", category: "Yoga" },
-  { title: "Shared meals, shared dignity", category: "Meals" },
-  { title: "Healthcare with compassion", category: "Healthcare" },
-  { title: "Festival celebrations", category: "Festivals" },
-  { title: "Volunteers in action", category: "Volunteers" },
-  { title: "Medical camp outreach", category: "Medical Camps" },
+  { title: "Education and hostel care", category: "Education" },
+  { title: "Bhandara and shared meals", category: "Meals" },
+  { title: "Clothes for families in need", category: "Volunteers" },
+  { title: "Tree plantation drives", category: "Environment" },
+  { title: "Community celebrations", category: "Festivals" },
+  { title: "Volunteers in action", category: "Daily Life" },
 ] as const;
 
 export const upcomingEvents = [
   {
     title: eventsInfo[0],
-    dateLabel: "21 Jun 2026",
-    location: "Anandam Seva Old Age Home, Ahmedabad",
-    summary: "Gentle yoga and wellness for residents and community guests.",
+    dateLabel: "Upcoming",
+    location: "Ahmedabad",
+    summary: "A large Bhandara sharing meals with poor and needy people.",
     href: ROUTES.events,
   },
   {
     title: eventsInfo[1],
-    dateLabel: "12 Jul 2026",
-    location: "Community Hall, SG Highway",
-    summary: "Free checkups, specialist consultations, and health guidance.",
+    dateLabel: "Upcoming",
+    location: "Ahmedabad neighbourhoods",
+    summary: "Planting trees with volunteers, families, and well-wishers.",
     href: ROUTES.events,
   },
   {
-    title: eventsInfo[3],
-    dateLabel: "15 Aug 2026",
-    location: "Ahmedabad neighborhoods",
-    summary: "Planting trees with volunteers, families, and local partners.",
+    title: eventsInfo[2],
+    dateLabel: "Upcoming",
+    location: "Ashram Road, Ahmedabad",
+    summary: "Clothes and essentials for families who need them.",
     href: ROUTES.events,
   },
 ] as const;
 
 export const impactUtilization = [
-  { label: "Resident Care & Shelter", percent: 42 },
-  { label: "Healthcare & Medicines", percent: 24 },
-  { label: "Nutrition & Meals", percent: 18 },
-  { label: "Education & Outreach", percent: 10 },
-  { label: "Operations & Transparency", percent: 6 },
+  { label: "Education & Hostel", percent: 30 },
+  { label: "Food, Bhandara & Clothing", percent: 28 },
+  { label: "Cow Welfare", percent: 16 },
+  { label: "Tree Plantation", percent: 14 },
+  { label: "Upcoming Old Age Home", percent: 12 },
 ] as const;
 
 export const homeNewsletter = {
   eyebrow: "Stay Close",
   title: "Stories of hope, delivered gently",
   description:
-    "Join our community for updates on impact, events, and meaningful ways to help—never spam, only purpose.",
+    "Join our community for updates on seva, events, and meaningful ways to help—never spam, only purpose.",
 } as const;
 
 export const homeAbout = {
   eyebrow: "Our Story",
-  title: "A family where every elder feels valued",
+  title: "Serving society since 2009",
   description: founderInfo.bio,
 } as const;
 
 export const homeTransparency = {
   eyebrow: "Transparency",
   title: "Open books. Clear impact.",
-  description: `Registered as ${trustInfo.registration}. 12A and 80G available. CSR partnerships welcome.`,
+  description: `${trustInfo.name} has served Ahmedabad since ${trustInfo.established}. Reach us anytime for how your support is used.`,
 } as const;

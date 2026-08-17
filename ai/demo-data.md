@@ -1,26 +1,8 @@
 # Demo Data
 
-This file contains realistic demo content for the entire website.
+This file contains verified content for Navchetna Charitable Trust.
 
-Until actual client information is provided, ALWAYS use this content.
-
-Never generate
-
-{{TRUST_NAME}}
-
-Lorem Ipsum
-
-Placeholder
-
-Sample
-
-John Doe
-
-Jane Doe
-
-Dummy
-
-Instead, use this information everywhere.
+Use this information everywhere. Never invent fake registration numbers, impact counts, or team members.
 
 ---
 
@@ -28,37 +10,39 @@ Instead, use this information everywhere.
 
 Trust Name
 
-Anandam Seva Foundation
+Navchetna Charitable Trust
 
 Tagline
 
-Serving Humanity with Compassion & Dignity
+The Spirit of Navchetna Charitable Trust.
 
 Short Slogan
 
-Every Life Deserves Love, Care & Respect.
+Service, Support & Humanity
+
+Elder commitment
+
+Respect, Care and Support for Every Elder — This is Our Commitment.
 
 Mission
 
-To provide compassionate care, dignity, healthcare, nutrition, shelter, education, and emotional support to elderly citizens and underprivileged communities through sustainable social initiatives.
+To serve society through education, compassion, support, and humanity, while helping needy people and contributing to the betterment of the community.
 
 Vision
 
-To build a society where every individual, regardless of age or circumstance, lives with dignity, security, love, and equal opportunity.
+To build a society where underprivileged families, children, cattle, and elders receive dignity, care, and a chance at a better life.
 
 Core Values
 
-Compassion
-
-Integrity
-
-Transparency
-
 Service
 
-Respect
+Compassion
 
-Empowerment
+Support
+
+Humanity
+
+Respect
 
 Community
 
@@ -68,19 +52,19 @@ Community
 
 Name
 
-Shri Harish Patel
+Shri Rupesh Bhai Modi
 
 Designation
 
-Founder & Managing Trustee
+Founder
 
 Bio
 
-Harish Patel founded Anandam Seva Foundation in 2012 after witnessing the loneliness and neglect faced by senior citizens. His vision was to create not just an old age home, but a family where every elderly person feels respected, valued, and loved.
+Navchetna Charitable Trust was established in 2009 by Shri Rupesh Bhai Modi with the aim of serving society and supporting people in need. Since its establishment, he has continuously worked to strengthen the Trust and involve more people in various social service activities.
 
 Message
 
-"We cannot change the entire world, but we can certainly change someone's world with kindness."
+"Service, Support & Humanity — The Spirit of Navchetna Charitable Trust."
 
 ---
 
@@ -88,31 +72,11 @@ Message
 
 Established
 
-2012
+2009
 
 Registration
 
-E/14562/Ahmedabad
-
-PAN
-
-AABTA4521P
-
-12A
-
-Available
-
-80G
-
-Available
-
-FCRA
-
-Applied
-
-CSR Eligible
-
-Yes
+Charitable Trust, Ahmedabad
 
 ---
 
@@ -120,45 +84,23 @@ Yes
 
 Address
 
-Anandam Seva Foundation
+30-FF, Harishiddh Chambers
 
-Near Shantivan Circle
-
-SG Highway
+Income Tax, Ashram Road
 
 Ahmedabad
 
 Gujarat
 
-380054
+380014
 
 Phone
 
-+91 98765 43210
-
-Emergency
-
-+91 98250 11223
++91 97125 17115
 
 Email
 
-info@anandamseva.org
-
-Support
-
-support@anandamseva.org
-
-Volunteer
-
-volunteer@anandamseva.org
-
-Donate
-
-donate@anandamseva.org
-
-Website
-
-www.anandamseva.org
+navchetnacharitabletrust09@gmail.com
 
 Office Hours
 
@@ -168,317 +110,91 @@ Monday - Saturday
 
 ---
 
-# Social Media
-
-Facebook
-
-facebook.com/anandamseva
-
-Instagram
-
-instagram.com/anandamseva
-
-YouTube
-
-youtube.com/@anandamseva
-
-LinkedIn
-
-linkedin.com/company/anandamseva
-
-Twitter
-
-x.com/anandamseva
-
----
-
 # Statistics
 
 Years of Service
 
-13+
+17+
 
-Residents Supported
+Established
 
-540+
+2009
 
-Meals Served
+Focus Areas
 
-485,000+
+5
 
-Medical Camps
-
-186+
-
-Children Educated
-
-920+
-
-Trees Planted
-
-18,400+
-
-Volunteers
-
-1,650+
-
-Families Supported
-
-4,800+
-
-CSR Partners
-
-36
-
-Annual Beneficiaries
-
-11,500+
+Do not invent resident counts, meal totals, or medical camp numbers.
 
 ---
 
 # Programs
 
-Old Age Home
-
-A permanent home providing shelter, healthcare, companionship, recreation, and dignity for senior citizens.
-
-Medical Camps
-
-Free healthcare camps including eye checkups, diabetes screening, dental care, and specialist consultations.
-
-Food Distribution
-
-Nutritious meals distributed daily to elderly citizens, homeless individuals, and families in need.
-
 Education Support
 
-Scholarships, school kits, digital learning, and tuition support for underprivileged children.
+Hostel facilities for needy children who did not have proper education and accommodation, so they can continue their studies in a safe and supportive environment.
 
-Women Empowerment
+Food & Clothing
 
-Skill development, tailoring, self-help groups, entrepreneurship training, and financial literacy.
+Food distribution programs and large Bhandara events for poor and needy people. Clothes and other necessary support for families in need.
 
-Environment
+Cow Welfare
 
-Tree plantation drives, water conservation, waste management awareness, and clean community initiatives.
+Care and well-being of needy and helpless cattle through cow welfare and gau seva.
 
-Disaster Relief
+Tree Plantation
 
-Emergency food, shelter, clothing, medicines, and rehabilitation during natural disasters.
+Tree plantation programs that encourage people to contribute towards a greener and healthier environment.
+
+Upcoming Old Age Home
+
+Working towards establishing an Old Age Home so elderly people who need care, companionship, and support can live in a safe, respectful, and caring environment.
 
 ---
 
 # Donation Plans
 
-Sponsor One Meal
+Support a Bhandara — ₹501
 
-₹501
+Clothes & Essentials — ₹1,100
 
-Sponsor Medicines
+Education & Hostel — ₹2,500
 
-₹1,100
+Cow Welfare — ₹5,100
 
-Sponsor Monthly Groceries
+Tree Plantation — ₹11,000
 
-₹2,500
+Old Age Home Fund — ₹21,000
 
-Sponsor Health Checkup
-
-₹5,100
-
-Sponsor One Resident
-
-₹11,000/month
-
-Festival Celebration
-
-₹21,000
-
-General Donation
-
-Any Amount
+General Donation — Any Amount
 
 ---
 
-# Testimonials
+# Team / Trustees
 
-Resident
+Shri Rupesh Bhai Modi — Founder & Trustee
 
-"After coming here, I found a new family. Every day is filled with love and care."
-
-— Sushila Ben, Resident
-
-Volunteer
-
-"Volunteering here changed my perspective on life. Every visit teaches compassion."
-
-— Rohan Shah
-
-Donor
-
-"I appreciate the complete transparency and genuine impact of every donation."
-
-— Priya Mehta
-
-Doctor
-
-"The organization maintains excellent healthcare standards and genuine commitment."
-
-— Dr. Amit Desai
-
----
-
-# Events
-
-International Yoga Day
-
-Senior Citizen Health Camp
-
-Diwali Celebration
-
-Tree Plantation Drive
-
-Winter Blanket Distribution
-
-Women's Skill Workshop
-
-Children Education Fair
-
-Blood Donation Camp
-
-Annual Charity Walk
-
----
-
-# Gallery Categories
-
-Daily Life
-
-Residents
-
-Healthcare
-
-Yoga
-
-Meals
-
-Festivals
-
-Volunteers
-
-Education
-
-Medical Camps
-
-Environment
-
-Food Distribution
-
-CSR Activities
-
----
-
-# Team
-
-Founder
-
-Harish Patel
-
-Managing Trustee
-
-Meena Shah
-
-Operations Head
-
-Rajesh Mehta
-
-Medical Coordinator
-
-Dr. Neha Joshi
-
-Volunteer Coordinator
-
-Nikhil Patel
-
-Accounts
-
-Kiran Desai
-
-Social Media
-
-Aarav Shah
-
----
-
-# Partners
-
-Apollo Hospitals
-
-Rotary Club
-
-Lions Club
-
-Infosys Foundation
-
-Tata Trusts
-
-Adani Foundation
-
-Zydus Hospitals
-
-HDFC Bank CSR
-
-State Bank of India CSR
-
-Ahmedabad Municipal Corporation
+Four additional trustees (names to be confirmed). Portraits are on the About page.
 
 ---
 
 # FAQs
 
-Can I visit the old age home?
+Can I visit the Trust?
 
-Yes. Visitors are welcome during visiting hours.
+Yes. You are welcome at our office on Ashram Road. Please call +91 97125 17115 to plan your visit.
 
 How can I volunteer?
 
 Fill out the volunteer form or contact us.
 
-Are donations tax exempt?
+Do you have an old age home?
 
-Yes, eligible donations qualify under Section 80G.
-
-Can I sponsor a resident?
-
-Yes. Monthly sponsorship plans are available.
+We are working towards establishing one. Your support helps this commitment take shape.
 
 Do you accept in-kind donations?
 
-Yes. Food, medicines, clothes, and essential supplies are welcome.
-
----
-
-# Blog Topics
-
-Healthy Ageing
-
-Mental Wellness
-
-Nutrition for Seniors
-
-Volunteer Stories
-
-Community Impact
-
-Festival Celebrations
-
-Medical Awareness
-
-CSR Success Stories
-
-Environmental Initiatives
-
-Education Programs
+Yes. Food, clothes, and other necessary support are welcome.
 
 ---
 
@@ -486,57 +202,27 @@ Education Programs
 
 Primary Brand
 
-Anandam Seva Foundation
+Navchetna Charitable Trust
 
 Primary Keyword
 
-Old Age Home in Ahmedabad
+Charitable Trust Ahmedabad
 
 Secondary Keywords
 
 NGO in Gujarat
 
-Charitable Trust
+Education hostel NGO
 
-Senior Citizen Care
+Food distribution Ahmedabad
 
-Volunteer NGO
+Bhandara Ahmedabad
 
-CSR NGO Gujarat
+Cow welfare Gujarat
 
-Donation for Elderly
+Tree plantation NGO
 
-Food Distribution NGO
-
-Medical Camps Ahmedabad
-
----
-
-# Brand Personality
-
-Warm
-
-Hopeful
-
-Compassionate
-
-Trustworthy
-
-Transparent
-
-Modern
-
-Minimal
-
-Professional
-
-Authentic
-
-Never corporate.
-
-Never government style.
-
-Always human.
+Old Age Home Ahmedabad
 
 ---
 
@@ -546,18 +232,10 @@ Write as if speaking to a caring human.
 
 Short paragraphs.
 
-Emotional storytelling.
-
 Authentic.
 
 Hopeful.
 
 Action-oriented.
 
-Professional.
-
-Never use filler content.
-
-Never use placeholder text.
-
-Never use Lorem Ipsum.
+Never invent unverified numbers, certificates, or people.

@@ -15,7 +15,7 @@ export function HomeGalleryPreview() {
           align="center"
           eyebrow="Gallery"
           title="Moments that feel like home"
-          description="A glimpse into daily life, festivals, healthcare, and the quiet joy of belonging."
+          description="A glimpse into education, bhandara, plantation, and community seva."
         />
       </SlideUp>
       <StaggerChildren

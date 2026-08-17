@@ -10,13 +10,13 @@ import { ROUTES } from "@/constants/routes";
 import { contactInfo, faqInfo } from "@/data/demo";
 
 const contactDescription =
-  "Contact Anandam Seva Foundation in Ahmedabad—visit, call, email, or send a message about donations, volunteering, and visits.";
+  "Reach Navchetna Charitable Trust in Ahmedabad—call, email, or visit our office on Ashram Road.";
 
 export const metadata = createPageMetadata({
   title: "Contact",
   description: contactDescription,
   path: ROUTES.contact,
-  keywords: ["Anandam Seva Foundation contact", "Old Age Home Ahmedabad"],
+  keywords: ["Navchetna Charitable Trust contact", "NGO Ahmedabad"],
 });
 
 export default function ContactPage() {
@@ -55,16 +55,10 @@ export default function ContactPage() {
                 <Card>
                   <CardTitle className="text-base">Phone</CardTitle>
                   <p className="mt-2 text-muted">{contactInfo.phone}</p>
-                  <p className="mt-1 text-sm text-muted">
-                    Emergency: {contactInfo.emergency}
-                  </p>
                 </Card>
                 <Card>
                   <CardTitle className="text-base">Email</CardTitle>
                   <p className="mt-2 text-muted">{contactInfo.email}</p>
-                  <p className="mt-1 text-sm text-muted">
-                    Support: {contactInfo.supportEmail}
-                  </p>
                 </Card>
               </div>
             </>

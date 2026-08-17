@@ -15,8 +15,8 @@ export function HomeImpactCounters() {
           <SectionHeading
             align="center"
             eyebrow="Impact"
-            title="Care that adds up to real change"
-            description="Numbers matter when they represent people, meals, and moments of dignity."
+            title="Seva that reaches people in need"
+            description="Education, food, cow welfare, plantation—and a home for elders still to come."
           />
         </SlideUp>
         <StaggerChildren
@@ -25,60 +25,46 @@ export function HomeImpactCounters() {
         >
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.residents}
-              label="Residents"
-              description="Elders receiving care and companionship."
+              value={STATISTICS.education}
+              label="Education"
+              description="Hostel care so needy children can continue school."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.meals}
-              label="Meals Served"
-              description="Nourishment prepared and shared with respect."
+              value={STATISTICS.food}
+              label="Food & Clothing"
+              description="Bhandara events, meals, and clothes for families."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.medicalCamps}
-              label="Medical Camps"
-              description="Healthcare brought closer to communities."
-            />
-          </StaggerItem>
-          <StaggerItem>
-            <StatisticCard
-              value={STATISTICS.volunteers}
-              label="Volunteers"
-              description="People giving time with purpose."
-            />
-          </StaggerItem>
-        </StaggerChildren>
-        <StaggerChildren className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:gap-8 lg:grid-cols-4">
-          <StaggerItem>
-            <StatisticCard
-              value={STATISTICS.childrenEducated}
-              label="Children Educated"
-              description="Learning support for brighter futures."
+              value={STATISTICS.cowWelfare}
+              label="Cow Welfare"
+              description="Care for needy and helpless cattle."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.trees}
-              label="Trees Planted"
-              description="Environment efforts that grow with us."
+              label="Tree Plantation"
+              description="Greener neighbourhoods through community drives."
             />
           </StaggerItem>
+        </StaggerChildren>
+        <StaggerChildren className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:gap-8 lg:grid-cols-2">
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.yearsOfService}
               label="Years of Service"
-              description={`Serving since ${siteConfig.foundingYear}.`}
+              description={`Serving Ahmedabad since ${siteConfig.foundingYear}.`}
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.familiesSupported}
-              label="Families Supported"
-              description="Households strengthened through care."
+              value={STATISTICS.oldAgeHome}
+              label="Old Age Home"
+              description="A respectful home for elders is being planned."
             />
           </StaggerItem>
         </StaggerChildren>

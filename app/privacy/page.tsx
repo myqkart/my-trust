@@ -5,7 +5,7 @@ import { legalPages } from "@/data/pages";
 
 const page = legalPages.privacy;
 const description =
-  "Privacy policy for Anandam Seva Foundation website visitors and supporters.";
+  "Privacy policy for Navchetna Charitable Trust website visitors and supporters.";
 
 export const metadata = createPageMetadata({
   title: page.title,

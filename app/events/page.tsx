@@ -11,13 +11,13 @@ import { ROUTES } from "@/constants/routes";
 import { eventsList } from "@/data/pages";
 
 const eventsDescription =
-  "Join upcoming Anandam Seva Foundation events—health camps, celebrations, plantation drives, and community gatherings.";
+  "Join upcoming Navchetna Charitable Trust events—bhandara, plantation drives, clothing distribution, and community gatherings.";
 
 export const metadata = createPageMetadata({
   title: "Events",
   description: eventsDescription,
   path: ROUTES.events,
-  keywords: ["NGO events Ahmedabad", "Senior Citizen Health Camp"],
+  keywords: ["NGO events Ahmedabad", "Bhandara Ahmedabad", "Tree plantation"],
 });
 
 export default function EventsPage() {

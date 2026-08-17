@@ -8,7 +8,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import { ROUTES } from "@/constants/routes";
 
 const searchDescription =
-  "Search Anandam Seva Foundation pages, programs, and resources.";
+  "Search Navchetna Charitable Trust pages, programs, and resources.";
 
 export const metadata = createPageMetadata({
   title: "Search",

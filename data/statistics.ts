@@ -1,11 +1,9 @@
 import { STATISTICS } from "@/constants/statistics";
 
-/** Homepage impact figures from demo data. */
+/** Homepage impact figures. */
 export const homepageStatistics = [
-  { label: "Residents Supported", value: STATISTICS.residents },
-  { label: "Meals Served", value: STATISTICS.meals },
-  { label: "Medical Camps", value: STATISTICS.medicalCamps },
-  { label: "Volunteers", value: STATISTICS.volunteers },
   { label: "Years of Service", value: STATISTICS.yearsOfService },
-  { label: "Trees Planted", value: STATISTICS.trees },
+  { label: "Serving Since", value: STATISTICS.established },
+  { label: "Focus Areas", value: STATISTICS.programs },
+  { label: "Based in", value: STATISTICS.city },
 ] as const;

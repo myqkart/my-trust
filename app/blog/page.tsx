@@ -15,13 +15,13 @@ import { blogPosts } from "@/data/pages";
 import { media } from "@/data/media";
 
 const blogDescription =
-  "Articles on healthy ageing, volunteering, nutrition, and CSR partnerships from Anandam Seva Foundation.";
+  "Articles on education, community seva, environment, and elder care from Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Blog",
   description: blogDescription,
   path: ROUTES.blog,
-  keywords: ["Healthy Ageing", "Volunteer Stories", "CSR Success Stories"],
+  keywords: ["Education Programs", "Community Impact", "Elder Care"],
 });
 
 export default function BlogPage() {

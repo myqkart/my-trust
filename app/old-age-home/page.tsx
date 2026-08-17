@@ -18,27 +18,27 @@ import { media } from "@/data/media";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const oldAgeHomeDescription =
-  "Visit Anandam Seva Old Age Home in Ahmedabad—safe shelter, healthcare, meals, companionship, and daily dignity for senior citizens.";
+  "Navchetna Charitable Trust is working towards an Old Age Home in Ahmedabad—a safe, respectful, and caring environment for elders who need companionship and support.";
 
 export const metadata = createPageMetadata({
-  title: "Old Age Home",
+  title: "Upcoming Old Age Home",
   description: oldAgeHomeDescription,
   path: ROUTES.oldAgeHome,
-  keywords: ["Old Age Home in Ahmedabad", "Senior Citizen Care"],
+  keywords: ["Old Age Home in Ahmedabad", "Senior Citizen Care", "Navchetna Charitable Trust"],
 });
 
 export default function OldAgeHomePage() {
   return (
     <>
       <PageJsonLd
-        title="Old Age Home"
+        title="Upcoming Old Age Home"
         description={oldAgeHomeDescription}
         path={ROUTES.oldAgeHome}
         breadcrumbs={[{ name: "Old Age Home", path: ROUTES.oldAgeHome }]}
         faqs={[...faqInfo]}
         extras={[
           serviceSchema({
-            name: "Old Age Home",
+            name: "Upcoming Old Age Home",
             description: oldAgeHomeDescription,
             path: ROUTES.oldAgeHome,
           }),
@@ -46,15 +46,15 @@ export default function OldAgeHomePage() {
       />
       <PageHero
         breadcrumbs={[{ label: "Old Age Home" }]}
-        eyebrow="Residential Care"
+        eyebrow="Coming Soon"
         title="A home filled with belonging"
-        description={`${statisticsInfo.residents} residents live with healthcare, nutritious meals, recreation, and the warmth of family.`}
-        primaryCta={{ label: "Sponsor a Resident", href: ROUTES.donate }}
-        secondaryCta={{ label: "Plan a Visit", href: ROUTES.contact }}
+        description={trustInfo.elderCommitment}
+        primaryCta={{ label: "Support This Vision", href: ROUTES.donate }}
+        secondaryCta={{ label: "Talk to Us", href: ROUTES.contact }}
         stats={[
-          { label: "Residents", value: statisticsInfo.residents },
-          { label: "Meals served", value: statisticsInfo.meals },
-          { label: "Years of care", value: statisticsInfo.yearsOfService },
+          { label: "Status", value: statisticsInfo.oldAgeHome },
+          { label: "Serving since", value: statisticsInfo.established },
+          { label: "Years of seva", value: statisticsInfo.yearsOfService },
         ]}
       />
 
@@ -63,17 +63,19 @@ export default function OldAgeHomePage() {
           left={
             <SlideUp>
               <SectionHeading
-                eyebrow="Our Home"
-                title="Care that feels personal"
-                description="Anandam Seva Old Age Home is more than shelter. It is a community where elders are respected, heard, and supported every day."
+                eyebrow="Our Commitment"
+                title="Respect, care and support for every elder"
+                description="Navchetna Charitable Trust is working towards establishing an Old Age Home so elderly people who need care, companionship, and support can live in a safe, respectful, and caring environment."
               />
               <p className="mt-6 text-muted">
-                Located near Shantivan Circle on SG Highway, Ahmedabad, our home
-                blends medical attention with companionship, prayer, gardens, and
-                shared meals—rooted in {trustInfo.slogan}
+                The Trust aims to provide senior citizens with essential
+                facilities along with dignity, care, companionship, and an
+                opportunity to live a better life. Through this initiative, we
+                hope to strengthen the spirit of service, respect, and compassion
+                towards the elderly in society.
               </p>
               <Button asChild className="mt-8">
-                <Link href={ROUTES.volunteer}>Volunteer With Us</Link>
+                <Link href={ROUTES.donate}>Help Us Build This Home</Link>
               </Button>
             </SlideUp>
           }
@@ -82,7 +84,7 @@ export default function OldAgeHomePage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-image)] bg-soft/40">
                 <OptimizedImage
                   src={media.oldAgeHome}
-                  alt="Residents and caregivers sharing a warm moment at the old age home"
+                  alt="A vision of companionship and care for elders at the upcoming old age home"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 45vw"
@@ -96,9 +98,9 @@ export default function OldAgeHomePage() {
       <Section background="soft">
         <SectionHeading
           align="center"
-          eyebrow="Facilities"
+          eyebrow="Planned Facilities"
           title="Spaces designed for comfort"
-          description="Every corner supports safety, accessibility, and everyday joy."
+          description="This is the kind of home we are working to create—safe, accessible, and full of everyday dignity."
         />
         <StaggerChildren className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {facilities.map((facility) => (
@@ -114,9 +116,9 @@ export default function OldAgeHomePage() {
       <Section background="white">
         <SectionHeading
           align="center"
-          eyebrow="Daily Life"
+          eyebrow="A Day We Envision"
           title="A gentle, purposeful routine"
-          description="Structure brings comfort—and room remains for friendship and rest."
+          description="When the home opens, days will hold structure, friendship, and rest."
         />
         <ol className="mx-auto mt-12 max-w-3xl space-y-4">
           {dailyRoutine.map((item) => (

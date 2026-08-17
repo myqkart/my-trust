@@ -90,7 +90,7 @@ export function organizationSchema(): JsonLd {
       socialConfig.youtube,
       socialConfig.linkedin,
       socialConfig.twitter,
-    ],
+    ].filter((url) => url && url !== "#"),
     contactPoint: [
       {
         "@type": "ContactPoint",

@@ -11,13 +11,13 @@ import { galleryCategories } from "@/data/pages";
 import { media, type GalleryCategory } from "@/data/media";
 
 const galleryDescription =
-  "Browse moments from daily life, healthcare, festivals, volunteering, and outreach at Anandam Seva Foundation.";
+  "Browse moments from education, bhandara, plantation, volunteering, and community seva at Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Gallery",
   description: galleryDescription,
   path: ROUTES.gallery,
-  keywords: ["Anandam Seva Foundation gallery", "Old Age Home in Ahmedabad"],
+  keywords: ["Navchetna Charitable Trust gallery", "NGO Ahmedabad"],
 });
 
 const galleryItems = galleryCategories.map((category) => ({

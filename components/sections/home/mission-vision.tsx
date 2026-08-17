@@ -13,7 +13,7 @@ export function HomeMissionVision() {
           align="center"
           eyebrow="Purpose"
           title="Mission & Vision"
-          description="We exist to turn compassion into daily care—and a future where dignity is never optional."
+          description="We exist to turn compassion into daily seva—education, food, gau seva, a greener city, and dignity for elders."
         />
       </SlideUp>
       <StaggerChildren className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">

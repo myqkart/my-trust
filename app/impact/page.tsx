@@ -14,7 +14,7 @@ import { partnersInfo, trustBadgesInfo } from "@/data/demo";
 import { impactHighlights } from "@/data/pages";
 
 const impactDescription =
-  "See the measurable impact of Anandam Seva Foundation—residents served, meals shared, medical camps, education, and community partnerships.";
+  "See how Navchetna Charitable Trust serves Ahmedabad—education, food and clothing, cow welfare, tree plantation, and an upcoming old age home.";
 
 export const metadata = createPageMetadata({
   title: "Impact",
@@ -35,8 +35,8 @@ export default function ImpactPage() {
       <PageHero
         breadcrumbs={[{ label: "Impact" }]}
         eyebrow="Transparency"
-        title="Impact you can measure and feel"
-        description="Numbers tell part of the story. Dignity, safety, and belonging tell the rest."
+        title="Impact you can feel"
+        description="Years of seva, five focus areas, and a promise to elders still taking shape."
         primaryCta={{ label: "Download Reports", href: ROUTES.reports }}
         secondaryCta={{ label: "Donate", href: ROUTES.donate }}
       />
@@ -45,7 +45,7 @@ export default function ImpactPage() {
         <SectionHeading
           align="center"
           eyebrow="By the Numbers"
-          title="Lives touched across Ahmedabad"
+          title="Seva across Ahmedabad"
         />
         <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {impactHighlights.map((item) => (
@@ -61,7 +61,7 @@ export default function ImpactPage() {
           align="center"
           eyebrow="Trust"
           title="Accountability built in"
-          description="Registration, compliance, and partner confidence keep our work open and verifiable."
+          description="Founded in 2009 by Shri Rupesh Bhai Modi. Reach us for how your support is used."
         />
         <StaggerChildren className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {trustBadgesInfo.map((badge) => (

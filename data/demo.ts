@@ -1,195 +1,175 @@
 /**
- * Demo content sourced from ai/demo-data.md.
- * Use until verified client information replaces it.
+ * Site content for Navchetna Charitable Trust.
  */
 
 export const trustInfo = {
-  name: "Anandam Seva Foundation",
-  shortName: "Anandam Seva",
-  tagline: "Serving Humanity with Compassion & Dignity",
-  slogan: "Every Life Deserves Love, Care & Respect.",
+  name: "Navchetna Charitable Trust",
+  shortName: "Navchetna",
+  tagline: "The Spirit of Navchetna Charitable Trust.",
+  slogan: "Service, Support & Humanity",
+  elderCommitment:
+    "Respect, Care and Support for Every Elder — This is Our Commitment.",
   mission:
-    "To provide compassionate care, dignity, healthcare, nutrition, shelter, education, and emotional support to elderly citizens and underprivileged communities through sustainable social initiatives.",
+    "To serve society through education, compassion, support, and humanity—helping needy people and contributing to the betterment of the community.",
   vision:
-    "To build a society where every individual, regardless of age or circumstance, lives with dignity, security, love, and equal opportunity.",
+    "To build a society where underprivileged families, children, cattle, and elders receive dignity, care, and a chance at a better life.",
   values: [
-    "Compassion",
-    "Integrity",
-    "Transparency",
     "Service",
+    "Compassion",
+    "Support",
+    "Humanity",
     "Respect",
-    "Empowerment",
     "Community",
   ] as const,
-  established: 2012,
-  registration: "E/14562/Ahmedabad",
-  pan: "AABTA4521P",
-  twelveA: "Available",
-  eightyG: "Available",
-  fcra: "Applied",
+  established: 2009,
+  registration: "Charitable Trust, Ahmedabad",
+  pan: "",
+  twelveA: "Please contact us for details",
+  eightyG: "Please contact us for details",
+  fcra: "",
   csrEligible: true,
-  website: "https://www.anandamseva.org",
+  website: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;
 
 export const founderInfo = {
-  name: "Shri Harish Patel",
-  designation: "Founder & Managing Trustee",
-  bio: "Harish Patel founded Anandam Seva Foundation in 2012 after witnessing the loneliness and neglect faced by senior citizens. His vision was to create not just an old age home, but a family where every elderly person feels respected, valued, and loved.",
+  name: "Shri Rupesh Bhai Modi",
+  designation: "Founder & Trustee",
+  bio: "Navchetna Charitable Trust was established in 2009 by Shri Rupesh Bhai Modi with the aim of serving society and supporting people in need. Since then he has continuously worked to strengthen the Trust and involve more people in social service.",
   message:
-    "We cannot change the entire world, but we can certainly change someone's world with kindness.",
+    "Service, Support & Humanity — The Spirit of Navchetna Charitable Trust.",
 } as const;
 
 export const contactInfo = {
   address: {
-    line1: "Near Shantivan Circle",
-    line2: "SG Highway",
+    line1: "30-FF, Harishiddh Chambers",
+    line2: "Income Tax, Ashram Road",
     city: "Ahmedabad",
     state: "Gujarat",
-    postalCode: "380054",
+    postalCode: "380014",
     country: "India",
-    full: "Anandam Seva Foundation, Near Shantivan Circle, SG Highway, Ahmedabad, Gujarat 380054",
+    full: "Navchetna Charitable Trust, 30-FF, Harishiddh Chambers, Income Tax, Ashram Road, Ahmedabad, Gujarat 380014",
   },
-  phone: "+91 98765 43210",
-  emergency: "+91 98250 11223",
-  email: "info@anandamseva.org",
-  supportEmail: "support@anandamseva.org",
-  volunteerEmail: "volunteer@anandamseva.org",
-  donateEmail: "donate@anandamseva.org",
+  phone: "+91 97125 17115",
+  emergency: "+91 97125 17115",
+  email: "navchetnacharitabletrust09@gmail.com",
+  supportEmail: "navchetnacharitabletrust09@gmail.com",
+  volunteerEmail: "navchetnacharitabletrust09@gmail.com",
+  donateEmail: "navchetnacharitabletrust09@gmail.com",
   officeHours: "Monday - Saturday, 9:00 AM – 6:00 PM",
-  whatsapp: "919876543210",
+  whatsapp: "919712517115",
 } as const;
 
 export const socialInfo = {
-  facebook: "https://facebook.com/anandamseva",
-  instagram: "https://instagram.com/anandamseva",
-  youtube: "https://youtube.com/@anandamseva",
-  linkedin: "https://linkedin.com/company/anandamseva",
-  twitter: "https://x.com/anandamseva",
-  whatsapp: "https://wa.me/919876543210",
+  facebook: "#",
+  instagram: "#",
+  youtube: "#",
+  linkedin: "#",
+  twitter: "#",
+  whatsapp: "https://wa.me/919712517115",
 } as const;
 
 export const statisticsInfo = {
-  yearsOfService: "13+",
-  residents: "540+",
-  meals: "485,000+",
-  medicalCamps: "186+",
-  childrenEducated: "920+",
-  trees: "18,400+",
-  volunteers: "1,650+",
-  familiesSupported: "4,800+",
-  csrPartners: "36",
-  annualBeneficiaries: "11,500+",
+  yearsOfService: "17+",
+  established: "2009",
+  programs: "5",
+  education: "Hostel",
+  food: "Bhandara",
+  cowWelfare: "Gau Seva",
+  trees: "Plantation",
+  oldAgeHome: "Planned",
+  city: "Ahmedabad",
 } as const;
 
 export const programsInfo = [
-  {
-    id: "old-age-home",
-    slug: "old-age-home",
-    title: "Old Age Home",
-    summary:
-      "A permanent home providing shelter, healthcare, companionship, recreation, and dignity for senior citizens.",
-    href: "/old-age-home",
-    impact: "Residential care",
-  },
-  {
-    id: "medical-camps",
-    slug: "medical-camps",
-    title: "Medical Camps",
-    summary:
-      "Free healthcare camps including eye checkups, diabetes screening, dental care, and specialist consultations.",
-    href: "/programs/medical-camps",
-    impact: "Community health",
-  },
-  {
-    id: "food-distribution",
-    slug: "food-distribution",
-    title: "Food Distribution",
-    summary:
-      "Nutritious meals distributed daily to elderly citizens, homeless individuals, and families in need.",
-    href: "/programs/food-distribution",
-    impact: "Nourishment",
-  },
   {
     id: "education",
     slug: "education",
     title: "Education Support",
     summary:
-      "Scholarships, school kits, digital learning, and tuition support for underprivileged children.",
+      "Hostel facilities for needy children who did not have proper education and accommodation, so they can continue studies in a safe, supportive environment.",
     href: "/programs/education",
-    impact: "Learning",
+    impact: "Learning & shelter",
   },
   {
-    id: "women-empowerment",
-    slug: "women-empowerment",
-    title: "Women Empowerment",
+    id: "food-distribution",
+    slug: "food-distribution",
+    title: "Food & Clothing",
     summary:
-      "Skill development, tailoring, self-help groups, entrepreneurship training, and financial literacy.",
-    href: "/programs/women-empowerment",
-    impact: "Livelihood",
+      "Food distribution programs and large Bhandara events for poor and needy people, along with clothes and other essential support for families.",
+    href: "/programs/food-distribution",
+    impact: "Nourishment",
+  },
+  {
+    id: "cow-welfare",
+    slug: "cow-welfare",
+    title: "Cow Welfare",
+    summary:
+      "Care and well-being of needy and helpless cattle through cow welfare and gau seva.",
+    href: "/programs/cow-welfare",
+    impact: "Gau seva",
   },
   {
     id: "environment",
     slug: "environment",
-    title: "Environment",
+    title: "Tree Plantation",
     summary:
-      "Tree plantation drives, water conservation, waste management awareness, and clean community initiatives.",
+      "Tree plantation programs that invite people to contribute towards a greener, healthier environment.",
     href: "/programs/environment",
-    impact: "Planet",
+    impact: "Environment",
   },
   {
-    id: "disaster-relief",
-    slug: "disaster-relief",
-    title: "Disaster Relief",
+    id: "old-age-home",
+    slug: "old-age-home",
+    title: "Upcoming Old Age Home",
     summary:
-      "Emergency food, shelter, clothing, medicines, and rehabilitation during natural disasters.",
-    href: "/programs/disaster-relief",
-    impact: "Emergency",
+      "A planned home where elderly people who need care, companionship, and support can live with dignity in a safe, respectful environment.",
+    href: "/old-age-home",
+    impact: "Coming soon",
   },
 ] as const;
 
 export const donationPlans = [
   {
     id: "sponsor-meal",
-    label: "Sponsor One Meal",
+    label: "Support a Bhandara",
     amount: 501,
     amountLabel: "₹501",
-    impact: "One nourishing meal served with dignity",
+    impact: "Meals shared with people in need",
   },
   {
-    id: "sponsor-medicine",
-    label: "Sponsor Medicines",
+    id: "sponsor-clothing",
+    label: "Clothes & Essentials",
     amount: 1100,
     amountLabel: "₹1,100",
-    impact: "Essential medicines for residents in need",
+    impact: "Clothing and necessary support for families",
   },
   {
-    id: "sponsor-groceries",
-    label: "Sponsor Monthly Groceries",
+    id: "sponsor-education",
+    label: "Education & Hostel",
     amount: 2500,
     amountLabel: "₹2,500",
-    impact: "A month of pantry support for residents",
+    impact: "Help a child stay and study with dignity",
   },
   {
-    id: "sponsor-health",
-    label: "Sponsor Health Checkup",
+    id: "sponsor-gau-seva",
+    label: "Cow Welfare",
     amount: 5100,
     amountLabel: "₹5,100",
-    impact: "Comprehensive health screening for seniors",
+    impact: "Care for needy and helpless cattle",
   },
   {
-    id: "sponsor-resident",
-    label: "Sponsor One Resident",
+    id: "sponsor-plantation",
+    label: "Tree Plantation",
     amount: 11000,
-    amountLabel: "₹11,000/month",
-    impact: "Monthly care, meals, and companionship",
-    recurring: true,
+    amountLabel: "₹11,000",
+    impact: "Greener neighbourhoods through plantation drives",
   },
   {
-    id: "festival",
-    label: "Festival Celebration",
+    id: "sponsor-elder-home",
+    label: "Old Age Home Fund",
     amount: 21000,
     amountLabel: "₹21,000",
-    impact: "Joyful festival celebrations for residents",
+    impact: "Help us build a respectful home for elders",
   },
   {
     id: "general",
@@ -203,115 +183,134 @@ export const donationPlans = [
 export const testimonialsInfo = [
   {
     quote:
-      "After coming here, I found a new family. Every day is filled with love and care.",
-    name: "Sushila Ben",
-    role: "Resident",
+      "A safe hostel and a chance to study gave our children hope when we had nowhere else to turn.",
+    name: "A parent we support",
+    role: "Education",
   },
   {
     quote:
-      "Volunteering here changed my perspective on life. Every visit teaches compassion.",
-    name: "Rohan Shah",
-    role: "Volunteer",
+      "The Bhandara and clothing support reached families in our neighbourhood with dignity and care.",
+    name: "Community volunteer",
+    role: "Food & Clothing",
   },
   {
     quote:
-      "I appreciate the complete transparency and genuine impact of every donation.",
-    name: "Priya Mehta",
+      "Navchetna’s gau seva and plantation work show that service includes animals and the environment too.",
+    name: "Local supporter",
     role: "Donor",
   },
   {
     quote:
-      "The organization maintains excellent healthcare standards and genuine commitment.",
-    name: "Dr. Amit Desai",
-    role: "Doctor",
+      "The Trust’s commitment to an old age home gives elders a future of respect, care, and companionship.",
+    name: "Well-wisher",
+    role: "Elder care",
   },
 ] as const;
 
 export const eventsInfo = [
-  "International Yoga Day",
-  "Senior Citizen Health Camp",
-  "Diwali Celebration",
+  "Community Bhandara",
   "Tree Plantation Drive",
-  "Winter Blanket Distribution",
-  "Women's Skill Workshop",
-  "Children Education Fair",
-  "Blood Donation Camp",
-  "Annual Charity Walk",
+  "Clothing Distribution",
+  "Education Support Meet",
+  "Cow Welfare Seva",
+  "Diwali Celebration",
 ] as const;
 
 export const partnersInfo = [
-  "Apollo Hospitals",
-  "Rotary Club",
-  "Lions Club",
-  "Infosys Foundation",
-  "Tata Trusts",
-  "Adani Foundation",
-  "Zydus Hospitals",
-  "HDFC Bank CSR",
-  "State Bank of India CSR",
-  "Ahmedabad Municipal Corporation",
+  "Community Volunteers",
+  "Local Donors",
+  "Ahmedabad Neighbourhoods",
+  "Education Well-wishers",
 ] as const;
 
 export const teamInfo = [
-  { name: "Harish Patel", role: "Founder" },
-  { name: "Meena Shah", role: "Managing Trustee" },
-  { name: "Rajesh Mehta", role: "Operations Head" },
-  { name: "Dr. Neha Joshi", role: "Medical Coordinator" },
-  { name: "Nikhil Patel", role: "Volunteer Coordinator" },
-  { name: "Kiran Desai", role: "Accounts" },
-  { name: "Aarav Shah", role: "Social Media" },
+  {
+    id: "rupesh-bhai-modi",
+    name: "Shri Rupesh Bhai Modi",
+    role: "Founder & Trustee",
+    image: "/images/trustees/rupesh-bhai-modi.png",
+  },
+  {
+    id: "trustee-02",
+    name: "Trustee",
+    role: "Trustee",
+    image: "/images/trustees/trustee-02.png",
+  },
+  {
+    id: "trustee-03",
+    name: "Trustee",
+    role: "Trustee",
+    image: "/images/trustees/trustee-03.png",
+  },
+  {
+    id: "trustee-04",
+    name: "Trustee",
+    role: "Trustee",
+    image: "/images/trustees/trustee-04.png",
+  },
+  {
+    id: "trustee-05",
+    name: "Trustee",
+    role: "Trustee",
+    image: "/images/trustees/trustee-05.png",
+  },
 ] as const;
 
 export const faqInfo = [
   {
-    question: "Can I visit the old age home?",
-    answer: "Yes. Visitors are welcome during visiting hours.",
+    question: "Can I visit the Trust?",
+    answer:
+      "Yes. You are welcome at our office: 30-FF, Harishiddh Chambers, Income Tax, Ashram Road, Ahmedabad 380014. Please call +91 97125 17115 to plan your visit.",
   },
   {
     question: "How can I volunteer?",
-    answer: "Fill out the volunteer form or contact us.",
+    answer:
+      "Fill out the volunteer form or contact us. We welcome help with education, food distribution, plantation, cow welfare, and upcoming elder-care work.",
   },
   {
-    question: "Are donations tax exempt?",
-    answer: "Yes, eligible donations qualify under Section 80G.",
-  },
-  {
-    question: "Can I sponsor a resident?",
-    answer: "Yes. Monthly sponsorship plans are available.",
+    question: "Do you have an old age home?",
+    answer:
+      "We are working towards establishing an Old Age Home so elders can live with dignity, care, and companionship. Your support helps this commitment take shape.",
   },
   {
     question: "Do you accept in-kind donations?",
-    answer: "Yes. Food, medicines, clothes, and essential supplies are welcome.",
+    answer:
+      "Yes. Food, clothes, and other necessary support for families in need are welcome.",
+  },
+  {
+    question: "How do I donate?",
+    answer:
+      "Use the donate form on this website or contact us at navchetnacharitabletrust09@gmail.com / +91 97125 17115.",
   },
 ] as const;
 
 export const trustBadgesInfo = [
   {
-    label: "Official Registration",
-    description: trustInfo.registration,
+    label: "Established",
+    description: "2009, Ahmedabad",
   },
   {
-    label: "80G",
-    description: "Tax-exempt donations available",
+    label: "Founder",
+    description: "Shri Rupesh Bhai Modi",
   },
   {
-    label: "12A",
-    description: "Registered charitable trust",
+    label: "Our Work",
+    description: "Education, food, gau seva & environment",
   },
   {
-    label: "CSR Ready",
-    description: "Eligible for CSR partnerships",
+    label: "Looking Ahead",
+    description: "Old Age Home for elders",
   },
 ] as const;
 
 export const seoKeywords = [
-  "Old Age Home in Ahmedabad",
+  "Navchetna Charitable Trust",
+  "Charitable Trust Ahmedabad",
   "NGO in Gujarat",
-  "Charitable Trust",
-  "Senior Citizen Care",
-  "Volunteer NGO",
-  "CSR NGO Gujarat",
-  "Donation for Elderly",
-  "Food Distribution NGO",
-  "Medical Camps Ahmedabad",
+  "Education hostel NGO",
+  "Food distribution Ahmedabad",
+  "Bhandara Ahmedabad",
+  "Cow welfare Gujarat",
+  "Tree plantation NGO",
+  "Old Age Home Ahmedabad",
 ] as const;

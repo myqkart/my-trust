@@ -18,4 +18,4 @@ export const socialLinks = [
   { name: "Twitter", href: socialConfig.twitter },
   { name: "LinkedIn", href: socialConfig.linkedin },
   { name: "YouTube", href: socialConfig.youtube },
-] as const;
+].filter((link) => link.href && link.href !== "#");

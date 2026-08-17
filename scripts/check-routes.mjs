@@ -71,18 +71,10 @@ async function main() {
 
   const known = new Set([
     ...routePaths,
-    "/programs/medical-camps",
     "/programs/food-distribution",
     "/programs/education",
-    "/programs/women-empowerment",
+    "/programs/cow-welfare",
     "/programs/environment",
-    "/programs/disaster-relief",
-    "/documents/annual-report.pdf",
-    "/documents/audit-report.pdf",
-    "/documents/80g.pdf",
-    "/documents/12a.pdf",
-    "/documents/impact-report.pdf",
-    "/documents/csr-deck.pdf",
   ]);
 
   const hrefPattern = /href=["'`](\/[^"'`?#]*)/g;

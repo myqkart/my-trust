@@ -30,66 +30,60 @@ export const media = {
     elderCare: unsplashSrc("1576765608535-5f04d1e3f289", { w: 900, h: 1125 }),
     companionship: unsplashSrc("1581579438747-1dc8d17bbce4", { w: 900, h: 1125 }),
   },
-  featuredStory: unsplashSrc("1566616213894-2d4e1baee5d8", { w: 1000, h: 1250 }),
+  featuredStory: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 1250 }),
   oldAgeHome: unsplashSrc("1516734212186-a967f81ad0d7", { w: 1200, h: 900 }),
   programs: {
     "old-age-home": unsplashSrc("1576765608535-5f04d1e3f289", { w: 1000, h: 750 }),
-    "medical-camps": unsplashSrc("1576091160399-112ba8d25d1d", { w: 1000, h: 750 }),
     "food-distribution": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 750 }),
     education: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 750 }),
-    "women-empowerment": unsplashSrc("1573496359142-b8d87734a5a2", { w: 1000, h: 750 }),
+    "cow-welfare": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 750 }),
     environment: unsplashSrc("1542601906990-b4d3fb778b09", { w: 1000, h: 750 }),
-    "disaster-relief": unsplashSrc("1469571486292-0ba58a3f068b", { w: 1000, h: 750 }),
   },
   gallery: {
-    "Daily Life": unsplashSrc("1516734212186-a967f81ad0d7", { w: 800, h: 1000 }),
-    Residents: unsplashSrc("1566616213894-2d4e1baee5d8", { w: 800, h: 1000 }),
-    Healthcare: unsplashSrc("1582750433449-648ed127bb54", { w: 800, h: 1000 }),
-    Yoga: unsplashSrc("1544367567-0f2fcb009e0b", { w: 800, h: 1000 }),
+    "Daily Life": unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
     Meals: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
     Festivals: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
     Volunteers: unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
     Education: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
-    "Medical Camps": unsplashSrc("1576091160399-112ba8d25d1d", { w: 800, h: 1000 }),
     Environment: unsplashSrc("1542601906990-b4d3fb778b09", { w: 800, h: 1000 }),
   },
   galleryPreview: [
     {
-      title: "Morning yoga with residents",
-      category: "Yoga",
-      src: unsplashSrc("1544367567-0f2fcb009e0b", { w: 800, h: 1000 }),
+      title: "Education and hostel care",
+      category: "Education",
+      src: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
     },
     {
-      title: "Shared meals, shared dignity",
+      title: "Bhandara and shared meals",
       category: "Meals",
       src: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
     },
     {
-      title: "Healthcare with compassion",
-      category: "Healthcare",
-      src: unsplashSrc("1582750433449-648ed127bb54", { w: 800, h: 1000 }),
+      title: "Clothes for families in need",
+      category: "Volunteers",
+      src: unsplashSrc("1489980557514-251d61e3eeb6", { w: 800, h: 1000 }),
     },
     {
-      title: "Festival celebrations",
+      title: "Tree plantation drives",
+      category: "Environment",
+      src: unsplashSrc("1542601906990-b4d3fb778b09", { w: 800, h: 1000 }),
+    },
+    {
+      title: "Community celebrations",
       category: "Festivals",
       src: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
     },
     {
       title: "Volunteers in action",
-      category: "Volunteers",
+      category: "Daily Life",
       src: unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
-    },
-    {
-      title: "Medical camp outreach",
-      category: "Medical Camps",
-      src: unsplashSrc("1576091160399-112ba8d25d1d", { w: 800, h: 1000 }),
     },
   ],
   stories: {
-    "Sushila Ben": unsplashSrc("1566616213894-2d4e1baee5d8", { w: 1000, h: 625 }),
-    "Rohan Shah": unsplashSrc("1507003211169-0a1dd7228f2d", { w: 1000, h: 625 }),
-    "Priya Mehta": unsplashSrc("1494790108377-be9c29b29330", { w: 1000, h: 625 }),
-    "Dr. Amit Desai": unsplashSrc("1612349317150-e413f6a5b16d", { w: 1000, h: 625 }),
+    "Children we shelter": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
+    "Families at our Bhandara": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
+    "Gau seva well-wishers": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
+    "Our elder-care promise": unsplashSrc("1576765608535-5f04d1e3f289", { w: 1000, h: 625 }),
   },
   team: [
     unsplashSrc("1507003211169-0a1dd7228f2d", { w: 240, h: 240 }),
@@ -101,19 +95,19 @@ export const media = {
     unsplashSrc("1523240795612-9a054b0db644", { w: 240, h: 240 }),
   ],
   blog: {
-    "healthy-ageing-with-dignity": unsplashSrc("1571019613454-1cb2f99b2d8b", {
+    "education-and-hostel-support": unsplashSrc("1503676260728-1c00da094a0b", {
       w: 1200,
       h: 750,
     }),
-    "volunteer-story-rohan": unsplashSrc("1559027615-cd4628902d4a", {
+    "bhandara-and-clothing-seva": unsplashSrc("1488521787991-ed7bbaae773c", {
       w: 1200,
       h: 750,
     }),
-    "nutrition-for-seniors": unsplashSrc("1593113598332-cd288d649433", {
+    "tree-plantation-and-gau-seva": unsplashSrc("1542601906990-b4d3fb778b09", {
       w: 1200,
       h: 750,
     }),
-    "csr-partnerships-that-matter": unsplashSrc("1454165804606-c3d57bc86b40", {
+    "upcoming-old-age-home": unsplashSrc("1576765608535-5f04d1e3f289", {
       w: 1200,
       h: 750,
     }),

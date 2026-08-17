@@ -115,10 +115,10 @@ export default function HomePage() {
             href: ROUTES.about,
           }}
           stats={[
-            { label: "Residents Supported", value: STATISTICS.residents },
             { label: "Years of Service", value: STATISTICS.yearsOfService },
-            { label: "Volunteers", value: STATISTICS.volunteers },
-            { label: "Meals Served", value: STATISTICS.meals },
+            { label: "Serving Since", value: STATISTICS.established },
+            { label: "Focus Areas", value: STATISTICS.programs },
+            { label: "Based in", value: STATISTICS.city },
           ]}
         />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 text-background">

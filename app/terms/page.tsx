@@ -4,7 +4,7 @@ import { ROUTES } from "@/constants/routes";
 import { legalPages } from "@/data/pages";
 
 const page = legalPages.terms;
-const description = "Terms of use for the Anandam Seva Foundation website.";
+const description = "Terms of use for the Navchetna Charitable Trust website.";
 
 export const metadata = createPageMetadata({
   title: page.title,

@@ -18,7 +18,7 @@ export function HomeFeaturedStory() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-image)] bg-soft/40 md:aspect-[5/6]">
               <OptimizedImage
                 src={media.featuredStory}
-                alt={`${featuredResidentStory.name}, resident at Anandam Seva`}
+                alt={`${featuredResidentStory.name} supported by Navchetna Charitable Trust`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 45vw"
@@ -26,7 +26,7 @@ export function HomeFeaturedStory() {
               <div className="absolute inset-0 bg-[image:var(--gradient-overlay)] opacity-50" />
               <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-8">
                 <p className="text-sm font-semibold tracking-wide text-soft uppercase">
-                  Resident Story
+                  Education Story
                 </p>
                 <p className="font-heading mt-2 text-2xl font-bold sm:text-3xl">
                   {featuredResidentStory.name}
@@ -39,7 +39,7 @@ export function HomeFeaturedStory() {
           <SlideUp>
             <SectionHeading
               eyebrow="Human Stories"
-              title="Dignity restored, one life at a time"
+              title="A chance to study, a place to stay"
               description={featuredResidentStory.summary}
             />
             <Quote className="mt-8" cite={featuredResidentStory.name}>
@@ -53,7 +53,7 @@ export function HomeFeaturedStory() {
                 </Link>
               </Button>
               <Button asChild variant="secondary" className="w-full sm:w-auto">
-                <Link href={ROUTES.donate}>Sponsor a Resident</Link>
+                <Link href={ROUTES.donate}>Support Education</Link>
               </Button>
             </div>
           </SlideUp>

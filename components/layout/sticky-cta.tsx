@@ -20,8 +20,8 @@ interface StickyCTAProps {
  */
 export function StickyCTA({
   className,
-  title = "Help us give dignity to every elder",
-  description = "Your support funds meals, medicine, and companionship.",
+  title = "Help us serve with humanity",
+  description = "Your support funds education, meals, gau seva, and elder care.",
 }: StickyCTAProps) {
   const { y } = useScroll();
   const visible = y > 520;

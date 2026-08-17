@@ -102,7 +102,7 @@ export function Navbar() {
                 )}
                 aria-hidden
               >
-                AS
+                NC
               </span>
               <span className="truncate text-base font-bold tracking-tight sm:text-lg md:text-xl">
                 {siteConfig.shortName}

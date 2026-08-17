@@ -13,13 +13,13 @@ import { faqInfo, programsInfo } from "@/data/demo";
 import { media } from "@/data/media";
 
 const programsDescription =
-  "Explore Anandam Seva Foundation programs—elder care, medical camps, food distribution, education, women empowerment, and more.";
+  "Explore Navchetna Charitable Trust programs—education and hostel care, food and clothing, cow welfare, tree plantation, and an upcoming old age home.";
 
 export const metadata = createPageMetadata({
   title: "Programs",
   description: programsDescription,
   path: ROUTES.programs,
-  keywords: ["NGO programs Gujarat", "Senior Citizen Care", "Medical Camps"],
+  keywords: ["NGO programs Gujarat", "Education hostel NGO", "Food distribution Ahmedabad"],
 });
 
 export default function ProgramsPage() {
@@ -36,8 +36,8 @@ export default function ProgramsPage() {
       <PageHero
         breadcrumbs={[{ label: "Programs" }]}
         eyebrow="Our Work"
-        title="Programs that restore dignity"
-        description="From residential elder care to community outreach—every initiative is designed around people, not paperwork."
+        title="Programs that serve with humanity"
+        description="Education, food and clothing, cow welfare, tree plantation—and a respectful home for elders we are working to establish."
         primaryCta={{ label: "Donate Now", href: ROUTES.donate }}
         secondaryCta={{ label: "Volunteer", href: ROUTES.volunteer }}
       />
@@ -46,8 +46,8 @@ export default function ProgramsPage() {
         <SectionHeading
           align="center"
           eyebrow="Impact Areas"
-          title="Seven ways we serve"
-          description="Choose a program to learn how your support becomes meals, medicine, learning, and belonging."
+          title="Five ways we serve"
+          description="Choose a program to see how your support becomes hostel care, meals, gau seva, greener streets, and elder dignity."
         />
         <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {programsInfo.map((program) => (

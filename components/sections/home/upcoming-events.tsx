@@ -15,7 +15,7 @@ export function HomeUpcomingEvents() {
           align="center"
           eyebrow="Events"
           title="Come be part of something meaningful"
-          description="From yoga mornings to medical camps, every gathering strengthens community."
+          description="From Bhandara gatherings to plantation drives, every event strengthens community."
         />
       </SlideUp>
       <StaggerChildren className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">

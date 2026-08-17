@@ -32,7 +32,7 @@ export async function generateMetadata({
     title: program.title,
     description: program.summary,
     path: `/programs/${program.slug}`,
-    keywords: [program.title, "Anandam Seva Foundation"],
+    keywords: [program.title, "Navchetna Charitable Trust"],
   });
 }
 

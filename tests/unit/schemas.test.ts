@@ -82,7 +82,7 @@ describe("volunteerSchema", () => {
 
 describe("newsletterSchema", () => {
   it("accepts valid emails only", () => {
-    expect(newsletterSchema.safeParse({ email: "hello@anandamseva.org" }).success).toBe(
+    expect(newsletterSchema.safeParse({ email: "hello@navchetna.org" }).success).toBe(
       true,
     );
     expect(newsletterSchema.safeParse({ email: "bad@" }).success).toBe(false);

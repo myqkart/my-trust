@@ -28,7 +28,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     path: `${ROUTES.blog}/${post.slug}`,
-    keywords: [post.category, "Anandam Seva Foundation"],
+    keywords: [post.category, "Navchetna Charitable Trust"],
     type: "article",
     publishedTime: post.publishedAt,
   });
@@ -78,14 +78,14 @@ export default async function BlogPostPage({
         <article className="space-y-6 text-lg leading-relaxed text-muted">
           <p>{post.excerpt}</p>
           <p>
-            At Anandam Seva Foundation, we share practical insights drawn from
-            daily care, volunteer partnerships, and community outreach across
-            Ahmedabad. This article expands on {post.category.toLowerCase()} with
-            guidance rooted in dignity and compassion.
+            At Navchetna Charitable Trust, we share practical insights drawn from
+            education support, food and clothing seva, cow welfare, plantation,
+            and our commitment to elders in Ahmedabad. This article expands on {post.category.toLowerCase()} with
+            guidance rooted in service and humanity.
           </p>
           <p>
             If this topic resonates, we invite you to visit, volunteer, or
-            support a resident—so learning becomes action.
+            support this work—so learning becomes action.
           </p>
           <div className="flex flex-wrap gap-3 pt-4">
             <Button asChild>

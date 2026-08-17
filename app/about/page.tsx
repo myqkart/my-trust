@@ -14,17 +14,16 @@ import { ROUTES } from "@/constants/routes";
 import { founderInfo, teamInfo, trustInfo } from "@/data/demo";
 import { homeTimeline } from "@/data/home";
 import { aboutFutureGoals } from "@/data/pages";
-import { media } from "@/data/media";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const aboutDescription =
-  "Learn the story of Anandam Seva Foundation—our mission, values, leadership, and journey of compassionate care in Ahmedabad.";
+  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Bhai Modi to serve people in need through education, food, cow welfare, plantation, and an upcoming old age home.";
 
 export const metadata = createPageMetadata({
   title: "About",
   description: aboutDescription,
   path: ROUTES.about,
-  keywords: ["Anandam Seva Foundation", "NGO in Gujarat", "Charitable Trust"],
+  keywords: ["Navchetna Charitable Trust", "NGO in Gujarat", "Charitable Trust"],
 });
 
 export default function AboutPage() {
@@ -40,8 +39,8 @@ export default function AboutPage() {
       <PageHero
         breadcrumbs={[{ label: "About" }]}
         eyebrow="About Us"
-        title="Our journey of dignity and care"
-        description="From a vision in 2012 to a growing family of residents, volunteers, and partners—built on compassion and transparency."
+        title="Our journey of service and humanity"
+        description="From a vision in 2009 to ongoing seva for children, families, cattle, and the environment—and a home for elders still to come."
         primaryCta={{ label: "Support Our Mission", href: ROUTES.donate }}
         secondaryCta={{ label: "Meet Our Team", href: "#team" }}
       />
@@ -52,7 +51,7 @@ export default function AboutPage() {
             <SlideUp>
               <SectionHeading
                 eyebrow="Our Story"
-                title="A home that feels like family"
+                title="Serving society, supporting people in need"
                 description={founderInfo.bio}
               />
             </SlideUp>
@@ -114,24 +113,40 @@ export default function AboutPage() {
         <SectionHeading
           align="center"
           eyebrow="Leadership"
-          title="People who steward this mission"
-          description="Trustees and team members dedicated to care you can trust."
+          title="Our trustees"
+          description="The people who steward Navchetna Charitable Trust with service, support, and humanity."
         />
         <StaggerChildren className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {teamInfo.map((member, index) => (
-            <StaggerItem key={member.name}>
-              <Card className="h-full text-center">
-                <div className="relative mx-auto mb-4 size-20 overflow-hidden rounded-full bg-soft/40">
+          {teamInfo.map((member) => (
+            <StaggerItem key={member.id}>
+              <Card padding="none" className="h-full overflow-hidden text-center">
+                <div className="relative aspect-[4/5] bg-soft/40">
                   <OptimizedImage
-                    src={media.team[index % media.team.length]}
-                    alt={member.name}
+                    src={member.image}
+                    alt={
+                      member.name === "Trustee"
+                        ? "Trustee of Navchetna Charitable Trust"
+                        : member.name
+                    }
                     fill
-                    className="object-cover"
-                    sizes="80px"
+                    className="object-cover object-[center_15%]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <CardTitle>{member.name}</CardTitle>
-                <p className="mt-2 text-sm text-muted">{member.role}</p>
+                <div className="p-5">
+                  {member.name !== "Trustee" ? (
+                    <CardTitle>{member.name}</CardTitle>
+                  ) : null}
+                  <p
+                    className={
+                      member.name !== "Trustee"
+                        ? "mt-2 text-sm text-muted"
+                        : "font-heading text-lg font-semibold text-primary"
+                    }
+                  >
+                    {member.role}
+                  </p>
+                </div>
               </Card>
             </StaggerItem>
           ))}

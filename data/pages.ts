@@ -1,82 +1,72 @@
-import { trustInfo } from "@/data/demo";
+import { contactInfo, trustInfo } from "@/data/demo";
 
 export const dailyRoutine = [
-  { time: "6:30 AM", title: "Morning Yoga", description: "Gentle movement to begin the day with calm energy." },
-  { time: "8:00 AM", title: "Breakfast", description: "Nutritious meals shared in community." },
-  { time: "10:00 AM", title: "Medical Checkup", description: "Routine care and health monitoring." },
-  { time: "11:00 AM", title: "Prayer & Reflection", description: "A quiet moment of peace and belonging." },
-  { time: "12:30 PM", title: "Lunch", description: "Wholesome food prepared with care." },
-  { time: "3:00 PM", title: "Recreation & Library", description: "Reading, conversation, and light activities." },
-  { time: "5:00 PM", title: "Garden Walk", description: "Fresh air and companionship outdoors." },
-  { time: "7:00 PM", title: "Dinner & Evening Activities", description: "Warm meals followed by shared evening time." },
+  { time: "Morning", title: "Prayer & tea", description: "A calm start with companionship and care." },
+  { time: "Breakfast", title: "Shared meals", description: "Nutritious food prepared with respect." },
+  { time: "Forenoon", title: "Health & rest", description: "Check-ins, medicines, and quiet time." },
+  { time: "Afternoon", title: "Garden & conversation", description: "Fresh air, friendship, and belonging." },
+  { time: "Evening", title: "Dinner together", description: "Warm meals followed by shared evening time." },
 ] as const;
 
 export const facilities = [
-  "Comfortable rooms",
+  "Safe rooms",
   "Kitchen & dining",
   "Medical care corner",
-  "Prayer hall",
-  "Garden spaces",
-  "Library",
-  "Security support",
+  "Prayer space",
+  "Garden",
+  "Companionship",
   "Accessible pathways",
+  "Dignity in daily life",
 ] as const;
 
 export const reportDocuments = [
-  { title: "Annual Report 2025", category: "Annual Report", issuedAt: "March 2026", href: "/documents/annual-report.pdf" },
-  { title: "Audit Statement 2025", category: "Audit", issuedAt: "February 2026", href: "/documents/audit-report.pdf" },
-  { title: "80G Certificate", category: "Compliance", issuedAt: "2024", href: "/documents/80g.pdf" },
-  { title: "12A Registration", category: "Compliance", issuedAt: "2012", href: "/documents/12a.pdf" },
-  { title: "Impact Report 2025", category: "Impact", issuedAt: "January 2026", href: "/documents/impact-report.pdf" },
-  { title: "CSR Partnership Deck", category: "CSR", issuedAt: "2026", href: "/documents/csr-deck.pdf" },
+  { title: "Annual overview", category: "Updates", issuedAt: "On request", href: "/contact" },
+  { title: "How to support us", category: "Giving", issuedAt: "Ongoing", href: "/donate" },
+  { title: "Volunteer with us", category: "Seva", issuedAt: "Ongoing", href: "/volunteer" },
 ] as const;
 
 export const blogPosts = [
   {
-    slug: "healthy-ageing-with-dignity",
-    title: "Healthy Ageing with Dignity",
-    excerpt: "Simple habits that help elders stay active, connected, and hopeful.",
-    category: "Healthy Ageing",
+    slug: "education-and-hostel-support",
+    title: "A Hostel, a School, a Chance",
+    excerpt: "How safe accommodation helps needy children continue their education.",
+    category: "Education Programs",
     publishedAt: "2026-06-12",
     readingTime: "5 min",
   },
   {
-    slug: "volunteer-story-rohan",
-    title: "What Volunteering Taught Rohan",
-    excerpt: "A young volunteer reflects on compassion learned through presence.",
-    category: "Volunteer Stories",
+    slug: "bhandara-and-clothing-seva",
+    title: "Meals and Clothes Shared with Dignity",
+    excerpt: "Bhandara events and clothing support for families in need.",
+    category: "Community Impact",
     publishedAt: "2026-05-28",
     readingTime: "4 min",
   },
   {
-    slug: "nutrition-for-seniors",
-    title: "Nutrition That Nurtures",
-    excerpt: "How balanced meals support strength and comfort for senior residents.",
-    category: "Nutrition for Seniors",
+    slug: "tree-plantation-and-gau-seva",
+    title: "Green Earth, Gentle Care",
+    excerpt: "Tree plantation and cow welfare as part of serving all life.",
+    category: "Environmental Initiatives",
     publishedAt: "2026-05-10",
     readingTime: "6 min",
   },
   {
-    slug: "csr-partnerships-that-matter",
-    title: "CSR Partnerships That Matter",
-    excerpt: "How transparent collaboration multiplies community impact.",
-    category: "CSR Success Stories",
+    slug: "upcoming-old-age-home",
+    title: "A Home for Every Elder",
+    excerpt: "Why Navchetna is working towards an Old Age Home in Ahmedabad.",
+    category: "Elder Care",
     publishedAt: "2026-04-22",
     readingTime: "5 min",
   },
 ] as const;
 
 export const galleryCategories = [
-  "Daily Life",
-  "Residents",
-  "Healthcare",
-  "Yoga",
-  "Meals",
-  "Festivals",
-  "Volunteers",
   "Education",
-  "Medical Camps",
+  "Meals",
+  "Volunteers",
   "Environment",
+  "Festivals",
+  "Daily Life",
 ] as const;
 
 export const legalPages = {
@@ -118,11 +108,11 @@ export const legalPages = {
     sections: [
       {
         heading: "Donation intent",
-        body: "Donations are voluntary contributions supporting care, nutrition, healthcare, and community programs.",
+        body: "Donations are voluntary contributions supporting education, food and clothing, cow welfare, plantation, and the upcoming old age home.",
       },
       {
         heading: "Refund requests",
-        body: "If a donation was made in error, contact us promptly at donate@anandamseva.org. Eligible refunds are reviewed case by case.",
+        body: `If a donation was made in error, contact us promptly at ${contactInfo.donateEmail}. Eligible refunds are reviewed case by case.`,
       },
     ],
   },
@@ -154,102 +144,106 @@ export const legalPages = {
       },
       {
         heading: "Feedback",
-        body: "If you face an accessibility barrier, email support@anandamseva.org and we will work to improve the experience.",
+        body: `If you face an accessibility barrier, email ${contactInfo.supportEmail} and we will work to improve the experience.`,
       },
     ],
   },
 } as const;
 
 export const aboutFutureGoals = [
-  "Expand residential capacity with the same family-like care",
-  "Grow medical outreach across more Ahmedabad neighborhoods",
-  "Strengthen education and women empowerment programs",
-  "Deepen CSR partnerships with measurable transparency",
+  "Establish an Old Age Home where elders live with dignity, care, and companionship",
+  "Deepen hostel and education support for more needy children",
+  "Continue Bhandara, food, and clothing seva for families in need",
+  "Grow cow welfare and tree plantation with the community",
 ] as const;
 
 export const eventsList = [
   {
-    title: "International Yoga Day",
-    dateLabel: "21 Jun 2026",
-    startDate: "2026-06-21",
-    location: "Anandam Seva Old Age Home, Ahmedabad",
-    summary: "Gentle yoga and wellness for residents and community guests.",
-  },
-  {
-    title: "Senior Citizen Health Camp",
-    dateLabel: "12 Jul 2026",
-    startDate: "2026-07-12",
-    location: "Community Hall, SG Highway",
-    summary: "Free checkups, specialist consultations, and health guidance.",
+    title: "Community Bhandara",
+    dateLabel: "Upcoming",
+    startDate: "2026-08-15",
+    location: "Ahmedabad",
+    summary: "A large Bhandara sharing meals with poor and needy people.",
   },
   {
     title: "Tree Plantation Drive",
-    dateLabel: "15 Aug 2026",
-    startDate: "2026-08-15",
-    location: "Ahmedabad neighborhoods",
-    summary: "Planting trees with volunteers, families, and local partners.",
+    dateLabel: "Upcoming",
+    startDate: "2026-08-20",
+    location: "Ahmedabad neighbourhoods",
+    summary: "Planting trees with volunteers, families, and well-wishers.",
+  },
+  {
+    title: "Clothing Distribution",
+    dateLabel: "Upcoming",
+    startDate: "2026-09-05",
+    location: "Ashram Road, Ahmedabad",
+    summary: "Clothes and essentials for families who need them.",
+  },
+  {
+    title: "Education Support Meet",
+    dateLabel: "Upcoming",
+    startDate: "2026-09-20",
+    location: "Navchetna office, Ahmedabad",
+    summary: "Connecting well-wishers with hostel and education support.",
+  },
+  {
+    title: "Cow Welfare Seva",
+    dateLabel: "Upcoming",
+    startDate: "2026-10-02",
+    location: "Ahmedabad",
+    summary: "Care and support for needy and helpless cattle.",
   },
   {
     title: "Diwali Celebration",
-    dateLabel: "08 Nov 2026",
+    dateLabel: "Upcoming",
     startDate: "2026-11-08",
-    location: "Anandam Seva Old Age Home",
-    summary: "Lights, sweets, music, and festival joy shared with residents.",
-  },
-  {
-    title: "Winter Blanket Distribution",
-    dateLabel: "12 Dec 2026",
-    startDate: "2026-12-12",
-    location: "Ahmedabad outreach routes",
-    summary: "Warmth for elders and families facing cold nights.",
-  },
-  {
-    title: "Annual Charity Walk",
-    dateLabel: "26 Jan 2027",
-    startDate: "2027-01-26",
-    location: "SG Highway corridor",
-    summary: "A community walk raising awareness and support for senior care.",
+    location: "Ahmedabad",
+    summary: "Lights, sweets, and festival joy shared with the community.",
   },
 ] as const;
 
 export const impactHighlights = [
-  { label: "Years of service", value: "13+" },
-  { label: "Residents supported", value: "540+" },
-  { label: "Meals served", value: "485,000+" },
-  { label: "Medical camps", value: "186+" },
-  { label: "Children educated", value: "920+" },
-  { label: "Trees planted", value: "18,400+" },
-  { label: "Active volunteers", value: "1,650+" },
-  { label: "Families supported", value: "4,800+" },
+  { label: "Years of service", value: "17+" },
+  { label: "Established", value: "2009" },
+  { label: "Focus areas", value: "5" },
+  { label: "Education", value: "Hostel" },
+  { label: "Food & clothing", value: "Bhandara" },
+  { label: "Cow welfare", value: "Gau Seva" },
+  { label: "Environment", value: "Plantation" },
+  { label: "Old Age Home", value: "Planned" },
 ] as const;
 
 export const storyProfiles = [
   {
-    name: "Sushila Ben",
-    quote: "After coming here, I found a new family. Every day is filled with love and care.",
+    name: "Children we shelter",
+    quote:
+      "A safe hostel and a chance to study gave our children hope when we had nowhere else to turn.",
     summary:
-      "Sushila Ben arrived seeking safety and companionship. Today she shares morning yoga, evening prayers, and a family that listens.",
-    role: "Resident",
+      "Needy children without proper education and accommodation receive hostel facilities so they can continue school in a supportive environment.",
+    role: "Education",
   },
   {
-    name: "Rohan Shah",
-    quote: "Volunteering here changed my perspective on life. Every visit teaches compassion.",
+    name: "Families at our Bhandara",
+    quote:
+      "The Bhandara and clothing support reached families in our neighbourhood with dignity and care.",
     summary:
-      "Rohan began as a weekend volunteer and now coordinates youth visits that bring music and conversation to residents.",
-    role: "Volunteer",
+      "Food distribution, large Bhandara events, and clothes help poor and needy people meet everyday needs.",
+    role: "Food & Clothing",
   },
   {
-    name: "Priya Mehta",
-    quote: "I appreciate the complete transparency and genuine impact of every donation.",
+    name: "Gau seva well-wishers",
+    quote:
+      "Navchetna’s gau seva and plantation work show that service includes animals and the environment too.",
     summary:
-      "Priya sponsors monthly groceries and follows impact updates that show exactly how her support is used.",
-    role: "Donor",
+      "Cow welfare and tree plantation invite the community to care for cattle and a greener Ahmedabad.",
+    role: "Environment & gau seva",
   },
   {
-    name: "Dr. Amit Desai",
-    quote: "The organization maintains excellent healthcare standards and genuine commitment.",
+    name: "Our elder-care promise",
+    quote:
+      "Respect, Care and Support for Every Elder — This is Our Commitment.",
     summary:
-      "Dr. Desai leads periodic health camps and mentors the medical care team on senior wellness.",
-    role: "Doctor",
+      "We are working towards an Old Age Home so senior citizens can live with safety, companionship, and dignity.",
+    role: "Upcoming Old Age Home",
   },
 ] as const;

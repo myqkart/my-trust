@@ -4,7 +4,7 @@ import { ROUTES } from "@/constants/routes";
 import { legalPages } from "@/data/pages";
 
 const page = legalPages.refund;
-const description = "Donation refund policy for Anandam Seva Foundation.";
+const description = "Donation refund policy for Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: page.title,

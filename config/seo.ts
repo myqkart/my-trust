@@ -6,7 +6,7 @@ import { seoKeywords, trustInfo } from "@/data/demo";
  */
 export const seoConfig = {
   titleTemplate: `%s | ${siteConfig.name}`,
-  defaultTitle: `${siteConfig.name} | Old Age Home in Ahmedabad`,
+  defaultTitle: `${siteConfig.name} | Charitable Trust in Ahmedabad`,
   description: `${trustInfo.slogan} ${trustInfo.tagline}`,
   canonical: siteConfig.url,
   openGraph: {

@@ -4,7 +4,7 @@ import { ROUTES } from "@/constants/routes";
 import { legalPages } from "@/data/pages";
 
 const page = legalPages.cookies;
-const description = "Cookie policy for Anandam Seva Foundation website.";
+const description = "Cookie policy for Navchetna Charitable Trust website.";
 
 export const metadata = createPageMetadata({
   title: page.title,

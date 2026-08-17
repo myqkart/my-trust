@@ -11,7 +11,7 @@ import { storyProfiles } from "@/data/pages";
 import { media } from "@/data/media";
 
 const storiesDescription =
-  "Meet residents, volunteers, donors, and doctors whose lives intersect at Anandam Seva Foundation.";
+  "Meet the children, families, volunteers, and well-wishers whose lives intersect at Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Success Stories",
@@ -43,7 +43,7 @@ export default function StoriesPage() {
         <SectionHeading
           align="center"
           eyebrow="Community Voices"
-          title="Stories of dignity restored"
+          title="Stories of seva and hope"
         />
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2">
           {storyProfiles.map((story) => (

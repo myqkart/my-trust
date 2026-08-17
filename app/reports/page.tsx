@@ -14,7 +14,7 @@ import { faqInfo } from "@/data/demo";
 import { reportDocuments } from "@/data/pages";
 
 const reportsDescription =
-  "Download Anandam Seva Foundation annual reports, audits, 80G/12A certificates, and CSR materials.";
+  "Documents and updates from Navchetna Charitable Trust—reach us for reports and partnership materials.";
 
 export const metadata = createPageMetadata({
   title: "Reports & Documents",
@@ -48,7 +48,7 @@ export default function ReportsPage() {
           align="center"
           eyebrow="Library"
           title="Documents for donors & partners"
-          description="PDF links are placeholders until verified files are uploaded."
+          description="Ask us for verified documents. Links below connect you to giving, volunteering, and our office."
         />
         <StaggerChildren className="mt-12 grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reportDocuments.map((doc) => (

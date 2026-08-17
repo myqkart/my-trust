@@ -17,7 +17,8 @@ export const donationConfig = {
   presets: [501, 1100, 2500, 5100, 11000] as const,
   categories,
   recurringEnabled: true as const,
-  taxBenefitsNote: "Yes, eligible donations qualify under Section 80G.",
+  taxBenefitsNote:
+    "A receipt is issued for every contribution. Please contact us for tax-exemption details.",
 };
 
 export type DonationConfig = typeof donationConfig;

@@ -57,7 +57,7 @@ export function VolunteerForm() {
     { id: "city", label: "City", type: "text", placeholder: "Ahmedabad" },
     { id: "skills", label: "Skills", type: "text", placeholder: "e.g. caregiving, teaching, events" },
     { id: "availability", label: "Availability", type: "text", placeholder: "Weekends / weekday evenings" },
-    { id: "interests", label: "Interests", type: "text", placeholder: "Old age home, medical camps…" },
+    { id: "interests", label: "Interests", type: "text", placeholder: "Education, bhandara, plantation, gau seva…" },
     { id: "emergencyContact", label: "Emergency contact", type: "text", placeholder: "Name and phone number" },
   ] as const;
 

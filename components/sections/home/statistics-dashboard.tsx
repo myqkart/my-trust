@@ -17,7 +17,7 @@ export function HomeStatisticsDashboard() {
           align="center"
           eyebrow="Dashboard"
           title="Where support becomes care"
-          description="A clear view of how contributions translate into meals, medicine, shelter, and hope."
+          description="A clear view of how contributions become education, meals, gau seva, and a future home for elders."
         />
       </SlideUp>
 
@@ -58,30 +58,30 @@ export function HomeStatisticsDashboard() {
         >
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.annualBeneficiaries}
-              label="Annual Beneficiaries"
-              description="Lives touched across programs each year."
+              value={STATISTICS.yearsOfService}
+              label="Years of Service"
+              description="Serving Ahmedabad with compassion since 2009."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.projects}
-              label="CSR Partners"
-              description="Organizations walking with us in impact."
+              value={STATISTICS.programs}
+              label="Focus Areas"
+              description="Education, food, gau seva, plantation, and elder care."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.meals}
-              label="Meals Served"
-              description="Nutrition delivered with dignity."
+              value={STATISTICS.food}
+              label="Food & Clothing"
+              description="Bhandara events and essentials for families in need."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
-              value={STATISTICS.medicalCamps}
-              label="Medical Camps"
-              description="Community health outreach moments."
+              value={STATISTICS.oldAgeHome}
+              label="Old Age Home"
+              description="A commitment taking shape for every elder."
             />
           </StaggerItem>
         </StaggerChildren>

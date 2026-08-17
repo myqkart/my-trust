@@ -12,13 +12,13 @@ import { ROUTES } from "@/constants/routes";
 import { donationPlans, faqInfo, trustBadgesInfo } from "@/data/demo";
 
 const donateDescription =
-  "Support Anandam Seva Foundation with secure donations—meals, medicines, resident sponsorship, and community care. 80G eligible.";
+  "Support Navchetna Charitable Trust with donations for education, food and clothing, cow welfare, plantation, and the upcoming old age home.";
 
 export const metadata = createPageMetadata({
   title: "Donate",
   description: donateDescription,
   path: ROUTES.donate,
-  keywords: ["Donation for Elderly", "80G NGO Ahmedabad"],
+  keywords: ["Donate Ahmedabad NGO", "Charitable Trust donation"],
 });
 
 export default function DonatePage() {
@@ -36,7 +36,7 @@ export default function DonatePage() {
         breadcrumbs={[{ label: "Donate" }]}
         eyebrow="Give With Confidence"
         title="Your kindness becomes daily care"
-        description="Sponsor a meal, medicines, or a resident. Every contribution is directed with transparency."
+        description="Support a Bhandara, education and hostel care, cow welfare, plantation—or the old age home we are building."
       />
 
       <Section background="white">

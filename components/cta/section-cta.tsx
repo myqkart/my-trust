@@ -78,7 +78,7 @@ export function DonateCTA({ className }: { className?: string }) {
       className={className}
       eyebrow="Participate"
       title="Your compassion can change someone's tomorrow"
-      description="Support meals, medicine, companionship, and dignity for elderly residents who deserve care that feels like home."
+      description="Support education, food and clothing, cow welfare, tree plantation—and help us build a respectful home for elders."
       primary={{ label: "Support Our Mission", href: "/donate" }}
       secondary={{ label: "Become a Volunteer", href: "/volunteer" }}
     />

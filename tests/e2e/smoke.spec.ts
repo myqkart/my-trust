@@ -2,13 +2,13 @@ import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const criticalRoutes = [
-  { path: "/", heading: /every life deserves love/i },
-  { path: "/about", heading: /journey of dignity/i },
+  { path: "/", heading: /service, support & humanity/i },
+  { path: "/about", heading: /journey of service and humanity/i },
   { path: "/old-age-home", heading: /home filled with belonging/i },
   { path: "/donate", heading: /kindness becomes daily care/i },
   { path: "/volunteer", heading: /presence is a gift/i },
   { path: "/contact", heading: /love to hear from you/i },
-  { path: "/programs", heading: /programs that restore dignity/i },
+  { path: "/programs", heading: /programs that serve with humanity/i },
   { path: "/privacy", heading: /privacy policy/i },
 ] as const;
 

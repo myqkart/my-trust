@@ -11,7 +11,7 @@ export function HomeTrustIndicators() {
     ...trustBadgesInfo,
     {
       label: "Years of Service",
-      description: `${STATISTICS.yearsOfService} of compassionate care`,
+      description: `Serving Ahmedabad since ${STATISTICS.established}`,
     },
   ];
 
@@ -24,7 +24,7 @@ export function HomeTrustIndicators() {
             align="center"
             eyebrow="Trust"
             title="Built on transparency and care"
-            description="Every credential below represents accountability you can verify—because trust grows from evidence, not promises."
+            description="A charitable trust serving Ahmedabad since 2009—with a founder who continues to invite more people into seva."
           />
         </SlideUp>
         <StaggerChildren className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:gap-8 lg:grid-cols-5">

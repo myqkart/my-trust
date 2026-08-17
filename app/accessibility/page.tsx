@@ -5,7 +5,7 @@ import { legalPages } from "@/data/pages";
 
 const page = legalPages.accessibility;
 const description =
-  "Accessibility statement for Anandam Seva Foundation website.";
+  "Accessibility statement for Navchetna Charitable Trust website.";
 
 export const metadata = createPageMetadata({
   title: page.title,
