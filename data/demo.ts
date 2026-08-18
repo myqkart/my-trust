@@ -222,6 +222,12 @@ export const teamInfo = [
     image: "/images/trustees/rupesh-bhai-modi.png",
   },
   {
+    id: "co-founder-trustee",
+    name: "Trustee",
+    role: "Co-Founder & Trustee",
+    image: "/images/trustees/co-founder-trustee.png",
+  },
+  {
     id: "trustee-02",
     name: "Trustee",
     role: "Trustee",

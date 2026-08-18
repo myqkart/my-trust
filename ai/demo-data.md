@@ -174,6 +174,8 @@ General Donation — Any Amount
 
 Shri Rupesh Bhai Modi — Founder & Trustee
 
+Co-Founder & Trustee (name to be confirmed). Portrait is on the About page.
+
 Four additional trustees (names to be confirmed). Portraits are on the About page.
 
 ---

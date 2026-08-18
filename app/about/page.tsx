@@ -125,7 +125,7 @@ export default function AboutPage() {
                     src={member.image}
                     alt={
                       member.name === "Trustee"
-                        ? "Trustee of Navchetna Charitable Trust"
+                        ? `${member.role} of Navchetna Charitable Trust`
                         : member.name
                     }
                     fill
