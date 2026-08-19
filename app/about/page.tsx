@@ -123,29 +123,15 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/5] bg-soft/40">
                   <OptimizedImage
                     src={member.image}
-                    alt={
-                      member.name === "Trustee"
-                        ? `${member.role} of Navchetna Charitable Trust`
-                        : member.name
-                    }
+                    alt={member.name}
                     fill
                     className="object-cover object-[center_15%]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-5">
-                  {member.name !== "Trustee" ? (
-                    <CardTitle>{member.name}</CardTitle>
-                  ) : null}
-                  <p
-                    className={
-                      member.name !== "Trustee"
-                        ? "mt-2 text-sm text-muted"
-                        : "font-heading text-lg font-semibold text-primary"
-                    }
-                  >
-                    {member.role}
-                  </p>
+                  <CardTitle>{member.name}</CardTitle>
+                  <p className="mt-2 text-sm text-muted">{member.role}</p>
                 </div>
               </Card>
             </StaggerItem>
