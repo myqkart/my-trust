@@ -26,6 +26,7 @@ export function Navbar() {
   const [programsOpen, setProgramsOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
+  const programsRef = useRef<HTMLDivElement>(null);
   const moreMenuId = useId();
 
   // Solid / floating only after leaving the hero — not after a few pixels.
@@ -44,14 +45,21 @@ export function Navbar() {
   }, [mobileOpen]);
 
   useEffect(() => {
-    if (!moreOpen) return;
+    if (!moreOpen && !programsOpen) return;
     const onPointer = (event: MouseEvent) => {
-      if (!moreRef.current?.contains(event.target as Node)) {
+      const target = event.target as Node;
+      if (moreOpen && !moreRef.current?.contains(target)) {
         setMoreOpen(false);
+      }
+      if (programsOpen && !programsRef.current?.contains(target)) {
+        setProgramsOpen(false);
       }
     };
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMoreOpen(false);
+      if (event.key === "Escape") {
+        setMoreOpen(false);
+        setProgramsOpen(false);
+      }
     };
     document.addEventListener("mousedown", onPointer);
     document.addEventListener("keydown", onKey);
@@ -59,7 +67,7 @@ export function Navbar() {
       document.removeEventListener("mousedown", onPointer);
       document.removeEventListener("keydown", onKey);
     };
-  }, [moreOpen]);
+  }, [moreOpen, programsOpen]);
 
   return (
     <>
@@ -117,6 +125,7 @@ export function Navbar() {
                 item.children ? (
                   <div
                     key={item.href}
+                    ref={programsRef}
                     className="relative"
                     onMouseEnter={() => {
                       setProgramsOpen(true);
@@ -150,7 +159,6 @@ export function Navbar() {
                       items={item.children}
                       open={programsOpen}
                       onClose={() => setProgramsOpen(false)}
-                      light={light}
                     />
                   </div>
                 ) : (
@@ -168,7 +176,15 @@ export function Navbar() {
                 ),
               )}
 
-              <div className="relative" ref={moreRef}>
+              <div
+                className="relative"
+                ref={moreRef}
+                onMouseEnter={() => {
+                  setMoreOpen(true);
+                  setProgramsOpen(false);
+                }}
+                onMouseLeave={() => setMoreOpen(false)}
+              >
                 <button
                   type="button"
                   className={cn(
@@ -199,27 +215,21 @@ export function Navbar() {
                   <div
                     id={moreMenuId}
                     role="menu"
-                    className={cn(
-                      "absolute top-full right-0 z-50 mt-3 w-56 overflow-hidden rounded-[1.25rem] border p-2 shadow-[var(--shadow-soft-lg)]",
-                      light
-                        ? "border-white/15 bg-primary/95 text-white backdrop-blur-xl"
-                        : "border-border/70 bg-white/95 text-primary backdrop-blur-xl",
-                    )}
+                    className="absolute top-full right-0 z-50 w-56 pt-2"
                   >
-                    {moreNavigation.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        role="menuitem"
-                        onClick={() => setMoreOpen(false)}
-                        className={cn(
-                          "block rounded-[14px] px-3 py-2.5 text-sm font-semibold transition-colors",
-                          light ? "hover:bg-white/10" : "hover:bg-soft/50",
-                        )}
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
+                    <div className="overflow-hidden rounded-[1.25rem] border border-border/70 bg-white p-2 text-primary shadow-[var(--shadow-soft-lg)]">
+                      {moreNavigation.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          role="menuitem"
+                          onClick={() => setMoreOpen(false)}
+                          className="block rounded-[14px] px-3 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-soft/60"
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 ) : null}
               </div>

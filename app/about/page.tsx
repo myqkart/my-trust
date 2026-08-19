@@ -17,7 +17,7 @@ import { aboutFutureGoals } from "@/data/pages";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const aboutDescription =
-  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Bhai Modi to serve people in need through plantation, food distribution, gau seva, helping the poor, and education.";
+  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Kumar Modi to serve people in need through plantation, food distribution, gau seva, helping the poor, and education.";
 
 export const metadata = createPageMetadata({
   title: "About",

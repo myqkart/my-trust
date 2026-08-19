@@ -52,7 +52,7 @@ Community
 
 Name
 
-Shri Rupesh Bhai Modi
+Shri Rupesh Kumar Modi
 
 Designation
 
@@ -60,7 +60,7 @@ Founder
 
 Bio
 
-Navchetna Charitable Trust was established in 2009 by Shri Rupesh Bhai Modi with the aim of serving society and supporting people in need. Since its establishment, he has continuously worked to strengthen the Trust and involve more people in various social service activities.
+Navchetna Charitable Trust was established in 2009 by Shri Rupesh Kumar Modi with the aim of serving society and supporting people in need. Since its establishment, he has continuously worked to strengthen the Trust and involve more people in various social service activities.
 
 Message
 
@@ -172,11 +172,13 @@ General Donation — Any Amount
 
 # Team / Trustees
 
-Shri Rupesh Bhai Modi — Founder & Trustee
+Shri Rupesh Kumar Modi — Founder & Trustee
 
-Co-Founder & Trustee (name to be confirmed). Portrait is on the About page.
+Rupal Modi — Co-Founder & Trustee
 
-Four additional trustees (names to be confirmed). Portraits are on the About page.
+Kajal Patel — Trustee
+
+Two additional trustees (names to be confirmed). Portraits are on the About page.
 
 ---
 

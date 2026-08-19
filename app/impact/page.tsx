@@ -60,7 +60,7 @@ export default function ImpactPage() {
           align="center"
           eyebrow="Trust"
           title="Accountability built in"
-          description="Founded in 2009 by Shri Rupesh Bhai Modi. Reach us for how your support is used."
+          description="Founded in 2009 by Shri Rupesh Kumar Modi. Reach us for how your support is used."
         />
         <StaggerChildren className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {trustBadgesInfo.map((badge) => (

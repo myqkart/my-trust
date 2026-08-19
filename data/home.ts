@@ -13,7 +13,7 @@ export const homeTimeline = [
     year: "2009",
     title: "Trust begins",
     description:
-      "Navchetna Charitable Trust is established in Ahmedabad by Shri Rupesh Bhai Modi to serve people in need.",
+      "Navchetna Charitable Trust is established in Ahmedabad by Shri Rupesh Kumar Modi to serve people in need.",
   },
   {
     year: "Seva",

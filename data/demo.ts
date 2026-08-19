@@ -31,9 +31,9 @@ export const trustInfo = {
 } as const;
 
 export const founderInfo = {
-  name: "Shri Rupesh Bhai Modi",
+  name: "Shri Rupesh Kumar Modi",
   designation: "Founder & Trustee",
-  bio: "Navchetna Charitable Trust was established in 2009 by Shri Rupesh Bhai Modi with the aim of serving society and supporting people in need. Since then he has continuously worked to strengthen the Trust and involve more people in social service.",
+  bio: "Navchetna Charitable Trust was established in 2009 by Shri Rupesh Kumar Modi with the aim of serving society and supporting people in need. Since then he has continuously worked to strengthen the Trust and involve more people in social service.",
   message:
     "Service, Support & Humanity — The Spirit of Navchetna Charitable Trust.",
 } as const;
@@ -217,39 +217,39 @@ export const eventsInfo = [
 export const teamInfo = [
   {
     id: "rupesh-bhai-modi",
-    name: "Shri Rupesh Bhai Modi",
+    name: "Shri Rupesh Kumar Modi",
     role: "Founder & Trustee",
     image: "/images/trustees/rupesh-bhai-modi.png",
   },
   {
-    id: "co-founder-trustee",
-    name: "Trustee",
+    id: "rupal-modi",
+    name: "Rupal Modi",
     role: "Co-Founder & Trustee",
-    image: "/images/trustees/co-founder-trustee.png",
-  },
-  {
-    id: "trustee-02",
-    name: "Trustee",
-    role: "Trustee",
     image: "/images/trustees/trustee-02.png",
   },
   {
     id: "trustee-03",
-    name: "Trustee",
+    name: "Krishiv Modi",
     role: "Trustee",
     image: "/images/trustees/trustee-03.png",
   },
   {
     id: "trustee-04",
-    name: "Trustee",
+    name: "Rudraa Modi",
     role: "Trustee",
     image: "/images/trustees/trustee-04.png",
   },
   {
     id: "trustee-05",
-    name: "Trustee",
+    name: "Krish Panchal",
     role: "Trustee",
     image: "/images/trustees/trustee-05.png",
+  },
+  {
+    id: "kajal-patel",
+    name: "Kajal Patel",
+    role: "Trustee",
+    image: "/images/trustees/trustee-06.png",
   },
 ] as const;
 
@@ -288,7 +288,7 @@ export const trustBadgesInfo = [
   },
   {
     label: "Founder",
-    description: "Shri Rupesh Bhai Modi",
+    description: "Shri Rupesh Kumar Modi",
   },
   {
     label: "Our Work",
