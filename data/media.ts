@@ -27,13 +27,30 @@ export const imageBlurDataUrl =
 
 export const media = {
   about: {
-    plantation: unsplashSrc("1542601906990-b4d3fb778b09", { w: 900, h: 1125 }),
+    plantation: "/images/plantation/plantation-01.png",
     meals: unsplashSrc("1488521787991-ed7bbaae773c", { w: 900, h: 1125 }),
   },
   featuredStory: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 1250 }),
   oldAgeHome: unsplashSrc("1516734212186-a967f81ad0d7", { w: 1200, h: 900 }),
+  plantation: [
+    {
+      src: "/images/plantation/plantation-01.png",
+      title: "Planting a sapling together",
+      alt: "Two people planting a young tree during a Navchetna plantation drive",
+    },
+    {
+      src: "/images/plantation/plantation-02.png",
+      title: "Staking and watering new trees",
+      alt: "Volunteers planting and securing a sapling in Ahmedabad",
+    },
+    {
+      src: "/images/plantation/plantation-03.png",
+      title: "Hands in the soil",
+      alt: "Community members placing a sapling into the ground",
+    },
+  ],
   programs: {
-    environment: unsplashSrc("1542601906990-b4d3fb778b09", { w: 1000, h: 750 }),
+    environment: "/images/plantation/plantation-01.png",
     "food-distribution": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 750 }),
     "cow-welfare": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 750 }),
     "helping-poor": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 750 }),
@@ -45,13 +62,23 @@ export const media = {
     Festivals: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
     Volunteers: unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
     Education: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
-    Environment: unsplashSrc("1542601906990-b4d3fb778b09", { w: 800, h: 1000 }),
+    Environment: "/images/plantation/plantation-01.png",
   },
   galleryPreview: [
     {
       title: "Trees we plant together",
       category: "Environment",
-      src: unsplashSrc("1542601906990-b4d3fb778b09", { w: 800, h: 1000 }),
+      src: "/images/plantation/plantation-01.png",
+    },
+    {
+      title: "Staking and watering new trees",
+      category: "Environment",
+      src: "/images/plantation/plantation-02.png",
+    },
+    {
+      title: "Hands in the soil",
+      category: "Environment",
+      src: "/images/plantation/plantation-03.png",
     },
     {
       title: "Food shared with dignity",
@@ -80,7 +107,7 @@ export const media = {
     },
   ],
   stories: {
-    "Trees we plant": unsplashSrc("1542601906990-b4d3fb778b09", { w: 1000, h: 625 }),
+    "Trees we plant": "/images/plantation/plantation-02.png",
     "Meals we share": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
     "Gau seva": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
     "Families we stand with": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 625 }),
@@ -96,10 +123,7 @@ export const media = {
     unsplashSrc("1523240795612-9a054b0db644", { w: 240, h: 240 }),
   ],
   blog: {
-    "tree-plantation-seva": unsplashSrc("1542601906990-b4d3fb778b09", {
-      w: 1200,
-      h: 750,
-    }),
+    "tree-plantation-seva": "/images/plantation/plantation-03.png",
     "food-distribution-seva": unsplashSrc("1488521787991-ed7bbaae773c", {
       w: 1200,
       h: 750,

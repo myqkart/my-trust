@@ -20,12 +20,29 @@ export const metadata = createPageMetadata({
   keywords: ["Navchetna Charitable Trust gallery", "NGO Ahmedabad"],
 });
 
-const galleryItems = galleryCategories.map((category) => ({
-  title: `${category} moments`,
-  category,
-  href: ROUTES.gallery,
-  imageSrc: media.gallery[category as GalleryCategory],
-}));
+const galleryItems = galleryCategories.flatMap((category) => {
+  if (category === "Environment") {
+    return media.plantation.map((photo) => ({
+      title: photo.title,
+      category,
+      href: ROUTES.gallery,
+      imageSrc: photo.src,
+      imageAlt: photo.alt,
+      key: photo.src,
+    }));
+  }
+
+  return [
+    {
+      title: `${category} moments`,
+      category,
+      href: ROUTES.gallery,
+      imageSrc: media.gallery[category as GalleryCategory],
+      imageAlt: `${category} moments`,
+      key: category,
+    },
+  ];
+});
 
 export default function GalleryPage() {
   return (
@@ -55,7 +72,7 @@ export default function GalleryPage() {
         />
         <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {galleryItems.map((item) => (
-            <StaggerItem key={item.category}>
+            <StaggerItem key={item.key}>
               <GalleryCard
                 title={item.title}
                 category={item.category}

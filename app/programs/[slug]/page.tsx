@@ -11,6 +11,9 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import { serviceSchema } from "@/lib/seo/json-ld";
 import { ROUTES } from "@/constants/routes";
 import { programsInfo } from "@/data/demo";
+import { media } from "@/data/media";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import { StaggerChildren, StaggerItem } from "@/components/animations";
 
 type Params = { slug: string };
 
@@ -100,6 +103,32 @@ export default async function ProgramDetailPage({
           </Card>
         </div>
       </Section>
+
+      {program.slug === "environment" ? (
+        <Section background="soft">
+          <SectionHeading
+            align="center"
+            eyebrow="In the field"
+            title="Our plantation drives"
+            description="Real moments from tree plantation with the community in Ahmedabad."
+          />
+          <StaggerChildren className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {media.plantation.map((photo) => (
+              <StaggerItem key={photo.src}>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-image)] bg-soft/40">
+                  <OptimizedImage
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
+        </Section>
+      ) : null}
 
       <DonateCTA />
     </>
