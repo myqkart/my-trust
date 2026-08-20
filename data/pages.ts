@@ -1,24 +1,5 @@
 import { contactInfo, trustInfo } from "@/data/demo";
 
-export const dailyRoutine = [
-  { time: "Morning", title: "Prayer & tea", description: "A calm start with companionship and care." },
-  { time: "Breakfast", title: "Shared meals", description: "Nutritious food prepared with respect." },
-  { time: "Forenoon", title: "Health & rest", description: "Check-ins, medicines, and quiet time." },
-  { time: "Afternoon", title: "Garden & conversation", description: "Fresh air, friendship, and belonging." },
-  { time: "Evening", title: "Dinner together", description: "Warm meals followed by shared evening time." },
-] as const;
-
-export const facilities = [
-  "Safe rooms",
-  "Kitchen & dining",
-  "Medical care corner",
-  "Prayer space",
-  "Garden",
-  "Companionship",
-  "Accessible pathways",
-  "Dignity in daily life",
-] as const;
-
 export const reportDocuments = [
   { title: "Annual overview", category: "Updates", issuedAt: "On request", href: "/contact" },
   { title: "How to support us", category: "Giving", issuedAt: "Ongoing", href: "/donate" },

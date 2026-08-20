@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Navchetna Charitable Trust
 
-## Getting Started
+Production website for **Navchetna Charitable Trust** (Ahmedabad) — Next.js App Router.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- Vitest + Playwright
+
+## Project structure
+
+```
+app/            # Routes and layouts
+components/     # UI, sections, forms, navigation, animations
+config/         # Site, nav, SEO, donation, social
+constants/      # Routes and statistics
+data/           # Trust content and media paths
+hooks/          # Scroll, hero, reduced-motion
+lib/            # SEO helpers, GSAP registration
+providers/      # App providers
+public/images/  # Plantation and trustee photos
+schemas/        # Form validation (Zod)
+scripts/        # Route checks and bundle report
+styles/theme/   # Spacing and motion tokens
+tests/          # Unit and e2e
+ai/design.md    # Design system reference
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit trust facts, programs, and contact in [`data/demo.ts`](data/demo.ts).  
+Page copy and blog posts: [`data/pages.ts`](data/pages.ts), [`data/home.ts`](data/home.ts).  
+Images: [`data/media.ts`](data/media.ts) + files under `public/images/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+```bash
+npm run dev          # Local development
+npm run build        # Production build
+npm start            # Serve production build
+npm test             # Unit tests
+npm run test:routes  # Route integrity check
+npm run test:e2e     # Playwright smoke tests
+npm run lint         # ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Environment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Copy [`.env.example`](.env.example) to `.env.local` and set `NEXT_PUBLIC_SITE_URL` for production.

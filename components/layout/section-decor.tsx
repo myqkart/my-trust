@@ -6,60 +6,7 @@ import {
   LeafPattern,
   NoiseOverlay,
   PatternDots,
-  WaveDivider,
 } from "@/components/ui/svg-decorations";
-
-type DividerVariant = "wave" | "fade" | "none";
-
-interface SectionDividerProps {
-  variant?: DividerVariant;
-  className?: string;
-  flip?: boolean;
-  tone?: "background" | "white" | "primary" | "soft";
-}
-
-const toneClasses = {
-  background: "text-background",
-  white: "text-white",
-  primary: "text-primary",
-  soft: "text-soft",
-} as const;
-
-/** Organic section separator from design.md. */
-export function SectionDivider({
-  variant = "wave",
-  className,
-  flip = false,
-  tone = "background",
-}: SectionDividerProps) {
-  if (variant === "none") return null;
-
-  if (variant === "fade") {
-    return (
-      <div
-        className={cn(
-          "pointer-events-none h-16 w-full bg-gradient-to-b from-transparent to-background",
-          className,
-        )}
-        aria-hidden
-      />
-    );
-  }
-
-  return (
-    <div
-      className={cn(
-        "pointer-events-none leading-none",
-        toneClasses[tone],
-        flip && "rotate-180",
-        className,
-      )}
-      aria-hidden
-    >
-      <WaveDivider />
-    </div>
-  );
-}
 
 type DecorVariant = "soft" | "mesh" | "dots" | "blobs";
 

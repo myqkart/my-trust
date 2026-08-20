@@ -4,7 +4,6 @@ import AxeBuilder from "@axe-core/playwright";
 const criticalRoutes = [
   { path: "/", heading: /service, support & humanity/i },
   { path: "/about", heading: /journey of service and humanity/i },
-  { path: "/old-age-home", heading: /home filled with belonging/i },
   { path: "/donate", heading: /kindness becomes daily care/i },
   { path: "/volunteer", heading: /presence is a gift/i },
   { path: "/contact", heading: /love to hear from you/i },

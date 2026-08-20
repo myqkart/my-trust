@@ -31,7 +31,6 @@ export const media = {
     meals: unsplashSrc("1488521787991-ed7bbaae773c", { w: 900, h: 1125 }),
   },
   featuredStory: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 1250 }),
-  oldAgeHome: unsplashSrc("1516734212186-a967f81ad0d7", { w: 1200, h: 900 }),
   plantation: [
     {
       src: "/images/plantation/plantation-01.png",

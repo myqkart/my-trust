@@ -7,8 +7,6 @@ export const trustInfo = {
   shortName: "Navchetna",
   tagline: "The Spirit of Navchetna Charitable Trust.",
   slogan: "Service, Support & Humanity",
-  elderCommitment:
-    "Respect, Care and Support for Every Elder — This is Our Commitment.",
   mission:
     "To serve society through tree plantation, food distribution, gau seva, help for the poor, and education support.",
   vision:
@@ -60,7 +58,7 @@ export const contactInfo = {
 
 export const socialInfo = {
   facebook: "#",
-  instagram: "#",
+  instagram: "https://www.instagram.com/navchetna_charitable_trust",
   youtube: "#",
   linkedin: "#",
   twitter: "#",

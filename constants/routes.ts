@@ -1,11 +1,10 @@
 /**
- * Application route constants from pages.md / seo.md.
+ * Application route constants.
  */
 export const ROUTES = {
   home: "/",
   about: "/about",
   programs: "/programs",
-  oldAgeHome: "/old-age-home",
   gallery: "/gallery",
   stories: "/stories",
   events: "/events",
