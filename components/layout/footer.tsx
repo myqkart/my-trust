@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { WaveDivider } from "@/components/ui/svg-decorations";
 import { footerNavigation } from "@/config/navigation";
 import { socialLinks } from "@/config/social";
@@ -77,15 +76,6 @@ export function Footer() {
                   {siteConfig.email}
                 </a>
               </p>
-            </div>
-
-            <div className="mt-8 max-w-md">
-              <h2 className="font-heading text-sm font-semibold tracking-wide uppercase">
-                Newsletter
-              </h2>
-              <div className="mt-4">
-                <NewsletterForm light />
-              </div>
             </div>
           </div>
 

@@ -1,24 +1,29 @@
-import { donationPlans } from "@/data/demo";
-
-const categories = donationPlans.map((plan) => ({
-  id: plan.id,
-  label: plan.label,
-  impact: plan.impact,
-  amount: plan.amount,
-  amountLabel: plan.amountLabel,
-}));
+import { donationPaymentInfo, donationPlans } from "@/data/demo";
 
 /**
- * Donation categories from ai/demo-data.md.
+ * Donation presets and payment methods shown on /donate.
  */
 export const donationConfig = {
   currency: "INR" as const,
   currencySymbol: "₹" as const,
   presets: [501, 1100, 2500, 5100, 11000] as const,
-  categories,
-  recurringEnabled: true as const,
+  plans: donationPlans,
+  payment: donationPaymentInfo,
+  methods: [
+    {
+      id: "bank" as const,
+      label: "Account & IFSC",
+      description: "Transfer directly to our trust bank account",
+    },
+    {
+      id: "gpay" as const,
+      label: "Google Pay QR",
+      description: "Scan and pay with Google Pay",
+    },
+  ],
   taxBenefitsNote:
     "A receipt is issued for every contribution. Please contact us for tax-exemption details.",
 };
 
 export type DonationConfig = typeof donationConfig;
+export type DonationPaymentMethod = (typeof donationConfig.methods)[number]["id"];

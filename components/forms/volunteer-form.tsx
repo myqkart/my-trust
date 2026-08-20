@@ -51,14 +51,14 @@ export function VolunteerForm() {
   }
 
   const fields = [
-    { id: "name", label: "Full name", type: "text", placeholder: "Your full name" },
-    { id: "email", label: "Email", type: "email", placeholder: "you@example.com" },
-    { id: "phone", label: "Phone", type: "tel", placeholder: "+91 98765 43210" },
-    { id: "city", label: "City", type: "text", placeholder: "Ahmedabad" },
-    { id: "skills", label: "Skills", type: "text", placeholder: "e.g. caregiving, teaching, events" },
-    { id: "availability", label: "Availability", type: "text", placeholder: "Weekends / weekday evenings" },
-    { id: "interests", label: "Interests", type: "text", placeholder: "Food Seva, Gau Seva, education, plantation…" },
-    { id: "emergencyContact", label: "Emergency contact", type: "text", placeholder: "Name and phone number" },
+    { id: "name", label: "Full name", type: "text", placeholder: "Enter your full name" },
+    { id: "email", label: "Email", type: "email", placeholder: "Enter your email" },
+    { id: "phone", label: "Phone", type: "tel", placeholder: "Enter phone number" },
+    { id: "city", label: "City", type: "text", placeholder: "Enter your city" },
+    { id: "skills", label: "Skills", type: "text", placeholder: "Enter your skills" },
+    { id: "availability", label: "Availability", type: "text", placeholder: "Enter your availability" },
+    { id: "interests", label: "Interests", type: "text", placeholder: "Enter areas of interest" },
+    { id: "emergencyContact", label: "Emergency contact", type: "text", placeholder: "Enter name and phone" },
   ] as const;
 
   return (
@@ -86,7 +86,7 @@ export function VolunteerForm() {
           id="volunteer-experience"
           name="experience"
           rows={4}
-          placeholder="Tell us about any relevant experience."
+          placeholder="Share relevant experience (optional)"
         />
       </div>
       <Button type="submit" loading={loading} fullWidth className="sm:w-auto">

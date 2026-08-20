@@ -56,7 +56,7 @@ export function ContactForm() {
             id="contact-name"
             name="name"
             autoComplete="name"
-            placeholder="Your full name"
+            placeholder="Enter your name"
             error={Boolean(errors.name)}
           />
           {errors.name ? <p className="text-sm text-error">{errors.name}</p> : null}
@@ -68,7 +68,7 @@ export function ContactForm() {
             name="email"
             type="email"
             autoComplete="email"
-            placeholder="you@example.com"
+            placeholder="Enter your email"
             error={Boolean(errors.email)}
           />
           {errors.email ? <p className="text-sm text-error">{errors.email}</p> : null}
@@ -82,7 +82,7 @@ export function ContactForm() {
             name="phone"
             type="tel"
             autoComplete="tel"
-            placeholder="+91 98765 43210"
+            placeholder="Enter phone number"
           />
         </div>
         <div className="space-y-2">
@@ -90,7 +90,7 @@ export function ContactForm() {
           <Input
             id="contact-subject"
             name="subject"
-            placeholder="How can we help?"
+            placeholder="Enter subject"
             error={Boolean(errors.subject)}
           />
           {errors.subject ? <p className="text-sm text-error">{errors.subject}</p> : null}
@@ -102,7 +102,7 @@ export function ContactForm() {
           id="contact-message"
           name="message"
           rows={5}
-          placeholder="Share a few details and we'll get back to you."
+          placeholder="Write your message"
           error={Boolean(errors.message)}
         />
         {errors.message ? <p className="text-sm text-error">{errors.message}</p> : null}

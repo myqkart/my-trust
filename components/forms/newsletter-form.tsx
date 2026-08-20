@@ -55,12 +55,12 @@ export function NewsletterForm({ className, light }: NewsletterFormProps) {
           type="email"
           name="email"
           autoComplete="email"
-          placeholder="Your email address"
+          placeholder="Enter your email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           error={Boolean(error)}
           aria-describedby={error ? "newsletter-error" : undefined}
-          className={cn(light && "border-white/20 bg-white/10 text-white placeholder:text-white/60")}
+          className={cn(light && "border-white/20 bg-white/10 text-white placeholder:text-white/45 placeholder:opacity-100")}
         />
         <Button
           type="submit"

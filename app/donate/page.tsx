@@ -77,10 +77,11 @@ export default function DonatePage() {
           right={
             <Card variant="elevated" padding="md" className="sm:p-8">
               <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
-                Donation form
+                How to donate
               </h2>
               <p className="mt-2 mb-6 text-sm text-muted">
-                Demo checkout flow—connect your payment gateway when ready.
+                No online checkout—transfer to our bank account or pay with Google Pay, then
+                share the payment proof for a receipt.
               </p>
               <DonationForm />
             </Card>

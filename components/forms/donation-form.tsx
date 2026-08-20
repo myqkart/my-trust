@@ -1,170 +1,166 @@
 "use client";
 
-import { useMemo, useState, type FormEvent } from "react";
+import { useState } from "react";
+import Link from "next/link";
+import { Check, Copy, Mail, MessageCircle } from "lucide-react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
-import { donationConfig } from "@/config/donation";
-import { donationSchema } from "@/schemas/donation";
+import { donationConfig, type DonationPaymentMethod } from "@/config/donation";
+import { contactInfo } from "@/data/demo";
 import { useToast } from "@/providers/toast-provider";
 import { cn } from "@/utils/cn";
-import { formatCurrency } from "@/utils/format";
 
-export function DonationForm() {
+function CopyField({ label, value }: { label: string; value: string }) {
   const { push } = useToast();
-  const [amount, setAmount] = useState<number>(donationConfig.presets[1]);
-  const [custom, setCustom] = useState("");
-  const [category, setCategory] = useState(donationConfig.categories[0].id);
-  const [recurring, setRecurring] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [copied, setCopied] = useState(false);
 
-  const selectedAmount = useMemo(() => {
-    const parsed = Number(custom);
-    return custom && !Number.isNaN(parsed) && parsed > 0 ? parsed : amount;
-  }, [amount, custom]);
-
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const payload = {
-      amount: selectedAmount,
-      category,
-      recurring,
-      name: String(form.get("name") ?? ""),
-      email: String(form.get("email") ?? ""),
-      phone: String(form.get("phone") ?? "") || undefined,
-      message: String(form.get("message") ?? "") || undefined,
-    };
-
-    const parsed = donationSchema.safeParse(payload);
-    if (!parsed.success) {
-      const next: Record<string, string> = {};
-      parsed.error.issues.forEach((issue) => {
-        next[String(issue.path[0] ?? "form")] = issue.message;
+  async function copyValue() {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      push({
+        variant: "success",
+        title: `${label} copied`,
+        description: value,
       });
-      setErrors(next);
-      return;
+      window.setTimeout(() => setCopied(false), 1600);
+    } catch {
+      push({
+        variant: "error",
+        title: "Could not copy",
+        description: "Please copy the details manually.",
+      });
     }
-
-    setErrors({});
-    setLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    setLoading(false);
-    push({
-      variant: "success",
-      title: "Thank you for helping create another story of hope",
-      description: `${formatCurrency(selectedAmount)} support recorded for review.`,
-    });
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-6" noValidate>
-      <div>
-        <p className="mb-3 text-sm font-semibold text-primary">Choose an amount</p>
-        <div className="flex flex-wrap gap-3">
-          {donationConfig.presets.map((preset) => (
-            <button
-              key={preset}
-              type="button"
-              onClick={() => {
-                setAmount(preset);
-                setCustom("");
-              }}
-              className={cn(
-                "rounded-[var(--radius-button)] border px-4 py-3 text-sm font-semibold transition-colors",
-                selectedAmount === preset && !custom
-                  ? "border-accent bg-soft/50 text-primary"
-                  : "border-border bg-white text-secondary hover:bg-soft/30",
-              )}
-            >
-              {formatCurrency(preset)}
-            </button>
-          ))}
+    <div className="rounded-[var(--radius-card)] border border-border bg-white px-4 py-3">
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-xs font-semibold tracking-wide text-muted uppercase">
+            {label}
+          </p>
+          <p className="mt-1 break-all font-semibold text-primary">{value}</p>
         </div>
-        <div className="mt-4 space-y-2">
-          <Label htmlFor="donation-custom">Custom amount</Label>
-          <Input
-            id="donation-custom"
-            inputMode="numeric"
-            placeholder="Enter amount"
-            value={custom}
-            onChange={(event) => setCustom(event.target.value)}
-            error={Boolean(errors.amount)}
-          />
-        </div>
+        <button
+          type="button"
+          onClick={copyValue}
+          className="inline-flex size-9 shrink-0 items-center justify-center rounded-[12px] border border-border text-secondary transition-colors hover:bg-soft/40"
+          aria-label={`Copy ${label}`}
+        >
+          {copied ? (
+            <Check className="size-4 text-accent" aria-hidden />
+          ) : (
+            <Copy className="size-4" aria-hidden />
+          )}
+        </button>
       </div>
+    </div>
+  );
+}
 
+/**
+ * Manual donation instructions — bank transfer or GPay QR.
+ * No payment gateway; donors pay outside the site, then contact us for a receipt.
+ */
+export function DonationForm() {
+  const [method, setMethod] = useState<DonationPaymentMethod>("bank");
+  const bank = donationConfig.payment.bank;
+  const gpay = donationConfig.payment.gpay;
+
+  const whatsappHref = `https://wa.me/${contactInfo.whatsapp.replace(/[^\d]/g, "")}?text=${encodeURIComponent(
+    "Namaste. I have donated to Navchetna Charitable Trust. Sharing payment details for a receipt.",
+  )}`;
+  const mailtoHref = `mailto:${contactInfo.donateEmail}?subject=${encodeURIComponent(
+    "Donation receipt request",
+  )}&body=${encodeURIComponent(
+    "Namaste,\n\nI have donated to Navchetna Charitable Trust.\n\nAmount:\nPayment method (bank / Google Pay):\nTransaction / UTR reference:\n\nPlease issue a receipt.\n\nName:\nPhone:\n",
+  )}`;
+
+  return (
+    <div className="space-y-6">
       <div>
-        <p className="mb-3 text-sm font-semibold text-primary">Support category</p>
+        <p className="mb-3 text-sm font-semibold text-primary">Choose a payment method</p>
         <div className="grid gap-3 sm:grid-cols-2">
-          {donationConfig.categories.map((item) => (
+          {donationConfig.methods.map((item) => (
             <button
               key={item.id}
               type="button"
-              onClick={() => setCategory(item.id)}
+              onClick={() => setMethod(item.id)}
               className={cn(
                 "rounded-[var(--radius-card)] border p-4 text-left transition-colors",
-                category === item.id
+                method === item.id
                   ? "border-accent bg-soft/40"
                   : "border-border bg-white hover:bg-soft/20",
               )}
             >
               <span className="block font-semibold text-primary">{item.label}</span>
-              <span className="mt-1 block text-sm text-muted">{item.impact}</span>
+              <span className="mt-1 block text-sm text-muted">{item.description}</span>
             </button>
           ))}
         </div>
       </div>
 
-      <div className="flex items-center justify-between rounded-[var(--radius-card)] border border-border bg-white px-4 py-3">
-        <div>
-          <p className="font-semibold text-primary">Monthly support</p>
-          <p className="text-sm text-muted">Make this a recurring contribution</p>
+      {method === "bank" ? (
+        <div className="space-y-3">
+          <CopyField label="Account name" value={bank.accountName} />
+          <CopyField label="Account number" value={bank.accountNumber} />
+          <CopyField label="IFSC" value={bank.ifsc} />
+          {bank.bankName ? <CopyField label="Bank" value={bank.bankName} /> : null}
+          <p className="text-sm text-muted">
+            Transfer any amount using these details. Use NEFT, IMPS, or RTGS from your bank app.
+          </p>
         </div>
-        <Switch checked={recurring} onCheckedChange={setRecurring} aria-label="Recurring donation" />
+      ) : (
+        <div className="space-y-3">
+          <div className="flex min-h-[260px] items-center justify-center rounded-[var(--radius-card)] border border-border bg-white p-6">
+            {gpay.qrSrc ? (
+              <OptimizedImage
+                src={gpay.qrSrc}
+                alt={gpay.qrAlt}
+                width={220}
+                height={220}
+                className="size-[220px] rounded-[16px] object-contain"
+              />
+            ) : (
+              <p className="max-w-xs text-center text-sm text-muted">
+                Google Pay QR will appear here once added. Until then, use bank transfer or call{" "}
+                <a href={`tel:${contactInfo.phone}`} className="font-semibold text-secondary">
+                  {contactInfo.phone}
+                </a>
+                .
+              </p>
+            )}
+          </div>
+          <p className="text-center text-sm text-muted">
+            Open Google Pay, scan the QR, and complete your contribution.
+          </p>
+        </div>
+      )}
+
+      <div className="rounded-[var(--radius-card)] border border-border bg-soft/30 p-4">
+        <p className="font-semibold text-primary">After you pay</p>
+        <p className="mt-2 text-sm text-muted">
+          Send your name, amount, and payment screenshot or UTR on WhatsApp or email. We will
+          issue a receipt.
+        </p>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+          <Button asChild variant="gradient" className="sm:flex-1">
+            <Link href={whatsappHref} target="_blank" rel="noopener noreferrer">
+              <MessageCircle aria-hidden />
+              WhatsApp us
+            </Link>
+          </Button>
+          <Button asChild variant="secondary" className="sm:flex-1">
+            <a href={mailtoHref}>
+              <Mail aria-hidden />
+              Email for receipt
+            </a>
+          </Button>
+        </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="donation-name">Name</Label>
-          <Input
-            id="donation-name"
-            name="name"
-            autoComplete="name"
-            placeholder="Name on the receipt"
-            error={Boolean(errors.name)}
-          />
-          {errors.name ? <p className="text-sm text-error">{errors.name}</p> : null}
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="donation-email">Email</Label>
-          <Input
-            id="donation-email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            placeholder="you@example.com"
-            error={Boolean(errors.email)}
-          />
-          {errors.email ? <p className="text-sm text-error">{errors.email}</p> : null}
-        </div>
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="donation-phone">Phone (optional)</Label>
-        <Input
-          id="donation-phone"
-          name="phone"
-          type="tel"
-          autoComplete="tel"
-          placeholder="+91 98765 43210"
-        />
-      </div>
-      <Button type="submit" loading={loading} fullWidth variant="gradient">
-        Continue with {formatCurrency(selectedAmount)}
-      </Button>
       <p className="text-center text-sm text-muted">{donationConfig.taxBenefitsNote}</p>
-    </form>
+    </div>
   );
 }

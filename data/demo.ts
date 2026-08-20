@@ -170,6 +170,21 @@ export const donationPlans = [
   },
 ] as const;
 
+/** Bank transfer and Google Pay details for the donate form. */
+export const donationPaymentInfo = {
+  bank: {
+    accountName: "Navchetna Charitable Trust",
+    accountNumber: "2391104000003179",
+    ifsc: "IBKL0002391",
+    bankName: "IDBI Bank",
+  },
+  gpay: {
+    /** Place the QR at `public/images/donate/gpay-qr.png`, then set this path. */
+    qrSrc: "",
+    qrAlt: "Google Pay QR code for Navchetna Charitable Trust",
+  },
+} as const;
+
 export const testimonialsInfo = [
   {
     quote:
@@ -280,7 +295,7 @@ export const faqInfo = [
   {
     question: "How do I donate?",
     answer:
-      "Use the donate form on this website or contact us at navchetnacharitabletrust09@gmail.com / +91 97125 17115.",
+      "On the donate page, transfer to our IDBI Bank account (account number and IFSC) or pay with Google Pay QR. Then WhatsApp or email your payment proof for a receipt. You can also call +91 97125 17115.",
   },
 ] as const;
 
