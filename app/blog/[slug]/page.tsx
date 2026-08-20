@@ -76,17 +76,9 @@ export default async function BlogPostPage({
 
       <CenteredLayout narrow>
         <article className="space-y-6 text-lg leading-relaxed text-muted">
-          <p>{post.excerpt}</p>
-          <p>
-            At Navchetna Charitable Trust, we share practical insights drawn from
-            education support, food distribution, gau seva, helping the poor,
-            and tree plantation in Ahmedabad. This article expands on {post.category.toLowerCase()} with
-            guidance rooted in service and humanity.
-          </p>
-          <p>
-            If this topic resonates, we invite you to visit, volunteer, or
-            support this work—so learning becomes action.
-          </p>
+          {post.paragraphs.map((paragraph) => (
+            <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+          ))}
           <div className="flex flex-wrap gap-3 pt-4">
             <Button asChild>
               <Link href={ROUTES.donate}>Donate</Link>

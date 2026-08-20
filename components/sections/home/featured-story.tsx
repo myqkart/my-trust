@@ -39,7 +39,7 @@ export function HomeFeaturedStory() {
           <SlideUp>
             <SectionHeading
               eyebrow="Human Stories"
-              title="A chance to study, a place to stay"
+              title="A place to stay, a chance to keep studying"
               description={featuredResidentStory.summary}
             />
             <Quote className="mt-8" cite={featuredResidentStory.name}>

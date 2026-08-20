@@ -11,13 +11,13 @@ import { storyProfiles } from "@/data/pages";
 import { media } from "@/data/media";
 
 const storiesDescription =
-  "Meet the children, families, volunteers, and well-wishers whose lives intersect at Navchetna Charitable Trust.";
+  "Stories of Food Seva, Gau Seva, family support, education, and the continuing journey of Navchetna Charitable Trust since 2009.";
 
 export const metadata = createPageMetadata({
   title: "Success Stories",
   description: storiesDescription,
   path: ROUTES.stories,
-  keywords: ["Volunteer Stories", "Charitable Trust Ahmedabad"],
+  keywords: ["Volunteer Stories", "Food Seva", "Education Support"],
 });
 
 export default function StoriesPage() {
@@ -33,8 +33,8 @@ export default function StoriesPage() {
       <PageHero
         breadcrumbs={[{ label: "Success Stories" }]}
         eyebrow="Stories"
-        title="Faces behind every act of care"
-        description="Real people. Real belonging. Every story reminds us why this work matters."
+        title="Dignity behind every act of care"
+        description="True service is not only about providing help, but also about giving people respect, support, and hope."
         primaryCta={{ label: "Become Part of a Story", href: ROUTES.volunteer }}
         secondaryCta={{ label: "Donate", href: ROUTES.donate }}
       />

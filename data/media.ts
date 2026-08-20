@@ -106,11 +106,11 @@ export const media = {
     },
   ],
   stories: {
-    "Trees we plant": "/images/plantation/plantation-02.png",
     "Meals we share": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
     "Gau seva": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
     "Families we stand with": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 625 }),
-    "Children we support": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
+    "Students we support": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
+    "Our continuing journey": "/images/plantation/plantation-02.png",
   },
   team: [
     unsplashSrc("1507003211169-0a1dd7228f2d", { w: 240, h: 240 }),
@@ -122,16 +122,20 @@ export const media = {
     unsplashSrc("1523240795612-9a054b0db644", { w: 240, h: 240 }),
   ],
   blog: {
-    "tree-plantation-seva": "/images/plantation/plantation-03.png",
-    "food-distribution-seva": unsplashSrc("1488521787991-ed7bbaae773c", {
+    "service-support-humanity": "/images/plantation/plantation-01.png",
+    "food-distribution-with-dignity": unsplashSrc("1488521787991-ed7bbaae773c", {
       w: 1200,
       h: 750,
     }),
-    "gau-seva-and-helping-the-poor": unsplashSrc("1546445317-29f4545e9d53", {
+    "gau-seva-compassion": unsplashSrc("1546445317-29f4545e9d53", {
       w: 1200,
       h: 750,
     }),
-    "education-support-for-children": unsplashSrc("1503676260728-1c00da094a0b", {
+    "helping-the-poor-essentials": unsplashSrc("1489980557514-251d61e3eeb6", {
+      w: 1200,
+      h: 750,
+    }),
+    "education-support-opportunity": unsplashSrc("1503676260728-1c00da094a0b", {
       w: 1200,
       h: 750,
     }),

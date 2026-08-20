@@ -15,13 +15,13 @@ import { blogPosts } from "@/data/pages";
 import { media } from "@/data/media";
 
 const blogDescription =
-  "Articles on plantation, food seva, gau seva, helping the poor, and education from Navchetna Charitable Trust.";
+  "Articles on Service, Support & Humanity—Food Seva, Gau Seva, helping families, and education support from Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Blog",
   description: blogDescription,
   path: ROUTES.blog,
-  keywords: ["Education Support", "Community Impact", "Tree Plantation"],
+  keywords: ["Service Support Humanity", "Food Seva", "Gau Seva", "Education Support"],
 });
 
 export default function BlogPage() {
@@ -38,7 +38,7 @@ export default function BlogPage() {
         breadcrumbs={[{ label: "Blog" }]}
         eyebrow="Insights"
         title="Stories, guidance, and community learning"
-        description="Short reads on plantation, food, gau seva, helping families, and education."
+        description="Short reads drawn from our work—dignity in giving, quiet Gau Seva, and education that continues."
         primaryCta={{ label: "Subscribe via Contact", href: ROUTES.contact }}
       />
 

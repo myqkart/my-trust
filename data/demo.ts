@@ -8,16 +8,16 @@ export const trustInfo = {
   tagline: "The Spirit of Navchetna Charitable Trust.",
   slogan: "Service, Support & Humanity",
   mission:
-    "To serve society through tree plantation, food distribution, gau seva, help for the poor, and education support.",
+    "To support people in need through food and clothing support, Bhandara services, educational assistance, cow welfare, and tree plantation—with respect, support, and hope.",
   vision:
-    "To build a kinder Ahmedabad where trees grow, no one goes hungry, cows are cared for, poor families are supported, and children can keep studying.",
+    "A continuing journey of service and humanity—from 2009 to today—where help is given with dignity, compassion reaches people and animals alike, and students can keep studying.",
   values: [
     "Service",
-    "Compassion",
     "Support",
     "Humanity",
     "Respect",
-    "Community",
+    "Compassion",
+    "Dignity",
   ] as const,
   established: 2009,
   registration: "Charitable Trust, Ahmedabad",
@@ -31,9 +31,9 @@ export const trustInfo = {
 export const founderInfo = {
   name: "Shri Rupesh Kumar Modi",
   designation: "Founder & Trustee",
-  bio: "Navchetna Charitable Trust was established in 2009 by Shri Rupesh Kumar Modi with the aim of serving society and supporting people in need. Since then he has continuously worked to strengthen the Trust and involve more people in social service.",
+  bio: "Navchetna Charitable Trust was established in 2009 with the service spirit and dedication of Shri Rupesh Kumar Modi, with the aim of supporting people in need and contributing positively to society. Today the core purpose remains unchanged—service, support, and humanity.",
   message:
-    "Service, Support & Humanity — The Spirit of Navchetna Charitable Trust.",
+    "Service, Support & Humanity is more than a slogan; it is the spirit behind our social service journey since 2009.",
 } as const;
 
 export const contactInfo = {
@@ -83,34 +83,34 @@ export const programsInfo = [
     slug: "environment",
     title: "Tree Plantation",
     summary:
-      "We plant trees and invite people to join plantation drives—so Ahmedabad grows greener, cooler, and healthier for the next generation.",
+      "Tree plantation is part of our commitment to a greener, healthier environment—inviting the community to plant and care for trees together.",
     href: "/programs/environment",
-    impact: "Plants",
+    impact: "Environment",
   },
   {
     id: "food-distribution",
     slug: "food-distribution",
     title: "Food Distribution",
     summary:
-      "We distribute food to people who are hungry—through community meals and regular food seva for poor and needy families.",
+      "Food Distribution and Bhandara are expressions of dignity and compassion—simple, clean meals offered with respect, privacy, and care.",
     href: "/programs/food-distribution",
-    impact: "Nourishment",
+    impact: "Dignity",
   },
   {
     id: "cow-welfare",
     slug: "cow-welfare",
     title: "Gau Seva",
     summary:
-      "We care for cows that are needy or helpless—feeding, sheltering, and protecting them with respect.",
+      "Gau Seva is quiet care for cows that may be vulnerable because of age, illness, injury, or abandonment—feeding, protecting, and serving with responsibility.",
     href: "/programs/cow-welfare",
-    impact: "Gau seva",
+    impact: "Compassion",
   },
   {
     id: "helping-poor",
     slug: "helping-poor",
     title: "Helping the Poor",
     summary:
-      "We stand with underprivileged families—offering clothes, essentials, and a helping hand when life is hardest.",
+      "Practical support through food, clothing, and everyday essentials—given with dignity so families are not alone in difficult moments.",
     href: "/programs/helping-poor",
     impact: "Support",
   },
@@ -119,9 +119,9 @@ export const programsInfo = [
     slug: "education",
     title: "Education Support",
     summary:
-      "We support needy children with education and hostel facilities so they can study in a safe, supportive environment.",
+      "Hostel accommodation, study materials, and educational support so students can continue studying in a safe and supportive environment.",
     href: "/programs/education",
-    impact: "Learning",
+    impact: "Opportunity",
   },
 ] as const;
 
@@ -138,28 +138,28 @@ export const donationPlans = [
     label: "Distribute Food",
     amount: 1100,
     amountLabel: "₹1,100",
-    impact: "Meals for people who need them today",
+    impact: "Meals shared with dignity and respect",
   },
   {
     id: "sponsor-gau-seva",
     label: "Gau Seva",
     amount: 2500,
     amountLabel: "₹2,500",
-    impact: "Feed and care for needy cows",
+    impact: "Quiet care for cows that need food and protection",
   },
   {
     id: "sponsor-poor",
     label: "Help the Poor",
     amount: 5100,
     amountLabel: "₹5,100",
-    impact: "Clothes, essentials, and support for families",
+    impact: "Food, clothing, and essentials for families in need",
   },
   {
     id: "sponsor-education",
     label: "Education Support",
     amount: 11000,
     amountLabel: "₹11,000",
-    impact: "Help a child continue school with dignity",
+    impact: "Hostel and study support so a student can continue",
   },
   {
     id: "general",
@@ -173,33 +173,33 @@ export const donationPlans = [
 export const testimonialsInfo = [
   {
     quote:
-      "The plantation drive brought the neighbourhood together—and the trees are still growing with us.",
-    name: "A volunteer",
-    role: "Tree Plantation",
-  },
-  {
-    quote:
-      "When food reached our family, it was given with respect. That kindness stays with us.",
+      "A meal can fill the stomach, but a meal served with dignity can touch the heart.",
     name: "A neighbour we support",
     role: "Food Distribution",
   },
   {
     quote:
-      "Gau seva at Navchetna is quiet, steady care for animals that have nowhere else to go.",
+      "Feeding with care, protecting with responsibility, and serving with compassion—this is the true spirit of Gau Seva.",
     name: "A well-wisher",
     role: "Gau Seva",
   },
   {
     quote:
-      "When we had nothing left to give our children, Navchetna stood with us—clothes, food, and a little hope.",
+      "True charity is not only about giving something; it is about giving with dignity, care, and humanity.",
     name: "A family we support",
     role: "Helping the Poor",
   },
   {
     quote:
-      "A safe place to stay and a chance to study changed what our children could hope for.",
-    name: "A parent we support",
+      "Sometimes a student simply needs a place to study, a safe place to stay, and someone who believes in their potential.",
+    name: "A student we support",
     role: "Education",
+  },
+  {
+    quote:
+      "2009 to 2026—one vision, one commitment, and a continuing journey of humanity and service.",
+    name: "A volunteer",
+    role: "Our Journey",
   },
 ] as const;
 
@@ -260,17 +260,22 @@ export const faqInfo = [
   {
     question: "How can I volunteer?",
     answer:
-      "Fill out the volunteer form or contact us. We welcome help with plantation, food distribution, gau seva, helping families in need, and education support.",
+      "Fill out the volunteer form or contact us. We welcome help with Food Seva and Bhandara, Gau Seva, family support, education and hostel work, and plantation.",
   },
   {
     question: "How can we help poor families?",
     answer:
-      "You can donate, volunteer, or give in-kind support such as food, clothes, and essentials. Call +91 97125 17115 or email us.",
+      "You can donate, volunteer, or give in-kind support such as food, good-quality clothes, and everyday essentials. Call +91 97125 17115 or email us.",
+  },
+  {
+    question: "Do you provide hostel support for students?",
+    answer:
+      "Yes. We make efforts to provide hostel accommodation and educational support so students who need a safe place to stay can continue their studies.",
   },
   {
     question: "Do you accept in-kind donations?",
     answer:
-      "Yes. Food, clothes, and other necessary support for families in need are welcome.",
+      "Yes. Food, clothes, and other necessary support for families in need are welcome—practical items a family can actually use.",
   },
   {
     question: "How do I donate?",
@@ -290,21 +295,22 @@ export const trustBadgesInfo = [
   },
   {
     label: "Our Work",
-    description: "Plants, food, gau seva, helping the poor & education",
+    description: "Food, clothing, Bhandara, gau seva, education & plantation",
   },
   {
     label: "Serving since",
-    description: "2009 in Ahmedabad",
+    description: "2009 to 2026 and beyond",
   },
 ] as const;
 
 export const seoKeywords = [
   "Navchetna Charitable Trust",
   "Charitable Trust Ahmedabad",
-  "NGO in Gujarat",
-  "Education hostel NGO",
+  "Service Support Humanity",
   "Food distribution Ahmedabad",
-  "Helping the poor Ahmedabad",
+  "Bhandara Ahmedabad",
   "Gau seva Gujarat",
+  "Education hostel support",
+  "Helping the poor Ahmedabad",
   "Tree plantation NGO",
 ] as const;

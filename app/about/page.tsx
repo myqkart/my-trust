@@ -17,13 +17,13 @@ import { aboutFutureGoals } from "@/data/pages";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const aboutDescription =
-  "Learn the story of Navchetna Charitable Trust—founded in 2009 by Shri Rupesh Kumar Modi to serve people in need through plantation, food distribution, gau seva, helping the poor, and education.";
+  "Navchetna Charitable Trust—Service, Support & Humanity since 2009. Founded with the dedication of Shri Rupesh Kumar Modi to support people in need through food, clothing, Bhandara, education, gau seva, and plantation.";
 
 export const metadata = createPageMetadata({
   title: "About",
   description: aboutDescription,
   path: ROUTES.about,
-  keywords: ["Navchetna Charitable Trust", "NGO in Gujarat", "Charitable Trust"],
+  keywords: ["Navchetna Charitable Trust", "Service Support Humanity", "Charitable Trust Ahmedabad"],
 });
 
 export default function AboutPage() {
@@ -40,7 +40,7 @@ export default function AboutPage() {
         breadcrumbs={[{ label: "About" }]}
         eyebrow="About Us"
         title="Our journey of service and humanity"
-        description="From a vision in 2009 to ongoing seva—planting trees, sharing food, gau seva, helping the poor, and supporting children's education."
+        description="2009 to 2026—one vision, one commitment. From Shree Rudraa Mahadev to the neighbourhood, we serve with respect, support, and hope."
         primaryCta={{ label: "Support Our Mission", href: ROUTES.donate }}
         secondaryCta={{ label: "Meet Our Team", href: "#team" }}
       />

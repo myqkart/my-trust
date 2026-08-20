@@ -25,7 +25,6 @@ public/images/  # Plantation and trustee photos
 schemas/        # Form validation (Zod)
 scripts/        # Route checks and bundle report
 styles/theme/   # Spacing and motion tokens
-tests/          # Unit and e2e
 ai/design.md    # Design system reference
 ```
 
@@ -38,13 +37,12 @@ Images: [`data/media.ts`](data/media.ts) + files under `public/images/`.
 ## Scripts
 
 ```bash
-npm run dev          # Local development
-npm run build        # Production build
-npm start            # Serve production build
-npm test             # Unit tests
-npm run test:routes  # Route integrity check
-npm run test:e2e     # Playwright smoke tests
-npm run lint         # ESLint
+npm run dev           # Local development
+npm run build         # Production build
+npm start             # Serve production build
+npm run lint          # ESLint
+npm run check:routes  # Route integrity check
+npm run analyze       # Build + bundle report
 ```
 
 ## Environment

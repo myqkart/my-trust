@@ -11,36 +11,36 @@ import {
 export const homeTimeline = [
   {
     year: "2009",
-    title: "Trust begins",
+    title: "A vision begins",
     description:
-      "Navchetna Charitable Trust is established in Ahmedabad by Shri Rupesh Kumar Modi to serve people in need.",
+      "Navchetna Charitable Trust is founded with the service spirit of Shri Rupesh Kumar Modi—to support people in need with respect, support, and hope.",
   },
   {
     year: "Seva",
-    title: "Food, gau seva & helping the poor",
+    title: "From Shree Rudraa Mahadev to the neighbourhood",
     description:
-      "Food distribution, cow care, and support for underprivileged families become a steady part of our work.",
+      "Service continues to reach nearby communities—food, clothing, Bhandara, gau seva, education, and plantation wherever support is needed.",
   },
   {
     year: "Learn",
-    title: "Education support",
+    title: "Education with a safe place to stay",
     description:
-      "Needy children receive education support and hostel facilities so they can continue their studies.",
+      "Hostel accommodation and study support help students continue their education in a secure environment.",
   },
   {
-    year: "Today",
-    title: "Planting for tomorrow",
-    description: `Tree plantation continues across Ahmedabad—${statisticsInfo.yearsOfService} years of service, support, and humanity.`,
+    year: "2026",
+    title: "One vision, one commitment",
+    description: `${statisticsInfo.yearsOfService} years on, the purpose remains unchanged—service, support, and humanity for people and living beings alike.`,
   },
 ] as const;
 
 export const featuredResidentStory = {
-  name: "Children we support",
+  name: "Students we support",
   quote: testimonialsInfo.find((item) => item.role === "Education")?.quote ?? "",
   summary:
-    "The Trust supports needy children with education and a safe place to stay—so learning is not lost when a family has little.",
+    "Many students can manage some educational expenses but lack a suitable place to stay. Navchetna works to provide hostel accommodation and study support so education does not stop.",
   journey:
-    "For children without proper facilities, a chance to study is the first step toward a better life. That is the heart of Navchetna’s education support.",
+    "Supporting a student’s education today can become the beginning of a better and brighter future tomorrow.",
   href: ROUTES.stories,
   cta: "Read Our Stories",
 } as const;
@@ -66,14 +66,14 @@ export const upcomingEvents = [
     title: eventsInfo[1],
     dateLabel: "Upcoming",
     location: "Ahmedabad",
-    summary: "Distribute food to people who need a meal today.",
+    summary: "Food Seva and Bhandara—meals offered with dignity and respect.",
     href: ROUTES.events,
   },
   {
     title: eventsInfo[2],
     dateLabel: "Upcoming",
     location: "Ahmedabad",
-    summary: "Care, feed, and protect cows that need our help.",
+    summary: "Quiet care for cows that need food, water, and protection.",
     href: ROUTES.events,
   },
 ] as const;
@@ -88,19 +88,19 @@ export const impactUtilization = [
 
 export const homeNewsletter = {
   eyebrow: "Stay Close",
-  title: "Stories of hope, delivered gently",
+  title: "Stories of service, delivered gently",
   description:
-    "Join us for updates on plantation, food seva, gau seva, education, and ways to help—never spam, only purpose.",
+    "Updates on Food Seva, Gau Seva, education, plantation, and ways to help—never spam, only purpose.",
 } as const;
 
 export const homeAbout = {
   eyebrow: "Our Story",
-  title: "Serving society since 2009",
+  title: "Serving since 2009",
   description: founderInfo.bio,
 } as const;
 
 export const homeTransparency = {
   eyebrow: "Transparency",
   title: "Open books. Clear impact.",
-  description: `${trustInfo.name} has served Ahmedabad since ${trustInfo.established}. Reach us anytime to know how your support is used.`,
+  description: `${trustInfo.name} has served with the same commitment since ${trustInfo.established}. Reach us anytime to know how your support is used.`,
 } as const;

@@ -13,7 +13,7 @@ import { trustBadgesInfo } from "@/data/demo";
 import { impactHighlights } from "@/data/pages";
 
 const impactDescription =
-  "See how Navchetna Charitable Trust serves Ahmedabad—tree plantation, food distribution, gau seva, helping the poor, and education support.";
+  "See how Navchetna Charitable Trust serves with Service, Support & Humanity—Food Seva, Gau Seva, helping families, education, and plantation since 2009.";
 
 export const metadata = createPageMetadata({
   title: "Impact",
@@ -35,7 +35,7 @@ export default function ImpactPage() {
         breadcrumbs={[{ label: "Impact" }]}
         eyebrow="Transparency"
         title="Impact you can feel"
-        description="Seventeen years of seva across five focus areas: plants, food, gau seva, helping the poor, and education."
+        description="Seventeen years of seva—meals with dignity, quiet Gau Seva, essentials for families, education support, and greener neighbourhoods."
         primaryCta={{ label: "Download Reports", href: ROUTES.reports }}
         secondaryCta={{ label: "Donate", href: ROUTES.donate }}
       />

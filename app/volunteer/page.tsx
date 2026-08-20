@@ -16,22 +16,22 @@ import { ROUTES } from "@/constants/routes";
 import { faqInfo } from "@/data/demo";
 
 const volunteerRoles = [
+  "Food Seva & Bhandara",
+  "Gau Seva",
+  "Helping families with essentials",
+  "Education & hostel support",
   "Tree plantation",
-  "Food distribution",
-  "Gau seva",
-  "Helping the poor",
-  "Education support",
   "Events & outreach",
 ] as const;
 
 const volunteerDescription =
-  "Volunteer with Navchetna Charitable Trust—plantation, food distribution, gau seva, helping the poor, and education support in Ahmedabad.";
+  "Volunteer with Navchetna Charitable Trust—Food Seva, Gau Seva, helping families, education support, and plantation in Ahmedabad.";
 
 export const metadata = createPageMetadata({
   title: "Volunteer",
   description: volunteerDescription,
   path: ROUTES.volunteer,
-  keywords: ["Volunteer NGO", "Volunteer Ahmedabad"],
+  keywords: ["Volunteer NGO", "Volunteer Ahmedabad", "Bhandara volunteer"],
 });
 
 export default function VolunteerPage() {
@@ -48,7 +48,7 @@ export default function VolunteerPage() {
         breadcrumbs={[{ label: "Volunteer" }]}
         eyebrow="Give Time"
         title="Your presence is a gift"
-        description="Share your time with plantation, food seva, gau seva, helping families in need, and education support."
+        description="Share your time with Food Seva, Gau Seva, family support, education, and plantation—service given with dignity."
         primaryCta={{ label: "Apply Now", href: "#apply" }}
         secondaryCta={{ label: "Contact Us", href: ROUTES.contact }}
       />

@@ -78,7 +78,7 @@ export function DonateCTA({ className }: { className?: string }) {
       className={className}
       eyebrow="Participate"
       title="Your compassion can change someone's tomorrow"
-      description="Support tree plantation, food distribution, gau seva, help for the poor, and education."
+      description="Support Food Seva and Bhandara, Gau Seva, help for families, education and hostel support, and tree plantation—with dignity and humanity."
       primary={{ label: "Support Our Mission", href: "/donate" }}
       secondary={{ label: "Become a Volunteer", href: "/volunteer" }}
     />

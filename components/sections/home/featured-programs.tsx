@@ -16,7 +16,7 @@ export function HomeFeaturedPrograms() {
           align="center"
           eyebrow="Programs"
           title="How we create impact"
-          description="Each program is designed around service, support, and humanity."
+          description="Each program reflects service, support, and humanity—help given with respect and hope."
         />
       </SlideUp>
       <StaggerChildren className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">

@@ -13,7 +13,7 @@ export function HomeMissionVision() {
           align="center"
           eyebrow="Purpose"
           title="Mission & Vision"
-          description="We exist to turn compassion into daily seva—plants, food, gau seva, help for the poor, and education."
+          description="We exist to turn compassion into daily seva—Food Seva and Bhandara with dignity, Gau Seva, help for families, education support, and plantation."
         />
       </SlideUp>
       <StaggerChildren className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">

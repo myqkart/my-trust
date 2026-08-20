@@ -16,7 +16,7 @@ export function HomeImpactCounters() {
             align="center"
             eyebrow="Impact"
             title="Seva that reaches people in need"
-            description="Plants, food, gau seva, help for the poor, and education—five ways we serve Ahmedabad."
+            description="Plants, Food Seva, Gau Seva, help for families, and education—five ways we serve with humanity."
           />
         </SlideUp>
         <StaggerChildren
@@ -34,35 +34,35 @@ export function HomeImpactCounters() {
             <StatisticCard
               value={STATISTICS.food}
               label="Food Distribution"
-              description="Meals shared with people who need them today."
+              description="Simple, clean meals offered with dignity through Food Seva and Bhandara."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.cowWelfare}
               label="Gau Seva"
-              description="Care for cows that are needy or helpless."
+              description="Quiet, regular care for cows that depend on human kindness."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.helpingPoor}
               label="Helping the Poor"
-              description="Clothes, essentials, and support for families."
+              description="Food, clothing, and essentials given with dignity and care."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.education}
               label="Education Support"
-              description="Help so needy children can continue school."
+              description="Hostel and study support so students can keep studying."
             />
           </StaggerItem>
           <StaggerItem>
             <StatisticCard
               value={STATISTICS.yearsOfService}
               label="Years of Service"
-              description={`Serving Ahmedabad since ${siteConfig.foundingYear}.`}
+              description={`One vision since ${siteConfig.foundingYear}—service, support, and humanity.`}
             />
           </StaggerItem>
         </StaggerChildren>
