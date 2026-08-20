@@ -20,29 +20,41 @@ export const metadata = createPageMetadata({
   keywords: ["Navchetna Charitable Trust gallery", "NGO Ahmedabad"],
 });
 
-const galleryItems = galleryCategories.flatMap((category) => {
+type GalleryItem = {
+  title: string;
+  category: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  key: string;
+};
+
+const galleryItems: GalleryItem[] = [];
+
+for (const category of galleryCategories) {
   if (category === "Environment") {
-    return media.plantation.map((photo) => ({
-      title: photo.title,
-      category,
-      href: ROUTES.gallery,
-      imageSrc: photo.src,
-      imageAlt: photo.alt,
-      key: photo.src,
-    }));
+    for (const photo of media.plantation) {
+      galleryItems.push({
+        title: photo.title,
+        category,
+        href: ROUTES.gallery,
+        imageSrc: photo.src,
+        imageAlt: photo.alt,
+        key: photo.src,
+      });
+    }
+    continue;
   }
 
-  return [
-    {
-      title: `${category} moments`,
-      category,
-      href: ROUTES.gallery,
-      imageSrc: media.gallery[category as GalleryCategory],
-      imageAlt: `${category} moments`,
-      key: category,
-    },
-  ];
-});
+  galleryItems.push({
+    title: `${category} moments`,
+    category,
+    href: ROUTES.gallery,
+    imageSrc: media.gallery[category as GalleryCategory],
+    imageAlt: `${category} moments`,
+    key: category,
+  });
+}
 
 export default function GalleryPage() {
   return (
@@ -78,7 +90,7 @@ export default function GalleryPage() {
                 category={item.category}
                 href={item.href}
                 imageSrc={item.imageSrc}
-                imageAlt={item.title}
+                imageAlt={item.imageAlt}
               />
             </StaggerItem>
           ))}
