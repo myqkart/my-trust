@@ -11,7 +11,7 @@ import { SplitLayout } from "@/components/layout";
 import { SlideUp, StaggerChildren, StaggerItem } from "@/components/animations";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { ROUTES } from "@/constants/routes";
-import { founderInfo, teamInfo, trustInfo } from "@/data/demo";
+import { founderInfo, faqInfo, teamInfo, trustInfo } from "@/data/demo";
 import { homeTimeline } from "@/data/home";
 import { aboutFutureGoals } from "@/data/pages";
 import { OptimizedImage } from "@/components/ui/optimized-image";
@@ -35,6 +35,7 @@ export default function AboutPage() {
         path={ROUTES.about}
         breadcrumbs={[{ name: "About", path: ROUTES.about }]}
         pageType="AboutPage"
+        faqs={[...faqInfo]}
       />
       <PageHero
         breadcrumbs={[{ label: "About" }]}

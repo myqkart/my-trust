@@ -14,7 +14,11 @@ import {
   organizationSchema,
   websiteSchema,
 } from "@/lib/seo/json-ld";
+import { absoluteUrl } from "@/utils/seo";
 import "./globals.css";
+
+/** Prefer static HTML for SEO/GEO crawlers (content is local data). */
+export const dynamic = "force-static";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -66,6 +70,9 @@ export const metadata: Metadata = {
   robots: seoConfig.robots,
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": absoluteUrl("/rss.xml"),
+    },
   },
   openGraph: {
     type: seoConfig.openGraph.type,
@@ -83,6 +90,7 @@ export const metadata: Metadata = {
     images: [seoConfig.openGraph.images[0].url],
   },
   category: "Nonprofit",
+  applicationName: siteConfig.shortName,
 };
 
 export const viewport: Viewport = {

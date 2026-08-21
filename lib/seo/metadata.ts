@@ -48,7 +48,17 @@ export function createPageMetadata({
     publisher: siteConfig.name,
     robots: noIndex
       ? { index: false, follow: false }
-      : { index: true, follow: true },
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        },
     alternates: { canonical: path },
     openGraph: {
       title: ogTitle,

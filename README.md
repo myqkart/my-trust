@@ -8,7 +8,6 @@ Production website for **Navchetna Charitable Trust** (Ahmedabad) — Next.js Ap
 - React 19
 - TypeScript
 - Tailwind CSS
-- Vitest + Playwright
 
 ## Project structure
 
@@ -47,4 +46,12 @@ npm run analyze       # Build + bundle report
 
 ## Environment
 
-Copy [`.env.example`](.env.example) to `.env.local` and set `NEXT_PUBLIC_SITE_URL` for production.
+Copy [`.env.example`](.env.example) to `.env.local` and set `NEXT_PUBLIC_SITE_URL` to your live domain (required for correct canonical URLs, sitemap, Open Graph, and JSON-LD).
+
+## SEO / discovery
+
+- Sitemap: `/sitemap.xml`
+- Robots: `/robots.txt`
+- RSS: `/rss.xml`
+- AI/GEO brief: `/llms.txt`
+- Open Graph image: `/opengraph-image`

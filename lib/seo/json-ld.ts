@@ -35,6 +35,7 @@ interface ArticleInput {
   datePublished: string;
   dateModified?: string;
   category?: string;
+  image?: string;
 }
 
 interface EventInput {
@@ -51,7 +52,7 @@ interface ServiceInput {
   path: string;
 }
 
-/** Organization schema from seo.md. */
+/** Organization schema for Google / AI entity grounding. */
 export function organizationSchema(): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -61,7 +62,7 @@ export function organizationSchema(): JsonLd {
     alternateName: siteConfig.shortName,
     description: siteConfig.description,
     url: absoluteUrl("/"),
-    logo: absoluteUrl("/images/og/default.png"),
+    logo: absoluteUrl("/opengraph-image"),
     image: absoluteUrl(seoConfig.openGraph.images[0].url),
     email: siteConfig.email,
     telephone: siteConfig.phone,
@@ -72,6 +73,14 @@ export function organizationSchema(): JsonLd {
     },
     identifier: siteConfig.registrationNumber,
     slogan: siteConfig.slogan,
+    knowsAbout: [
+      "Food distribution and Bhandara",
+      "Gau seva",
+      "Education and hostel support",
+      "Helping families in need",
+      "Tree plantation",
+      "Charitable service in Ahmedabad",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: `${siteConfig.address.line1}, ${siteConfig.address.line2}`,
@@ -104,7 +113,7 @@ export function organizationSchema(): JsonLd {
   };
 }
 
-/** WebSite schema with optional site search. */
+/** WebSite schema (no SearchAction — /search is a stub, not a real search index). */
 export function websiteSchema(): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -115,14 +124,6 @@ export function websiteSchema(): JsonLd {
     description: seoConfig.description,
     publisher: { "@id": `${absoluteUrl("/")}#organization` },
     inLanguage: siteConfig.language,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${absoluteUrl("/search")}?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 
@@ -189,6 +190,7 @@ export function articleSchema({
   datePublished,
   dateModified,
   category,
+  image = seoConfig.openGraph.images[0].url,
 }: ArticleInput): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -196,14 +198,19 @@ export function articleSchema({
     headline: title,
     description,
     url: absoluteUrl(path),
+    image: [absoluteUrl(image)],
     datePublished,
     dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Organization",
       name: siteConfig.name,
+      url: absoluteUrl("/"),
     },
     publisher: { "@id": `${absoluteUrl("/")}#organization` },
-    mainEntityOfPage: absoluteUrl(path),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(path),
+    },
     articleSection: category,
     inLanguage: siteConfig.language,
   };

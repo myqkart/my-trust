@@ -16,8 +16,8 @@ import { siteConfig } from "@/config/site";
 import { seoConfig } from "@/config/seo";
 import { ROUTES } from "@/constants/routes";
 import { STATISTICS } from "@/constants/statistics";
-import { seoKeywords, trustInfo } from "@/data/demo";
-import { webPageSchema } from "@/lib/seo/json-ld";
+import { faqInfo, seoKeywords, trustInfo } from "@/data/demo";
+import { faqSchema, webPageSchema } from "@/lib/seo/json-ld";
 import { createPageMetadata } from "@/lib/seo/metadata";
 
 const HomeStatisticsDashboard = dynamic(
@@ -85,11 +85,14 @@ export default function HomePage() {
   return (
     <>
       <JsonLd
-        data={webPageSchema({
-          name: siteConfig.name,
-          description: seoConfig.description,
-          path: ROUTES.home,
-        })}
+        data={[
+          webPageSchema({
+            name: siteConfig.name,
+            description: seoConfig.description,
+            path: ROUTES.home,
+          }),
+          faqSchema([...faqInfo]),
+        ]}
       />
       {/* 01 Hero */}
       <div className="relative">
