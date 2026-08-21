@@ -179,9 +179,8 @@ export const donationPaymentInfo = {
     bankName: "IDBI Bank",
   },
   gpay: {
-    /** Place the QR at `public/images/donate/gpay-qr.png`, then set this path. */
-    qrSrc: "",
-    qrAlt: "Google Pay QR code for Navchetna Charitable Trust",
+    qrSrc: "/images/donate/gpay-qr.png",
+    qrAlt: "UPI / Google Pay QR code for Navchetna Charitable Trust",
   },
 } as const;
 
