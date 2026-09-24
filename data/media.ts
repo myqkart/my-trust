@@ -28,7 +28,7 @@ export const imageBlurDataUrl =
 export const media = {
   about: {
     plantation: "/images/plantation/plantation-01.png",
-    meals: unsplashSrc("1488521787991-ed7bbaae773c", { w: 900, h: 1125 }),
+    meals: "/images/events/ambaji-food-seva/03-community-at-table.jpg",
   },
   featuredStory: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 1250 }),
   plantation: [
@@ -48,18 +48,47 @@ export const media = {
       alt: "Community members placing a sapling into the ground",
     },
   ],
+  /** Food seva / pakpads at Ambaji (September 2026). */
+  ambajiFoodSeva: [
+    {
+      src: "/images/events/ambaji-food-seva/01-volunteers-with-truck.jpg",
+      title: "Volunteers with the seva truck",
+      alt: "Navchetna Charitable Trust volunteers standing in front of a cargo truck during food distribution in Ambaji",
+    },
+    {
+      src: "/images/events/ambaji-food-seva/02-serving-food.jpg",
+      title: "Serving meals with care",
+      alt: "Volunteers serving food into bowls at a roadside food distribution table in Ambaji",
+    },
+    {
+      src: "/images/events/ambaji-food-seva/03-community-at-table.jpg",
+      title: "Community at the serving table",
+      alt: "Volunteers and community members gathered around a blue table during Ambaji food seva",
+    },
+    {
+      src: "/images/events/ambaji-food-seva/04-team-group.jpg",
+      title: "The Ambaji seva team",
+      alt: "Group of Navchetna Charitable Trust volunteers posing after food distribution in Ambaji",
+    },
+    {
+      src: "/images/events/ambaji-food-seva/05-serving-from-truck.jpg",
+      title: "Serving from the truck",
+      alt: "Volunteers distributing freshly prepared food from a truck during Ambaji food seva",
+    },
+  ],
   programs: {
     environment: "/images/plantation/plantation-01.png",
-    "food-distribution": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 750 }),
+    "food-distribution":
+      "/images/events/ambaji-food-seva/02-serving-food.jpg",
     "cow-welfare": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 750 }),
     "helping-poor": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 750 }),
     education: unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 750 }),
   },
   gallery: {
     "Daily Life": unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
-    Meals: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
+    Meals: "/images/events/ambaji-food-seva/02-serving-food.jpg",
     Festivals: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
-    Volunteers: unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
+    Volunteers: "/images/events/ambaji-food-seva/04-team-group.jpg",
     Education: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
     Environment: "/images/plantation/plantation-01.png",
   },
@@ -80,19 +109,19 @@ export const media = {
       src: "/images/plantation/plantation-03.png",
     },
     {
-      title: "Food shared with dignity",
+      title: "Food seva in Ambaji",
       category: "Meals",
-      src: unsplashSrc("1593113598332-cd288d649433", { w: 800, h: 1000 }),
+      src: "/images/events/ambaji-food-seva/02-serving-food.jpg",
     },
     {
-      title: "Gau seva",
-      category: "Daily Life",
-      src: unsplashSrc("1546445317-29f4545e9d53", { w: 800, h: 1000 }),
-    },
-    {
-      title: "Help for families in need",
+      title: "Ambaji volunteers",
       category: "Volunteers",
-      src: unsplashSrc("1489980557514-251d61e3eeb6", { w: 800, h: 1000 }),
+      src: "/images/events/ambaji-food-seva/01-volunteers-with-truck.jpg",
+    },
+    {
+      title: "Serving from the truck",
+      category: "Meals",
+      src: "/images/events/ambaji-food-seva/05-serving-from-truck.jpg",
     },
     {
       title: "Education support",
@@ -106,7 +135,7 @@ export const media = {
     },
   ],
   stories: {
-    "Meals we share": unsplashSrc("1488521787991-ed7bbaae773c", { w: 1000, h: 625 }),
+    "Meals we share": "/images/events/ambaji-food-seva/03-community-at-table.jpg",
     "Gau seva": unsplashSrc("1546445317-29f4545e9d53", { w: 1000, h: 625 }),
     "Families we stand with": unsplashSrc("1489980557514-251d61e3eeb6", { w: 1000, h: 625 }),
     "Students we support": unsplashSrc("1503676260728-1c00da094a0b", { w: 1000, h: 625 }),
@@ -123,10 +152,8 @@ export const media = {
   ],
   blog: {
     "service-support-humanity": "/images/plantation/plantation-01.png",
-    "food-distribution-with-dignity": unsplashSrc("1488521787991-ed7bbaae773c", {
-      w: 1200,
-      h: 750,
-    }),
+    "food-distribution-with-dignity":
+      "/images/events/ambaji-food-seva/02-serving-food.jpg",
     "gau-seva-compassion": unsplashSrc("1546445317-29f4545e9d53", {
       w: 1200,
       h: 750,
@@ -140,7 +167,7 @@ export const media = {
       h: 750,
     }),
   },
-  events: unsplashSrc("1559027615-cd4628902d4a", { w: 1000, h: 625 }),
+  events: "/images/events/ambaji-food-seva/01-volunteers-with-truck.jpg",
 } as const;
 
 export type GalleryCategory = keyof typeof media.gallery;

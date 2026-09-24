@@ -176,6 +176,8 @@ export interface EventCardProps {
   dateLabel: string;
   location: string;
   href: string;
+  imageSrc?: string;
+  imageAlt?: string;
   className?: string;
 }
 
@@ -185,23 +187,38 @@ export function EventCard({
   dateLabel,
   location,
   href,
+  imageSrc,
+  imageAlt,
   className,
 }: EventCardProps) {
   return (
-    <Card as="article" className={className}>
-      <CardHeader>
-        <Badge variant="accent">{dateLabel}</Badge>
-        <CardTitle className="mt-3">{title}</CardTitle>
-        <CardDescription>{summary}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p className="text-sm text-muted">{location}</p>
-      </CardContent>
-      <CardFooter>
-        <Button asChild size="sm">
-          <Link href={href}>View Event</Link>
-        </Button>
-      </CardFooter>
+    <Card as="article" padding="none" className={cn("group overflow-hidden", className)}>
+      {imageSrc ? (
+        <div className="relative aspect-[16/10] overflow-hidden bg-soft/40">
+          <OptimizedImage
+            src={imageSrc}
+            alt={imageAlt ?? title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      ) : null}
+      <div className="p-6">
+        <CardHeader className="p-0">
+          <Badge variant="accent">{dateLabel}</Badge>
+          <CardTitle className="mt-3">{title}</CardTitle>
+          <CardDescription>{summary}</CardDescription>
+        </CardHeader>
+        <CardContent className="mt-4 p-0">
+          <p className="text-sm text-muted">{location}</p>
+        </CardContent>
+        <CardFooter className="mt-5 p-0">
+          <Button asChild size="sm">
+            <Link href={href}>View Event</Link>
+          </Button>
+        </CardFooter>
+      </div>
     </Card>
   );
 }

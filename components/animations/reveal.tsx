@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type HTMLMotionProps } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { fade } from "@/animations/fade";
 import { slideUp, slideLeft, slideRight } from "@/animations/slide";
 import { scaleIn } from "@/animations/scale";
@@ -27,8 +27,13 @@ function RevealBase({
   ...props
 }: RevealProps & { variants: typeof fade }) {
   const reduced = useReducedMotion();
+  // SSR + first paint stay visible; animate only after mount.
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    setReady(true);
+  }, []);
 
-  if (reduced) {
+  if (reduced || !ready) {
     return <div className={className}>{children}</div>;
   }
 

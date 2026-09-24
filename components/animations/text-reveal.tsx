@@ -89,8 +89,12 @@ export function ParagraphReveal({
   delay = 0.15,
 }: ParagraphRevealProps) {
   const reduced = useReducedMotion();
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    setReady(true);
+  }, []);
 
-  if (reduced) {
+  if (reduced || !ready) {
     return <p className={className}>{children}</p>;
   }
 

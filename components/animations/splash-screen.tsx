@@ -8,18 +8,29 @@ import { useReducedMotion } from "@/hooks/use-reduced-motion";
 const HOLD_MS = 2200;
 const EXIT_MS = 700;
 
+function isCrawler(): boolean {
+  if (typeof navigator === "undefined") return true;
+  return /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|quora|linkedinbot|pinterest|redditbot|whatsapp|telegram/i.test(
+    navigator.userAgent,
+  );
+}
+
 /**
- * Full-viewport brand splash on every hard load / first paint.
- * Skips client-side route changes; respects reduced motion.
+ * Brand splash on first client paint only.
+ * Not rendered in SSR HTML so crawlers and "View Source" see real page content.
  */
 export function SplashScreen() {
   const reduced = useReducedMotion();
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (isCrawler()) return;
+
+    setVisible(true);
     const hold = reduced ? 400 : HOLD_MS;
     const timer = window.setTimeout(() => setVisible(false), hold);
     document.documentElement.classList.add("splash-lock");
+
     return () => {
       window.clearTimeout(timer);
       document.documentElement.classList.remove("splash-lock");

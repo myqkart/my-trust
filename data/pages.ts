@@ -192,11 +192,32 @@ export const aboutFutureGoals = [
 
 export const eventsList = [
   {
+    title: "Food Distribution in Ambaji",
+    dateLabel: "Completed · Sep 2026",
+    startDate: "2026-09-09",
+    location: "Ambaji",
+    summary:
+      "Pakpads food seva—meals shared with dignity for pilgrims and people in need at Ambaji.",
+    imageSrc: "/images/events/ambaji-food-seva/02-serving-food.jpg",
+    imageAlt:
+      "Volunteers serving food during Navchetna Charitable Trust food distribution in Ambaji",
+  },
+  {
+    title: "Religious Seva & Cleanliness Program",
+    dateLabel: "Completed · Sun 13 Sep 2026",
+    startDate: "2026-09-13",
+    location: "Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
+    summary:
+      "Temple cleanliness, drinking water, and assistance for devotees—seva as bhakti in a clean, welcoming space.",
+  },
+  {
     title: "Tree Plantation Drive",
     dateLabel: "Upcoming",
     startDate: "2026-08-20",
     location: "Ahmedabad neighbourhoods",
     summary: "Plant trees with volunteers, families, and well-wishers.",
+    imageSrc: "/images/plantation/plantation-01.png",
+    imageAlt: "Tree plantation drive by Navchetna Charitable Trust",
   },
   {
     title: "Food Distribution",
@@ -204,6 +225,8 @@ export const eventsList = [
     startDate: "2026-08-15",
     location: "Ahmedabad",
     summary: "Share clean, simple meals with dignity through Food Seva and Bhandara.",
+    imageSrc: "/images/events/ambaji-food-seva/05-serving-from-truck.jpg",
+    imageAlt: "Food seva volunteers preparing meals for distribution",
   },
   {
     title: "Gau Seva",

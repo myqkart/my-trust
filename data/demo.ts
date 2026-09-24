@@ -30,7 +30,7 @@ export const trustInfo = {
 
 export const founderInfo = {
   name: "Shri Rupesh Kumar Modi",
-  designation: "Founder & Trustee",
+  designation: "Managing Trustee",
   bio: "Navchetna Charitable Trust was established in 2009 with the service spirit and dedication of Shri Rupesh Kumar Modi, with the aim of supporting people in need and contributing positively to society. Today the core purpose remains unchanged—service, support, and humanity.",
   message:
     "Service, Support & Humanity is more than a slogan; it is the spirit behind our social service journey since 2009.",
@@ -224,26 +224,21 @@ export const eventsInfo = [
   "Support for Families",
   "Education Support Meet",
   "Community Gathering",
+  "Religious Seva & Cleanliness Program",
 ] as const;
 
 export const teamInfo = [
   {
     id: "rupesh-bhai-modi",
     name: "Shri Rupesh Kumar Modi",
-    role: "Founder & Trustee",
+    role: "Managing Trustee",
     image: "/images/trustees/rupesh-bhai-modi.png",
   },
   {
     id: "rupal-modi",
     name: "Rupal Modi",
-    role: "Co-Founder & Trustee",
+    role: "Secretary",
     image: "/images/trustees/trustee-02.png",
-  },
-  {
-    id: "trustee-03",
-    name: "Krishiv Modi",
-    role: "Trustee",
-    image: "/images/trustees/trustee-03.png",
   },
   {
     id: "trustee-04",
@@ -256,6 +251,12 @@ export const teamInfo = [
     name: "Krish Panchal",
     role: "Trustee",
     image: "/images/trustees/trustee-05.png",
+  },
+  {
+    id: "trustee-03",
+    name: "Krishiv Modi",
+    role: "Trustee",
+    image: "/images/trustees/trustee-03.png",
   },
   {
     id: "kajal-patel",
@@ -304,7 +305,7 @@ export const trustBadgesInfo = [
     description: "2009, Ahmedabad",
   },
   {
-    label: "Founder",
+    label: "Managing Trustee",
     description: "Shri Rupesh Kumar Modi",
   },
   {

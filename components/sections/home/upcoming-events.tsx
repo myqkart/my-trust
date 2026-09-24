@@ -27,6 +27,8 @@ export function HomeUpcomingEvents() {
               dateLabel={event.dateLabel}
               location={event.location}
               href={event.href}
+              imageSrc={"imageSrc" in event ? event.imageSrc : undefined}
+              imageAlt={"imageAlt" in event ? event.imageAlt : undefined}
             />
           </StaggerItem>
         ))}

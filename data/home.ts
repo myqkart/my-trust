@@ -56,25 +56,31 @@ export const galleryPreviewItems = [
 
 export const upcomingEvents = [
   {
+    title: "Food Distribution in Ambaji",
+    dateLabel: "Completed · Sep 2026",
+    location: "Ambaji",
+    summary: "Pakpads food seva—meals shared with dignity at Ambaji.",
+    href: `${ROUTES.events}#ambaji-food-seva`,
+    imageSrc: "/images/events/ambaji-food-seva/02-serving-food.jpg",
+    imageAlt:
+      "Volunteers serving food during Navchetna Charitable Trust food distribution in Ambaji",
+  },
+  {
+    title: "Religious Seva & Cleanliness Program",
+    dateLabel: "Completed · Sun 13 Sep 2026",
+    location: "Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
+    summary:
+      "Temple cleanliness, drinking water, and care for devotees—seva is bhakti.",
+    href: ROUTES.events,
+  },
+  {
     title: eventsInfo[0],
     dateLabel: "Upcoming",
     location: "Ahmedabad neighbourhoods",
     summary: "Plant trees with volunteers, families, and well-wishers.",
     href: ROUTES.events,
-  },
-  {
-    title: eventsInfo[1],
-    dateLabel: "Upcoming",
-    location: "Ahmedabad",
-    summary: "Food Seva and Bhandara—meals offered with dignity and respect.",
-    href: ROUTES.events,
-  },
-  {
-    title: eventsInfo[2],
-    dateLabel: "Upcoming",
-    location: "Ahmedabad",
-    summary: "Quiet care for cows that need food, water, and protection.",
-    href: ROUTES.events,
+    imageSrc: "/images/plantation/plantation-01.png",
+    imageAlt: "Tree plantation drive by Navchetna Charitable Trust",
   },
 ] as const;
 

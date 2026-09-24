@@ -1,8 +1,9 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { PageTransition } from "@/components/animations/page-transition";
 
+/**
+ * Server template — keeps layout structure without a client boundary
+ * wrapping every page (better for SSR HTML / crawlers).
+ */
 export default function Template({ children }: { children: ReactNode }) {
-  return <PageTransition>{children}</PageTransition>;
+  return <div className="flex min-h-0 flex-1 flex-col">{children}</div>;
 }

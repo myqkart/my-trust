@@ -1,6 +1,6 @@
 import { PageHero } from "@/components/hero/page-hero";
 import { DonateCTA } from "@/components/cta/section-cta";
-import { EventCard } from "@/components/cards";
+import { EventCard, GalleryCard } from "@/components/cards";
 import { PageJsonLd } from "@/components/seo/page-json-ld";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/typography";
@@ -9,15 +9,21 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import { eventSchema } from "@/lib/seo/json-ld";
 import { ROUTES } from "@/constants/routes";
 import { eventsList } from "@/data/pages";
+import { media } from "@/data/media";
 
 const eventsDescription =
-  "Join upcoming Navchetna Charitable Trust events—plantation drives, food distribution, gau seva, and community gatherings.";
+  "Join Navchetna Charitable Trust events—Ambaji food seva, temple cleanliness seva, plantation drives, gau seva, and community gatherings.";
 
 export const metadata = createPageMetadata({
   title: "Events",
   description: eventsDescription,
   path: ROUTES.events,
-  keywords: ["NGO events Ahmedabad", "Tree plantation Ahmedabad", "Food distribution"],
+  keywords: [
+    "NGO events Ahmedabad",
+    "Ambaji food distribution",
+    "Food seva Ambaji",
+    "Tree plantation Ahmedabad",
+  ],
 });
 
 export default function EventsPage() {
@@ -51,7 +57,7 @@ export default function EventsPage() {
       <Section background="white">
         <SectionHeading
           align="center"
-          eyebrow="Upcoming"
+          eyebrow="Calendar"
           title="Events on the calendar"
         />
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -62,7 +68,35 @@ export default function EventsPage() {
                 summary={event.summary}
                 dateLabel={event.dateLabel}
                 location={event.location}
-                href={ROUTES.contact}
+                href={
+                  event.title === "Food Distribution in Ambaji"
+                    ? "#ambaji-food-seva"
+                    : ROUTES.contact
+                }
+                imageSrc={"imageSrc" in event ? event.imageSrc : undefined}
+                imageAlt={"imageAlt" in event ? event.imageAlt : undefined}
+              />
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
+      </Section>
+
+      <Section id="ambaji-food-seva" background="default">
+        <SectionHeading
+          align="center"
+          eyebrow="Ambaji · Sep 2026"
+          title="Food distribution in Ambaji"
+          description="Pakpads food seva—meals shared with dignity for pilgrims and people in need."
+        />
+        <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {media.ambajiFoodSeva.map((photo) => (
+            <StaggerItem key={photo.src}>
+              <GalleryCard
+                title={photo.title}
+                category="Meals"
+                href={ROUTES.gallery}
+                imageSrc={photo.src}
+                imageAlt={photo.alt}
               />
             </StaggerItem>
           ))}

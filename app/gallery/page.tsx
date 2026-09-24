@@ -11,13 +11,17 @@ import { galleryCategories } from "@/data/pages";
 import { media, type GalleryCategory } from "@/data/media";
 
 const galleryDescription =
-  "Browse moments from plantation, food seva, gau seva, education, and community work at Navchetna Charitable Trust.";
+  "Browse moments from Ambaji food seva, plantation, gau seva, education, and community work at Navchetna Charitable Trust.";
 
 export const metadata = createPageMetadata({
   title: "Gallery",
   description: galleryDescription,
   path: ROUTES.gallery,
-  keywords: ["Navchetna Charitable Trust gallery", "NGO Ahmedabad"],
+  keywords: [
+    "Navchetna Charitable Trust gallery",
+    "Ambaji food distribution",
+    "NGO Ahmedabad",
+  ],
 });
 
 type GalleryItem = {
@@ -46,12 +50,26 @@ for (const category of galleryCategories) {
     continue;
   }
 
+  if (category === "Meals") {
+    for (const photo of media.ambajiFoodSeva) {
+      galleryItems.push({
+        title: photo.title,
+        category,
+        href: ROUTES.gallery,
+        imageSrc: photo.src,
+        imageAlt: photo.alt,
+        key: photo.src,
+      });
+    }
+    continue;
+  }
+
   galleryItems.push({
     title: `${category} moments`,
     category,
     href: ROUTES.gallery,
     imageSrc: media.gallery[category as GalleryCategory],
-    imageAlt: `${category} moments`,
+    imageAlt: `${category} moments at Navchetna Charitable Trust`,
     key: category,
   });
 }
@@ -70,7 +88,7 @@ export default function GalleryPage() {
         breadcrumbs={[{ label: "Gallery" }]}
         eyebrow="Moments"
         title="Life inside our community"
-        description="A visual window into care, celebration, service, and everyday belonging."
+        description="A visual window into care, celebration, service, and everyday belonging—including food seva in Ambaji."
         primaryCta={{ label: "Visit Us", href: ROUTES.contact }}
         secondaryCta={{ label: "Volunteer", href: ROUTES.volunteer }}
       />
@@ -80,7 +98,7 @@ export default function GalleryPage() {
           align="center"
           eyebrow="Photo Stories"
           title="Care captured in everyday frames"
-          description="Documentary moments from our home, outreach, and community celebrations."
+          description="Documentary moments from Ambaji food seva, plantation, outreach, and community celebrations."
         />
         <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {galleryItems.map((item) => (
