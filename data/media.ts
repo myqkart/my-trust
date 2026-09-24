@@ -76,6 +76,49 @@ export const media = {
       alt: "Volunteers distributing freshly prepared food from a truck during Ambaji food seva",
     },
   ],
+  /** Temple cleanliness & religious seva (13 Sep 2026). */
+  templeSeva: [
+    {
+      src: "/images/events/temple-seva/01-watering-sapling.jpg",
+      title: "Watering a temple sapling",
+      alt: "Volunteer watering a young sapling during temple seva at Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
+    },
+    {
+      src: "/images/events/temple-seva/02-meditation-group.jpg",
+      title: "Quiet prayer together",
+      alt: "Volunteers seated in prayer and meditation during religious seva at the temple",
+    },
+    {
+      src: "/images/events/temple-seva/03-volunteers-with-saplings.jpg",
+      title: "Ready for plantation seva",
+      alt: "Volunteers holding saplings for plantation during temple cleanliness and seva program",
+    },
+    {
+      src: "/images/events/temple-seva/04-team-group.jpg",
+      title: "Temple seva team",
+      alt: "Group of Navchetna Charitable Trust volunteers at Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
+    },
+    {
+      src: "/images/events/temple-seva/05-volunteers-ready-to-plant.jpg",
+      title: "Saplings and water ready",
+      alt: "Volunteers with saplings and water buckets prepared for temple plantation seva",
+    },
+    {
+      src: "/images/events/temple-seva/06-two-with-saplings.jpg",
+      title: "Carrying saplings with care",
+      alt: "Two volunteers holding tree saplings during religious seva at the temple",
+    },
+    {
+      src: "/images/events/temple-seva/07-watering-with-bucket.jpg",
+      title: "Caring for young trees",
+      alt: "Volunteer pouring water onto a guarded sapling during temple seva",
+    },
+    {
+      src: "/images/events/temple-seva/08-prayer-session.jpg",
+      title: "Seva is bhakti",
+      alt: "Volunteers in a prayer session during the religious seva and cleanliness program at the temple",
+    },
+  ],
   programs: {
     environment: "/images/plantation/plantation-01.png",
     "food-distribution":
@@ -87,10 +130,10 @@ export const media = {
   gallery: {
     "Daily Life": unsplashSrc("1559027615-cd4628902d4a", { w: 800, h: 1000 }),
     Meals: "/images/events/ambaji-food-seva/02-serving-food.jpg",
-    Festivals: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
+    Festivals: "/images/events/temple-seva/08-prayer-session.jpg",
     Volunteers: "/images/events/ambaji-food-seva/04-team-group.jpg",
     Education: unsplashSrc("1497633762265-9d179a990aa6", { w: 800, h: 1000 }),
-    Environment: "/images/plantation/plantation-01.png",
+    Environment: "/images/events/temple-seva/01-watering-sapling.jpg",
   },
   galleryPreview: [
     {
@@ -131,7 +174,12 @@ export const media = {
     {
       title: "Community gatherings",
       category: "Festivals",
-      src: unsplashSrc("1545389336-cf090694435e", { w: 800, h: 1000 }),
+      src: "/images/events/temple-seva/08-prayer-session.jpg",
+    },
+    {
+      title: "Temple sapling care",
+      category: "Environment",
+      src: "/images/events/temple-seva/01-watering-sapling.jpg",
     },
   ],
   stories: {

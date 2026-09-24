@@ -209,6 +209,9 @@ export const eventsList = [
     location: "Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
     summary:
       "Temple cleanliness, drinking water, and assistance for devotees—seva as bhakti in a clean, welcoming space.",
+    imageSrc: "/images/events/temple-seva/04-team-group.jpg",
+    imageAlt:
+      "Volunteers at Shree Rudhreshwar Mahadev & Rudra Hanuman Temple during religious seva and cleanliness program",
   },
   {
     title: "Tree Plantation Drive",

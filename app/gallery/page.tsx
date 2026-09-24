@@ -64,6 +64,20 @@ for (const category of galleryCategories) {
     continue;
   }
 
+  if (category === "Festivals") {
+    for (const photo of media.templeSeva) {
+      galleryItems.push({
+        title: photo.title,
+        category,
+        href: ROUTES.gallery,
+        imageSrc: photo.src,
+        imageAlt: photo.alt,
+        key: photo.src,
+      });
+    }
+    continue;
+  }
+
   galleryItems.push({
     title: `${category} moments`,
     category,

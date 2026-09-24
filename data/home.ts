@@ -71,7 +71,10 @@ export const upcomingEvents = [
     location: "Shree Rudhreshwar Mahadev & Rudra Hanuman Temple",
     summary:
       "Temple cleanliness, drinking water, and care for devotees—seva is bhakti.",
-    href: ROUTES.events,
+    href: `${ROUTES.events}#temple-seva`,
+    imageSrc: "/images/events/temple-seva/04-team-group.jpg",
+    imageAlt:
+      "Volunteers at Shree Rudhreshwar Mahadev & Rudra Hanuman Temple during religious seva",
   },
   {
     title: eventsInfo[0],

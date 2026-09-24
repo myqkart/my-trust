@@ -21,6 +21,8 @@ export const metadata = createPageMetadata({
   keywords: [
     "NGO events Ahmedabad",
     "Ambaji food distribution",
+    "Temple seva",
+    "Rudhreshwar Mahadev",
     "Food seva Ambaji",
     "Tree plantation Ahmedabad",
   ],
@@ -71,7 +73,9 @@ export default function EventsPage() {
                 href={
                   event.title === "Food Distribution in Ambaji"
                     ? "#ambaji-food-seva"
-                    : ROUTES.contact
+                    : event.title === "Religious Seva & Cleanliness Program"
+                      ? "#temple-seva"
+                      : ROUTES.contact
                 }
                 imageSrc={"imageSrc" in event ? event.imageSrc : undefined}
                 imageAlt={"imageAlt" in event ? event.imageAlt : undefined}
@@ -94,6 +98,28 @@ export default function EventsPage() {
               <GalleryCard
                 title={photo.title}
                 category="Meals"
+                href={ROUTES.gallery}
+                imageSrc={photo.src}
+                imageAlt={photo.alt}
+              />
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
+      </Section>
+
+      <Section id="temple-seva" background="white">
+        <SectionHeading
+          align="center"
+          eyebrow="Temple · Sun 13 Sep 2026"
+          title="Religious seva & cleanliness"
+          description="At Shree Rudhreshwar Mahadev & Rudra Hanuman Temple—cleanliness, care for devotees, and plantation. Seva is bhakti."
+        />
+        <StaggerChildren className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {media.templeSeva.map((photo) => (
+            <StaggerItem key={photo.src}>
+              <GalleryCard
+                title={photo.title}
+                category="Festivals"
                 href={ROUTES.gallery}
                 imageSrc={photo.src}
                 imageAlt={photo.alt}
